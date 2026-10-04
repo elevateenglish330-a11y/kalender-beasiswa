@@ -60,6 +60,17 @@ Kalau kamu menambah beasiswa dengan negara yang belum pernah ada, lingkarannya t
 
 Lintang dulu, bujur kemudian. Selatan dan barat bernilai negatif.
 
+## Cari dan saring
+
+Bilah di atas hasil berlaku untuk ketiga tampilan sekaligus. Menyaring di Daftar juga menyaring Kalender dan Peta.
+
+- **Kotak cari** menelusuri nama, penyelenggara, negara, jenjang, catatan, dan seluruh teks syarat. Beberapa kata dicari sebagai gabungan, jadi `korea s2` hanya menampilkan yang mengandung keduanya.
+- **Urutkan**: tenggat terdekat, tenggat terjauh, nama A-Z, negara A-Z.
+- **Empat kelompok filter**: status, jenjang, pendanaan, penyelenggara, plus dropdown negara.
+- **Angka di tiap chip** dihitung ulang mengikuti filter lain yang sedang aktif, jadi kamu selalu tahu berapa hasilnya sebelum mengklik. Chip yang hasilnya nol otomatis dimatikan supaya tidak ada klik buntu.
+
+Field `sumber` di data.json mengisi filter Penyelenggara, isinya `pemerintah`, `kampus`, atau `yayasan`.
+
 ## Soal label Perkiraan
 
 Setiap beasiswa punya penanda `pasti`:

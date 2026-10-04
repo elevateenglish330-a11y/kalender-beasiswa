@@ -168,6 +168,32 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
 .row.closed{opacity:.62}
 .empty{padding:34px 18px;text-align:center;color:var(--ink-3);font-size:13.5px;border:1px dashed var(--line-strong);border-radius:4px;background:var(--surface)}
 
+/* bilah cari, urutkan, saring */
+.tools{margin-top:18px;background:var(--surface);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.tools-top{display:flex;flex-wrap:wrap;gap:10px;padding:12px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.cari{position:relative;flex:1 1 230px;min-width:0}
+.cari input{width:100%;font:inherit;font-size:14px;background:var(--surface);color:var(--ink);
+  border:1px solid var(--line-strong);border-radius:4px;padding:9px 34px 9px 12px}
+.cari svg{position:absolute;right:11px;top:50%;transform:translateY(-50%);width:15px;height:15px;
+  stroke:var(--ink-3);fill:none;stroke-width:2;pointer-events:none}
+.cari button{position:absolute;right:7px;top:50%;transform:translateY(-50%);border:0;background:var(--line);
+  color:var(--ink-2);border-radius:999px;width:19px;height:19px;line-height:1;padding:0;font-size:12px}
+.urut{display:flex;align-items:center;gap:7px;flex:0 1 auto}
+.urut label{font-family:var(--font-mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);white-space:nowrap}
+.urut select{font:inherit;font-size:13.5px;background:var(--surface);color:var(--ink);
+  border:1px solid var(--line-strong);border-radius:4px;padding:8px 9px;max-width:100%}
+.facets{padding:4px 12px 12px}
+.fgrp{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding-top:9px}
+.fgrp > b{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-3);flex:0 0 92px;font-weight:400}
+.chip .n{font-family:var(--font-mono);font-size:10px;opacity:.6;margin-left:5px}
+.chip[disabled]{opacity:.38;cursor:not-allowed}
+.hasil{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:11px 12px;
+  border-top:1px solid var(--line);background:var(--surface-2);font-size:13px;color:var(--ink-2)}
+.hasil b{color:var(--ink);font-family:var(--font-mono);font-weight:600}
+.hasil button{margin-left:auto}
+mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;border-radius:2px;padding:0 1px}
+
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
 .chip{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:5px 12px;font-size:12.5px;line-height:1.3}
 .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:500}
@@ -337,8 +363,10 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
   var editing = false, dirty = false;
   var formFor = null, toast = null, showJson = false;
   var view = hashView() || "kalender";
-  var filterStatus = "aktif", filterJenjang = "semua", filterDana = "semua";
+  var filterStatus = "aktif", filterJenjang = "semua", filterDana = "semua", filterSumber = "semua";
+  var filterNegara = "semua", cari = "", urut = "dekat";
   var mapNegara = null;
+  var fokusCari = false, caret = 0;
   var curY, curM, selected = null;
 
   function pad(n){ return n < 10 ? "0" + n : "" + n; }
@@ -384,9 +412,9 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
   }
   function safeUrl(u){ return (typeof u === "string" && /^https:\/\//i.test(u)) ? u : ""; }
 
-  function eventMap(){
+  function eventMap(list){
     var m = {};
-    state.items.forEach(function(it){
+    (list || state.items).forEach(function(it){
       if (valid(it.tutup)) (m[it.tutup] = m[it.tutup] || []).push({ it: it, tipe: "tutup" });
       if (valid(it.buka))  (m[it.buka]  = m[it.buka]  || []).push({ it: it, tipe: "buka"  });
     });
@@ -461,7 +489,11 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       + '<button class="vbtn" aria-pressed="' + (view === "peta") + '" data-view="peta">Peta</button>'
       + '</div>';
 
-    h += view === "peta" ? petaHtml() : (view === "kalender" ? calendarHtml(evs) : daftarHtml(items));
+    h += toolsHtml();
+
+    var pilihan = tersaring();
+    h += view === "peta" ? petaHtml(pilihan)
+       : (view === "kalender" ? calendarHtml(eventMap(pilihan), pilihan) : daftarHtml(pilihan));
     h += penawaranHtml();
 
     var wa = state.kontak.wa ? String(state.kontak.wa).replace(/[^0-9]/g,"") : "";
@@ -482,9 +514,15 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       + 'Halaman ini bukan afiliasi resmi dari penyelenggara beasiswa mana pun.</p>';
 
     app.innerHTML = h;
+
+    if (fokusCari){
+      var q = document.getElementById("q");
+      if (q){ q.focus(); try { q.setSelectionRange(caret, caret); } catch(e){} }
+      fokusCari = false;
+    }
   }
 
-  function calendarHtml(evs){
+  function calendarHtml(evs, list){
     var first = new Date(Date.UTC(curY, curM, 1));
     var startDow = (first.getUTCDay() + 6) % 7;
     var dim = new Date(Date.UTC(curY, curM + 1, 0)).getUTCDate();
@@ -540,7 +578,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     }
 
     var hadir = {};
-    state.items.forEach(function(it){ hadir[it.region || "lain"] = 1; });
+    (list || state.items).forEach(function(it){ hadir[it.region || "lain"] = 1; });
     var lg = "";
     REGIONS.forEach(function(r){ if (hadir[r[0]]) lg += '<span class="lg r-' + r[0] + '"><i></i>' + esc(r[1]) + "</span>"; });
     if (lg) h += '<div class="legend">' + lg + "</div>";
@@ -561,27 +599,15 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     return h + "</section>";
   }
 
-  function daftarHtml(items){
-    var shown = items.filter(function(i){
-      var s = statusOf(i);
-      if (filterStatus === "aktif" && s === "tutup") return false;
-      if (filterStatus === "buka" && s !== "buka") return false;
-      if (filterStatus === "nanti" && s !== "nanti") return false;
-      if (filterStatus === "tutup" && s !== "tutup") return false;
-      if (filterJenjang !== "semua" && (i.jenjang || []).indexOf(filterJenjang) === -1) return false;
-      if (filterDana !== "semua" && i.tipe !== filterDana) return false;
-      return true;
-    });
-    var h = '<div class="chips">'
-      + chip("status","aktif","Aktif") + chip("status","buka","Dibuka")
-      + chip("status","nanti","Belum buka") + chip("status","tutup","Sudah tutup")
-      + chip("status","semua","Semua") + '<div class="sep"></div>'
-      + chip("jenjang","semua","Semua jenjang") + chip("jenjang","S1","S1")
-      + chip("jenjang","S2","S2") + chip("jenjang","S3","S3") + '<div class="sep"></div>'
-      + chip("dana","semua","Semua dana") + chip("dana","penuh","Beasiswa penuh")
-      + chip("dana","parsial","Parsial") + "</div>";
-    h += '<div class="list">';
-    if (!shown.length) h += '<div class="empty">Tidak ada beasiswa yang cocok dengan filter ini.</div>';
+  function kosongHtml(){
+    return '<div class="empty">Tidak ada beasiswa yang cocok.'
+      + (cari ? " Coba kata kunci yang lebih pendek" : " Coba longgarkan filternya")
+      + ', atau <button class="btn sm" data-act="reset">hapus semua filter</button>.</div>';
+  }
+
+  function daftarHtml(shown){
+    var h = '<div class="list">';
+    if (!shown.length) h += kosongHtml();
     else shown.forEach(function(it){
       h += rowHtml(it, "tutup");
       if (editing && formFor === it.id) h += formHtml(it);
@@ -673,9 +699,9 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
   function px(lon){ return lon - LON0; }
   function py(lat){ return LAT0 - lat; }
 
-  function negaraStat(){
+  function negaraStat(list){
     var g = {};
-    state.items.forEach(function(it){
+    (list || state.items).forEach(function(it){
       var k = it.negara || "Lainnya";
       if (!g[k]) g[k] = { negara:k, region:it.region, total:0, buka:0, penuh:0, items:[] };
       g[k].total++;
@@ -688,8 +714,9 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     }).map(function(k){ return g[k]; });
   }
 
-  function petaHtml(){
-    var negs = negaraStat();
+  function petaHtml(list){
+    var negs = negaraStat(list);
+    if (!negs.length) return kosongHtml();
     var maxT = negs.reduce(function(m,n){ return Math.max(m, n.total); }, 1);
 
     var h = '<div class="map"><div class="mapwrap"><svg viewBox="0 0 ' + MW + " " + MH
@@ -739,8 +766,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     h += "</div></div>";
 
     var pilih = mapNegara ? negs.filter(function(n){ return n.negara === mapNegara; })[0] : null;
-    var daftar = pilih ? pilih.items.slice() : state.items.slice();
-    daftar.sort(function(a,b){ var x = urutan(a), y = urutan(b); return x[0]-y[0] || x[1]-y[1]; });
+    var daftar = (pilih ? pilih.items.slice() : (list || state.items).slice()).sort(urutkan);
 
     h += '<div class="mapsel"><h3>' + (pilih ? esc(pilih.negara) : "Semua negara") + "</h3>"
       + "<span>" + daftar.length + " beasiswa</span>"
@@ -754,10 +780,128 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     return h + "</div>";
   }
 
+  /* ---------- cari, saring, urutkan ---------- */
+  var FILTER = {
+    status:  function(){ return filterStatus; },
+    jenjang: function(){ return filterJenjang; },
+    dana:    function(){ return filterDana; },
+    sumber:  function(){ return filterSumber; },
+    negara:  function(){ return filterNegara; }
+  };
+  function setFilter(g, v){
+    if (g === "status") filterStatus = v;
+    else if (g === "jenjang") filterJenjang = v;
+    else if (g === "dana") filterDana = v;
+    else if (g === "sumber") filterSumber = v;
+    else if (g === "negara") filterNegara = v;
+  }
+
+  function teksCari(it){
+    return [it.nama, it.org, it.negara, (it.jenjang||[]).join(" "), it.catatan, (it.syarat||[]).join(" ")]
+      .join(" ").toLowerCase();
+  }
+  function lolosFilter(it, g, nilai){
+    if (nilai === "semua") return true;
+    if (g === "status"){
+      var s = statusOf(it);
+      return nilai === "aktif" ? s !== "tutup" : s === nilai;
+    }
+    if (g === "jenjang") return (it.jenjang || []).indexOf(nilai) > -1;
+    if (g === "dana")    return it.tipe === nilai;
+    if (g === "sumber")  return it.sumber === nilai;
+    if (g === "negara")  return it.negara === nilai;
+    return true;
+  }
+  /* abaikan: nama facet yang dilewati, dipakai untuk menghitung angka di tiap chip */
+  function cocok(it, abaikan){
+    if (cari){
+      var q = cari.toLowerCase().split(/\s+/).filter(Boolean);
+      var t = teksCari(it);
+      for (var i = 0; i < q.length; i++) if (t.indexOf(q[i]) === -1) return false;
+    }
+    for (var g in FILTER){
+      if (g === abaikan) continue;
+      if (!lolosFilter(it, g, FILTER[g]())) return false;
+    }
+    return true;
+  }
+  function hitung(g, nilai){
+    var n = 0;
+    state.items.forEach(function(it){ if (cocok(it, g) && lolosFilter(it, g, nilai)) n++; });
+    return n;
+  }
+  function urutkan(a, b){
+    if (urut === "nama")   return a.nama.localeCompare(b.nama);
+    if (urut === "negara") return a.negara.localeCompare(b.negara) || a.nama.localeCompare(b.nama);
+    var x = urutan(a), y = urutan(b);
+    if (urut === "jauh") return y[0] - x[0] || y[1] - x[1];
+    return x[0] - y[0] || x[1] - y[1];
+  }
+  function tersaring(){
+    return state.items.filter(function(it){ return cocok(it); }).sort(urutkan);
+  }
+  function adaFilter(){
+    return cari !== "" || filterStatus !== "aktif" || filterJenjang !== "semua"
+      || filterDana !== "semua" || filterSumber !== "semua" || filterNegara !== "semua";
+  }
+  function hl(s){
+    var e = esc(s);
+    if (!cari) return e;
+    cari.toLowerCase().split(/\s+/).filter(Boolean).forEach(function(q){
+      e = e.replace(new RegExp("(" + q.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")", "ig"), "\u0001$1\u0002");
+    });
+    return e.split("\u0001").join("<mark>").split("\u0002").join("</mark>");
+  }
+
+  function toolsHtml(){
+    var hasil = tersaring().length;
+    var negaraOpts = ['<option value="semua">Semua negara (' + state.items.length + ")</option>"];
+    var daftarNeg = {};
+    state.items.forEach(function(it){ daftarNeg[it.negara] = 1; });
+    Object.keys(daftarNeg).sort().forEach(function(n){
+      var c = hitung("negara", n);
+      negaraOpts.push('<option value="' + esc(n) + '"' + (filterNegara === n ? " selected" : "")
+        + (c === 0 ? " disabled" : "") + ">" + esc(n) + " (" + c + ")</option>");
+    });
+
+    var h = '<div class="tools"><div class="tools-top">'
+      + '<div class="cari"><input id="q" type="search" placeholder="Cari beasiswa, negara, atau syarat" value="'
+        + esc(cari) + '" autocomplete="off" aria-label="Cari beasiswa">'
+      + (cari ? '<button type="button" data-act="hapus-cari" aria-label="Hapus pencarian">&times;</button>'
+              : '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>')
+      + "</div>"
+      + '<div class="urut"><label for="urut">Urutkan</label><select id="urut">'
+      + ["dekat|Tenggat terdekat","jauh|Tenggat terjauh","nama|Nama A sampai Z","negara|Negara A sampai Z"]
+          .map(function(o){ var p = o.split("|");
+            return '<option value="' + p[0] + '"' + (urut === p[0] ? " selected" : "") + ">" + p[1] + "</option>"; }).join("")
+      + "</select></div>"
+      + '<div class="urut"><label for="fneg">Negara</label><select id="fneg">' + negaraOpts.join("") + "</select></div>"
+      + "</div>";
+
+    h += '<div class="facets">'
+      + grup("status", "Status", [["aktif","Aktif"],["buka","Dibuka"],["nanti","Belum buka"],["tutup","Sudah tutup"],["semua","Semua"]])
+      + grup("jenjang", "Jenjang", [["semua","Semua"],["S1","S1"],["S2","S2"],["S3","S3"]])
+      + grup("dana", "Pendanaan", [["semua","Semua"],["penuh","Beasiswa penuh"],["parsial","Parsial"]])
+      + grup("sumber", "Penyelenggara", [["semua","Semua"],["pemerintah","Pemerintah"],["kampus","Kampus"],["yayasan","Yayasan"]])
+      + "</div>";
+
+    h += '<div class="hasil">Menampilkan <b>' + hasil + "</b> dari <b>" + state.items.length + "</b> beasiswa"
+      + (adaFilter() ? '<button class="btn sm" data-act="reset">Hapus semua filter</button>' : "")
+      + "</div></div>";
+    return h;
+  }
+
+  function grup(g, label, opsi){
+    var h = '<div class="fgrp"><b>' + esc(label) + "</b>";
+    opsi.forEach(function(o){ h += chip(g, o[0], o[1]); });
+    return h + "</div>";
+  }
+
   function chip(grup, nilai, label){
-    var cur = grup === "status" ? filterStatus : (grup === "jenjang" ? filterJenjang : filterDana);
-    var aktif = cur === nilai;
-    return '<button class="chip" aria-pressed="' + aktif + '" data-filter="' + grup + '" data-val="' + esc(nilai) + '">' + esc(label) + "</button>";
+    var aktif = FILTER[grup]() === nilai;
+    var n = hitung(grup, nilai);
+    return '<button class="chip" aria-pressed="' + aktif + '" data-filter="' + grup + '" data-val="' + esc(nilai) + '"'
+      + (n === 0 && !aktif ? " disabled" : "") + ">" + esc(label) + '<span class="n">' + n + "</span></button>";
   }
 
   function rowHtml(it, tipe){
@@ -779,7 +923,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     if (!it.pasti) tags += '<span class="tag est">Perkiraan</span>';
 
     var h = '<article class="row ' + kelasRow(it) + " " + regionCls(it) + '"><div class="stripe"></div><div class="body">'
-      + '<div class="ttl"><h3>' + esc(it.nama) + '</h3><span class="org">' + esc(it.org) + "</span></div>"
+      + '<div class="ttl"><h3>' + hl(it.nama) + '</h3><span class="org">' + hl(it.org) + "</span></div>"
       + '<div class="tags">' + tags + "</div>"
       + '<div class="dates"><span>Buka <b>' + esc(fmt(it.buka, it.presisi)) + "</b></span>"
       + "<span>Tutup <b>" + esc(fmt(it.tutup, it.presisi)) + "</b>" + (it.jam ? " " + esc(it.jam) : "") + "</span></div>";
@@ -932,9 +1076,8 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       render(); return;
     }
     if (b.dataset.filter){
-      if (b.dataset.filter === "status") filterStatus = b.dataset.val;
-      else if (b.dataset.filter === "jenjang") filterJenjang = b.dataset.val;
-      else filterDana = b.dataset.val;
+      if (b.disabled) return;
+      setFilter(b.dataset.filter, b.dataset.val);
       render(); return;
     }
 
@@ -942,7 +1085,13 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
     if (!act) return;
     toast = null;
 
-    if (act === "toggle-edit"){ editing = !editing; formFor = null; showJson = false; render(); }
+    if (act === "reset"){
+      cari = ""; filterStatus = "aktif"; filterJenjang = "semua"; filterDana = "semua";
+      filterSumber = "semua"; filterNegara = "semua"; mapNegara = null;
+      render();
+    }
+    else if (act === "hapus-cari"){ cari = ""; fokusCari = true; caret = 0; render(); }
+    else if (act === "toggle-edit"){ editing = !editing; formFor = null; showJson = false; render(); }
     else if (act === "add"){ formFor = "__new__"; render(); }
     else if (act === "edit"){ formFor = b.dataset.id; render(); }
     else if (act === "kontak"){ formFor = "__kontak__"; render(); }
@@ -980,6 +1129,20 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       toast = { kind:"", text:"Kontak tersimpan sementara. Klik Salin data.json lalu tempel ke GitHub." };
       render();
     }
+  });
+
+  var tundaCari = null;
+  app.addEventListener("input", function(e){
+    if (e.target.id !== "q") return;
+    cari = e.target.value;
+    caret = e.target.selectionStart;
+    fokusCari = true;
+    clearTimeout(tundaCari);
+    tundaCari = setTimeout(render, 160);
+  });
+  app.addEventListener("change", function(e){
+    if (e.target.id === "urut"){ urut = e.target.value; render(); }
+    else if (e.target.id === "fneg"){ filterNegara = e.target.value; render(); }
   });
 
   window.addEventListener("hashchange", function(){
