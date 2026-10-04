@@ -191,6 +191,8 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
 .hasil{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:11px 12px;
   border-top:1px solid var(--line);background:var(--surface-2);font-size:13px;color:var(--ink-2)}
 .hasil b{color:var(--ink);font-family:var(--font-mono);font-weight:600}
+.hasil .pisah{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-3);
+  border-left:1px solid var(--line-strong);padding-left:10px}
 .hasil button{margin-left:auto}
 mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;border-radius:2px;padding:0 1px}
 
@@ -364,7 +366,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
   var formFor = null, toast = null, showJson = false;
   var view = hashView() || "kalender";
   var filterStatus = "aktif", filterJenjang = "semua", filterDana = "semua", filterSumber = "semua";
-  var filterNegara = "semua", cari = "", urut = "dekat";
+  var filterPasti = "semua", filterNegara = "semua", cari = "", urut = "dekat";
   var mapNegara = null;
   var fokusCari = false, caret = 0;
   var curY, curM, selected = null;
@@ -616,7 +618,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
   }
 
   var REGIONS = [["uk","Inggris"],["eropa","Eropa"],["amerika","Amerika"],["oseania","Australia & NZ"],
-                 ["asiatimur","Asia Timur"],["asiatenggara","Asia Tenggara"],["turki","Turki"],["indonesia","Indonesia"]];
+                 ["asiatimur","Asia Timur"],["asiatenggara","Asia Tenggara"],["turki","Timur Tengah & Asia Tengah"],["indonesia","Indonesia"]];
   function regionCls(it){
     var r = it.region || "lain";
     for (var i = 0; i < REGIONS.length; i++) if (REGIONS[i][0] === r) return "r-" + r;
@@ -681,10 +683,12 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
   /* ---------- peta ---------- */
   var KOORD = {
     "Inggris":[54.0,-2.0], "Jerman":[51.0,10.5], "Belanda":[52.2,5.3], "Hungaria":[47.2,19.5],
-    "Swedia":[60.0,15.0], "Eropa (multi-negara)":[46.8,2.5], "Prancis":[46.5,2.5], "Italia":[42.8,12.5],
+    "Swedia":[60.0,15.0], "Prancis":[46.5,2.5], "Italia":[42.8,12.5],
     "Spanyol":[40.2,-3.7], "Irlandia":[53.3,-8.0], "Norwegia":[61.0,9.0], "Finlandia":[62.0,26.0],
     "Denmark":[56.0,10.0], "Austria":[47.6,14.1], "Swiss":[46.8,8.2], "Belgia":[50.6,4.6],
     "Polandia":[52.0,19.4], "Ceko":[49.8,15.5], "Rusia":[58.0,45.0], "Turki":[39.0,35.0],
+    "Latvia":[56.9,24.6], "Serbia":[44.0,21.0], "Lebanon":[33.9,35.5], "Mesir":[26.8,30.8], "Kazakhstan":[48.0,68.0], "Romania":[45.9,25.0], "Azerbaijan":[40.4,47.6], "Yunani":[39.1,22.0],
+    "Portugal":[39.5,-8.0], "Estonia":[58.6,25.0], "Lituania":[55.2,23.9], "Slovakia":[48.7,19.5],
     "Amerika Serikat":[39.5,-98.5], "Amerika Serikat / Inggris":[39.5,-98.5], "Kanada":[56.0,-106.0],
     "Australia":[-25.0,134.0], "Selandia Baru":[-41.0,174.0],
     "Jepang":[36.5,138.0], "Korea Selatan":[36.5,127.8], "Taiwan":[23.7,121.0],
@@ -738,7 +742,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 
     titik.forEach(function(n){
       var k = KOORD[n.negara];
-      var r = 2.4 + 2.8 * Math.sqrt(n.total / maxT);
+      var r = 2.2 + 2.4 * Math.sqrt(n.total / maxT);
       var x = px(k[1]), y = py(k[0]);
       var on = mapNegara === n.negara;
       h += '<g class="' + regionCls({ region:n.region }) + '">'
@@ -753,7 +757,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     h += '<div class="mapkey"><span>Besar lingkaran = jumlah beasiswa</span><span>Warna = wilayah</span>'
       + "<span>Abu = tidak ada yang sedang dibuka</span>"
       + "<span>Titik Eropa saling tumpang tindih karena jaraknya memang rapat, klik daftar di bawah kalau sulit</span>"
-      + (unplotted.length ? "<span>Belum ada di peta: " + esc(unplotted.join(", ")) + "</span>" : "") + "</div>";
+      + (unplotted.length ? "<span>Tidak dipetakan: " + esc(unplotted.join(", ")) + ", karena tidak terikat satu lokasi</span>" : "") + "</div>";
 
     h += '<div class="negs">';
     negs.forEach(function(n){
@@ -786,6 +790,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     jenjang: function(){ return filterJenjang; },
     dana:    function(){ return filterDana; },
     sumber:  function(){ return filterSumber; },
+    pasti:   function(){ return filterPasti; },
     negara:  function(){ return filterNegara; }
   };
   function setFilter(g, v){
@@ -793,6 +798,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     else if (g === "jenjang") filterJenjang = v;
     else if (g === "dana") filterDana = v;
     else if (g === "sumber") filterSumber = v;
+    else if (g === "pasti") filterPasti = v;
     else if (g === "negara") filterNegara = v;
   }
 
@@ -809,6 +815,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     if (g === "jenjang") return (it.jenjang || []).indexOf(nilai) > -1;
     if (g === "dana")    return it.tipe === nilai;
     if (g === "sumber")  return it.sumber === nilai;
+    if (g === "pasti")   return nilai === "ya" ? !!it.pasti : !it.pasti;
     if (g === "negara")  return it.negara === nilai;
     return true;
   }
@@ -842,7 +849,8 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
   }
   function adaFilter(){
     return cari !== "" || filterStatus !== "aktif" || filterJenjang !== "semua"
-      || filterDana !== "semua" || filterSumber !== "semua" || filterNegara !== "semua";
+      || filterDana !== "semua" || filterSumber !== "semua" || filterPasti !== "semua"
+      || filterNegara !== "semua";
   }
   function hl(s){
     var e = esc(s);
@@ -882,10 +890,14 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
       + grup("status", "Status", [["aktif","Aktif"],["buka","Dibuka"],["nanti","Belum buka"],["tutup","Sudah tutup"],["semua","Semua"]])
       + grup("jenjang", "Jenjang", [["semua","Semua"],["S1","S1"],["S2","S2"],["S3","S3"]])
       + grup("dana", "Pendanaan", [["semua","Semua"],["penuh","Beasiswa penuh"],["parsial","Parsial"]])
-      + grup("sumber", "Penyelenggara", [["semua","Semua"],["pemerintah","Pemerintah"],["kampus","Kampus"],["yayasan","Yayasan"]])
+      + grup("sumber", "Penyelenggara", [["semua","Semua"],["pemerintah","Pemerintah"],["kampus","Kampus"],["yayasan","Yayasan / swasta"]])
+      + grup("pasti", "Keandalan tanggal", [["semua","Semua"],["ya","Dikonfirmasi resmi"],["tidak","Perkiraan"]])
       + "</div>";
 
+    var ya = 0, tidak = 0;
+    tersaring().forEach(function(it){ if (it.pasti) ya++; else tidak++; });
     h += '<div class="hasil">Menampilkan <b>' + hasil + "</b> dari <b>" + state.items.length + "</b> beasiswa"
+      + '<span class="pisah">' + ya + " tanggal dikonfirmasi, " + tidak + " masih perkiraan</span>"
       + (adaFilter() ? '<button class="btn sm" data-act="reset">Hapus semua filter</button>' : "")
       + "</div></div>";
     return h;
@@ -1087,7 +1099,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 
     if (act === "reset"){
       cari = ""; filterStatus = "aktif"; filterJenjang = "semua"; filterDana = "semua";
-      filterSumber = "semua"; filterNegara = "semua"; mapNegara = null;
+      filterSumber = "semua"; filterPasti = "semua"; filterNegara = "semua"; mapNegara = null;
       render();
     }
     else if (act === "hapus-cari"){ cari = ""; fokusCari = true; caret = 0; render(); }

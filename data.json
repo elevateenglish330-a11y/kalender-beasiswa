@@ -217,10 +217,10 @@
         "S2",
         "S3"
       ],
-      "buka": "2027-01-10",
-      "tutup": "2027-02-20",
+      "buka": "2026-12-25",
+      "tutup": "2027-02-15",
       "presisi": "hari",
-      "pasti": true,
+      "pasti": false,
       "jam": "",
       "link": "https://turkiyeburslari.gov.tr/",
       "syarat": [
@@ -230,7 +230,7 @@
         "Gratis kursus bahasa Turki satu tahun sebelum kuliah",
         "Satu jendela pendaftaran per tahun, hanya 41 hari"
       ],
-      "catatan": "Jendelanya pendek dan tidak dibuka dua kali. Siapkan dokumen dari Desember, karena Februari sudah tutup.",
+      "catatan": "DUA SUMBER BERBEDA: satu menyebut 10 Januari sampai 20 Februari 2027, satu lagi 25 Desember 2026 sampai 15 Februari 2027. Pakai yang paling awal sebagai patokan siap-siap, dan konfirmasi ke turkiyeburslari.gov.tr sebelum mengandalkan tanggal mana pun.",
       "tipe": "penuh",
       "sumber": "pemerintah"
     },
@@ -243,10 +243,10 @@
       "jenjang": [
         "S2"
       ],
-      "buka": "2027-02-09",
-      "tutup": "2027-02-25",
+      "buka": "2026-10-10",
+      "tutup": "2027-02-20",
       "presisi": "hari",
-      "pasti": true,
+      "pasti": false,
       "jam": "",
       "link": "https://si.se/en/apply/scholarships/swedish-institute-scholarships-for-global-professionals/",
       "syarat": [
@@ -256,7 +256,7 @@
         "Dua surat referensi",
         "Portal SI baru dibuka 9 sampai 25 Februari, setelah pendaftaran kampus"
       ],
-      "catatan": "Dua tahap terpisah dan ini yang paling sering bikin gagal: kalau lewat 15 Januari di University Admissions, pendaftaran SI-mu otomatis gugur meski portalnya masih buka.",
+      "catatan": "KOREKSI: pendaftaran SI ternyata dibuka jauh lebih awal, 10 Oktober 2026 sampai 20 Februari 2027, bukan hanya jendela Februari. TETAPI dua tahap tetap berlaku: pendaftaran kampus lewat University Admissions paling lambat 15 Januari 2027, dan kalau lewat, pendaftaran SI-mu gugur. Dua sumber menyebut tanggal berbeda, cek situs resmi SI.",
       "tipe": "penuh",
       "sumber": "pemerintah"
     },
@@ -325,8 +325,8 @@
         "S2"
       ],
       "buka": "2026-10-01",
-      "tutup": "2027-01-31",
-      "presisi": "bulan",
+      "tutup": "2027-01-01",
+      "presisi": "hari",
       "pasti": false,
       "jam": "",
       "link": "https://www.eacea.ec.europa.eu/scholarships/emjmd-catalogue_en",
@@ -337,7 +337,7 @@
         "Maksimal mendaftar 3 program dalam satu siklus",
         "Belum pernah menerima beasiswa Erasmus Mundus sebelumnya"
       ],
-      "catatan": "Tidak ada satu deadline. Tiap program punya portal dan tanggalnya sendiri, mayoritas tutup Januari sampai Februari 2027. 37 program baru diumumkan untuk angkatan September 2027.",
+      "catatan": "KOREKSI: jendela umum terbaca 1 Oktober 2026 sampai 1 Januari 2027. Tapi tetap tidak ada satu deadline, tiap program punya portal dan tanggalnya sendiri, mayoritas Januari sampai Februari 2027. Cek program incaranmu satu per satu.",
       "tipe": "penuh",
       "sumber": "pemerintah"
     },
@@ -553,7 +553,7 @@
         "Kuota dan daftar kampus tujuan bisa berbeda antar tahap",
         "Perhatikan jadwal mulai kuliah, Tahap 2 biasanya untuk intake tahun berikutnya"
       ],
-      "catatan": "Perkiraan dari pola. Tahap 2 2026 berjalan 30 Juni sampai 31 Juli 2026, jadi Tahap 2 2027 kemungkinan di jendela yang sama.",
+      "catatan": "Perkiraan, tapi polanya kini terkuatkan: jendela 2026 terbaca 30 Juni sampai 31 Juli 2026 di dua sumber terpisah. Tahap 2 2027 kemungkinan besar di jendela yang sama.",
       "tipe": "penuh",
       "sumber": "pemerintah"
     },
@@ -762,7 +762,9 @@
       "link": "https://www.id.emb-japan.go.jp/sch.html",
       "syarat": [
         "Jendela nyata: tutup 22 April 2026",
-        "Ujian tertulis dan wawancara di Kedutaan Jepang Jakarta"
+        "Ujian tertulis bahasa Inggris dan Jepang, lalu wawancara di Kedutaan Jepang Jakarta",
+        "Butuh rencana penelitian dan calon supervisor di kampus Jepang",
+        "Jalur G to G, berbeda dari jalur U to U lewat kampus"
       ],
       "catatan": "Sudah tutup. Dicantumkan sebagai pembanding untuk memperkirakan jendela siklus berikutnya.",
       "tipe": "penuh",
@@ -925,8 +927,8 @@
       "jenjang": [
         "S2"
       ],
-      "buka": "2026-08-12",
-      "tutup": "2027-05-31",
+      "buka": "2026-02-01",
+      "tutup": "2026-12-31",
       "presisi": "hari",
       "pasti": false,
       "jam": "",
@@ -937,8 +939,2516 @@
         "Termasuk magang di Boustany Foundation",
         "Diberikan dua tahun sekali, cek siklusnya"
       ],
-      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga. Kampus mitra tersebar di Amerika dan Inggris. Program sangat spesifik untuk MBA, periksa daftar kampus mitranya dulu.",
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Khusus MBA di kampus mitra yayasan, termasuk Harvard. Tanggal dari daftar agregator.",
       "sumber": "yayasan"
+    },
+    {
+      "id": "swiss-eskas-2728",
+      "nama": "Swiss Government Excellence (ESKAS)",
+      "org": "Pemerintah Swiss",
+      "negara": "Swiss",
+      "region": "eropa",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-08-20",
+      "tutup": "2026-11-30",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://www.sbfi.admin.ch/sbfi/en/home/education/scholarships-and-grants/swiss-government-excellence-scholarships.html",
+      "syarat": [
+        "Sudah menyelesaikan S2 sebelum program dimulai",
+        "Untuk peneliti tahap awal, fokus utama riset dan doktoral",
+        "Mendaftar lewat Kedutaan Swiss di Jakarta, bukan langsung ke kampus",
+        "Butuh surat kesediaan calon supervisor di kampus Swiss",
+        "Tunjangan bulanan CHF 2.450"
+      ],
+      "catatan": "Tenggat pastinya berbeda per negara, umumnya November sampai Desember. Konfirmasi ke Kedutaan Swiss di Jakarta. Program mulai 1 September 2027."
+    },
+    {
+      "id": "open-doors-2027",
+      "nama": "Open Doors Russian Scholarship",
+      "org": "Kementerian Sains dan Pendidikan Tinggi Rusia",
+      "negara": "Rusia",
+      "region": "eropa",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-08-20",
+      "tutup": "2026-11-01",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://od.globaluni.ru/",
+      "syarat": [
+        "Seleksi berbentuk olimpiade daring, bukan seleksi berkas biasa",
+        "Terbuka untuk S1, S2, dan S3",
+        "Gratis biaya kuliah penuh plus uang saku bulanan",
+        "Tidak perlu LoA lebih dulu",
+        "Seluruh proses dilakukan online"
+      ],
+      "catatan": "Jendela 2026 terbaca 20 Agustus sampai 1 November 2026 di sumber terpisah, cocok dengan tanggal resmi. Formatnya berbeda dari beasiswa lain: kamu bersaing lewat olimpiade akademik daring, bukan dinilai dari esai dan surat rekomendasi."
+    },
+    {
+      "id": "singa-2027",
+      "nama": "Singapore International Graduate Award (SINGA)",
+      "org": "A-STAR, NUS, NTU, SMU, SUTD, SIT",
+      "negara": "Singapura",
+      "region": "asiatenggara",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-06-01",
+      "tutup": "2026-12-01",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://www.a-star.edu.sg/Scholarships/for-graduate-studies/singapore-international-graduate-award-singa",
+      "syarat": [
+        "Khusus PhD bidang sains, teknik, komputer, dan biomedis",
+        "Gelar S1 atau S2 dengan rekam jejak riset yang kuat",
+        "Biaya kuliah penuh plus uang saku SGD 2.200 per bulan, naik jadi SGD 2.700 setelah lulus ujian kualifikasi",
+        "Tiket pesawat dan tunjangan kedatangan",
+        "Tanpa ikatan dinas"
+      ],
+      "catatan": "Tenggat 1 Desember 2026 untuk masuk Agustus 2027. Ada jendela kedua 1 Juni 2027 untuk masuk Januari 2028, hanya A-STAR dan NTU. Dekat, berbahasa Inggris, reputasi risetnya tinggi."
+    },
+    {
+      "id": "eiffel-2027",
+      "nama": "France Excellence Eiffel",
+      "org": "Campus France",
+      "negara": "Prancis",
+      "region": "eropa",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-10-01",
+      "tutup": "2027-01-08",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://www.campusfrance.org/en/eiffel-scholarship-program-of-excellence",
+      "syarat": [
+        "PENTING: kamu tidak bisa mendaftar sendiri, harus dinominasikan oleh kampus Prancis tujuanmu",
+        "Hubungi kampus Prancis jauh sebelum tenggat, deadline internal mereka pertengahan Oktober sampai akhir November",
+        "Batas usia umumnya di bawah 25 tahun untuk S2 dan 30 tahun untuk S3",
+        "Tunjangan EUR 1.181 per bulan untuk S2, EUR 1.800 untuk S3",
+        "Tidak berlaku untuk warga negara Prancis"
+      ],
+      "catatan": "Tanggal 8 Januari 2027 adalah tenggat kampus menyerahkan nominasi ke Campus France, bukan tenggatmu. Tenggat nyatamu jauh lebih awal dan berbeda tiap kampus."
+    },
+    {
+      "id": "jjwbgsp-2027-w1",
+      "nama": "Joint Japan World Bank Scholarship, Jendela 1",
+      "org": "World Bank dan Pemerintah Jepang",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-01-18",
+      "tutup": "2027-02-26",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://www.worldbank.org/en/programs/scholarships/jj-wbgsp",
+      "syarat": [
+        "Minimal 3 tahun pengalaman kerja purnawaktu di bidang pembangunan setelah S1",
+        "Gelar S1 diperoleh minimal 3 tahun sebelum tenggat",
+        "Mendaftar ke program master di daftar kampus mitra JJ/WBGSP di berbagai negara",
+        "Tidak boleh berkewarganegaraan ganda dengan negara maju",
+        "Beasiswa penuh termasuk tiket, asuransi, dan tunjangan hidup"
+      ],
+      "catatan": "Daftar kampus mitra di tiap jendela berbeda. Cek dulu kampus tujuanmu masuk jendela yang mana sebelum menyiapkan berkas."
+    },
+    {
+      "id": "jjwbgsp-2027-w2",
+      "nama": "Joint Japan World Bank Scholarship, Jendela 2",
+      "org": "World Bank dan Pemerintah Jepang",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-03-29",
+      "tutup": "2027-05-21",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://www.worldbank.org/en/programs/scholarships/jj-wbgsp",
+      "syarat": [
+        "Syarat sama dengan Jendela 1",
+        "Daftar kampus mitranya berbeda dari Jendela 1",
+        "Sebagian kampus hanya menerima pelamar yang sudah dinominasikan"
+      ],
+      "catatan": "Kalau kampus tujuanmu tidak ada di Jendela 1, kemungkinan ada di sini. Jangan menunggu tanpa mengecek daftarnya."
+    },
+    {
+      "id": "adb-jsp-2027",
+      "nama": "ADB-Japan Scholarship Program",
+      "org": "Asian Development Bank",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-11-01",
+      "tutup": "2026-12-10",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.adb.org/work-with-us/careers/japan-scholarship-program",
+      "syarat": [
+        "Minimal 2 tahun pengalaman kerja purnawaktu setelah lulus S1",
+        "Mendaftar langsung ke kampus mitra ADB, bukan ke ADB",
+        "Batas usia umumnya 35 tahun",
+        "Bersedia kembali ke negara asal setelah lulus",
+        "Beasiswa penuh termasuk tiket dan tunjangan hidup"
+      ],
+      "catatan": "Tidak ada satu tenggat. Tiap kampus mitra punya jadwal sendiri, umumnya November sampai Februari. Dua yang terverifikasi: UTokyo GraSPP 1 November sampai 1 Desember 2026, dan UTokyo Frontier Sciences 10 Desember 2026. Nagoya University membuka jendelanya terpisah sekitar 1 sampai 16 Juni. Kampus mitra juga ada di Filipina, Thailand, Selandia Baru, dan Amerika."
+    },
+    {
+      "id": "csc-china-2728",
+      "nama": "Chinese Government Scholarship (CSC)",
+      "org": "China Scholarship Council",
+      "negara": "China",
+      "region": "asiatimur",
+      "tipe": "penuh",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-12-01",
+      "tutup": "2027-03-31",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.campuschina.org/",
+      "syarat": [
+        "Daftar lewat portal campuschina.org, nomor agensi Indonesia 3602",
+        "Dua jalur: lewat Kedutaan China (Tipe A) atau langsung ke kampus (Tipe B)",
+        "Sebaiknya kantongi Pre-Admission Letter dari kampus tujuan lebih dulu",
+        "Batas usia umumnya 25 untuk S1, 35 untuk S2, 40 untuk S3",
+        "Beasiswa penuh termasuk asrama dan uang saku bulanan"
+      ],
+      "catatan": "Tenggatnya berbeda antar kedutaan dan antar kampus, tersebar Januari sampai April. Pembanding: siklus 2026/2027 lewat Kedutaan tutup 8 Februari 2026. Cek kampus tujuanmu sendiri."
+    },
+    {
+      "id": "rotary-peace-2829",
+      "nama": "Rotary Peace Fellowship",
+      "org": "Rotary Foundation",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "tipe": "penuh",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-05-15",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://www.rotary.org/en/our-programs/peace-fellowships",
+      "syarat": [
+        "Fokus bidang perdamaian, resolusi konflik, dan pembangunan",
+        "Minimal 3 tahun pengalaman kerja relevan untuk jalur master",
+        "Butuh dukungan klub atau distrik Rotary setempat, hubungi mereka lebih dulu",
+        "Pilihan kampus: Duke-UNC, Uppsala, Bradford, ICU Tokyo, Queensland, Chulalongkorn",
+        "Beasiswa penuh termasuk biaya kuliah, hidup, dan perjalanan lapangan"
+      ],
+      "catatan": "Untuk tahun akademik 2028/2029. Jalur dukungan Rotary lokal sering jadi penghambat, mulai kontak klub Rotary terdekat beberapa bulan sebelum tenggat."
+    },
+    {
+      "id": "mitsui-bussan-2027",
+      "nama": "Mitsui Bussan Scholarship",
+      "org": "Mitsui and Co.",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "tipe": "penuh",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-01-15",
+      "tutup": "2027-02-28",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.mbkscholarship-id.com/",
+      "syarat": [
+        "KHUSUS pelamar Indonesia, bukan program internasional umum",
+        "Lulusan SMA jurusan IPA, batas usia umumnya di bawah 20 tahun",
+        "Termasuk 1,5 tahun kursus bahasa Jepang sebelum kuliah",
+        "Beasiswa penuh selama 5,5 tahun termasuk tiket, uang saku, dan asrama",
+        "Seleksi berlapis: berkas, tes tulis, lalu wawancara"
+      ],
+      "catatan": "Perkiraan. Seleksi berikutnya disebut dimulai Januari 2027. Salah satu beasiswa S1 ke Jepang paling murah hati, tapi kuotanya kecil dan pesaingnya ketat."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "lpdp-kemitraan-2027",
+      "nama": "LPDP Kemitraan / Co-Funding",
+      "org": "LPDP dan kampus mitra",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-01-22",
+      "tutup": "2027-02-23",
+      "link": "https://lpdp.kemenkeu.go.id/",
+      "syarat": [
+        "Jalur terpisah dari LPDP Reguler, kuotanya lebih kecil dan kampusnya sudah ditentukan",
+        "Mitra 2026 yang teramati: NUS Singapura, UNSW dan University of Sydney dan Australia Awards Australia, Tsinghua dan Central South University China, Hiroshima Jepang, Universite Paris-Saclay dan LPDP France Prancis, University College Dublin Irlandia, CRUK Scotland Institute dan University of Glasgow Inggris, IE University Spanyol, serta beberapa kampus Belanda",
+        "Ada jalur khusus bidang energi dan life sciences untuk program doktor",
+        "Sebagian biaya ditanggung kampus mitra, sisanya LPDP",
+        "Tiap mitra punya jendela sendiri yang tersebar Januari sampai Mei, bukan satu tanggal"
+      ],
+      "catatan": "Perkiraan. Gelombang utama 2026 berjalan 22 Januari sampai 23 Februari 2026, tapi mitra lain dibuka menyusul sampai Mei 2026. Kalau kampus incaranmu ada di daftar mitra, pesaingnya jauh lebih sedikit daripada LPDP Reguler."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "thailand-tica-2027",
+      "nama": "Beasiswa Pemerintah Thailand (TICA)",
+      "org": "Thailand International Cooperation Agency",
+      "negara": "Thailand",
+      "region": "asiatenggara",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-01-16",
+      "tutup": "2027-02-16",
+      "link": "https://tica-thaigov.mfa.go.th/",
+      "syarat": [
+        "Mendaftar lewat Kedutaan Thailand di Jakarta",
+        "Program master berbahasa Inggris di kampus Thailand",
+        "Beasiswa penuh termasuk tiket, uang saku, dan asuransi"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 16 Januari sampai 16 Februari 2026. Dekat, biaya hidup rendah, dan pesaingnya jauh lebih sedikit dibanding tujuan Eropa."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "bydpa-malaysia-2027",
+      "nama": "Yang di-Pertuan Agong Scholarship (BYDPA)",
+      "org": "Pemerintah Malaysia",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-09",
+      "tutup": "2027-03-09",
+      "link": "https://biasiswa.mohe.gov.my/",
+      "syarat": [
+        "Untuk program master dan doktor di kampus Malaysia",
+        "Beasiswa penuh termasuk biaya kuliah dan tunjangan hidup",
+        "Bidang prioritas ditentukan tiap tahun"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 9 Februari sampai 9 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "latvia-2027",
+      "nama": "Beasiswa Pemerintah Latvia",
+      "org": "State Education Development Agency Latvia",
+      "negara": "Latvia",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-04-01",
+      "link": "https://www.viaa.gov.lv/en",
+      "syarat": [
+        "Terbuka untuk S1, S2, dan S3",
+        "Indonesia termasuk negara yang memenuhi syarat",
+        "Biaya kuliah plus tunjangan hidup bulanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Februari sampai 1 April 2026. Negara Uni Eropa dengan biaya hidup rendah dan pesaing sedikit."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "romania-mfa-2027",
+      "nama": "Beasiswa Pemerintah Romania (MFA)",
+      "org": "Kementerian Luar Negeri Romania",
+      "negara": "Romania",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-16",
+      "tutup": "2027-03-31",
+      "link": "https://www.mae.ro/en/node/10251",
+      "syarat": [
+        "Terbuka untuk semua jenjang gelar",
+        "Termasuk satu tahun kursus bahasa Romania bagi yang mengambil program berbahasa Romania",
+        "Bidang kedokteran umumnya dikecualikan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 16 Februari sampai 31 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "azerbaijan-2027",
+      "nama": "Heydar Aliyev International Education Grant",
+      "org": "Pemerintah Azerbaijan",
+      "negara": "Azerbaijan",
+      "region": "turki",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-16",
+      "tutup": "2027-04-15",
+      "link": "https://edu.gov.az/en",
+      "syarat": [
+        "Terbuka untuk S1, S2, dan S3",
+        "Biaya kuliah, asrama, dan tunjangan bulanan",
+        "Sebagian program berbahasa Inggris"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 16 Februari sampai 15 April 2026."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "madinah-2027",
+      "nama": "Universitas Islam Madinah",
+      "org": "Islamic University of Madinah",
+      "negara": "Arab Saudi",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-01-01",
+      "tutup": "2026-12-01",
+      "link": "https://admission.iu.edu.sa/",
+      "syarat": [
+        "Fokus studi keislaman dan bahasa Arab, ada juga beberapa program umum",
+        "Beasiswa penuh termasuk asrama, uang saku, dan tiket tahunan",
+        "Umumnya butuh rekomendasi dari lembaga Islam setempat",
+        "Jendela pendaftarannya panjang, tapi kuota bisa penuh lebih awal"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Tanggal dari daftar agregator. Kuota bisa penuh jauh sebelum tenggat."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "alqasimia-2027",
+      "nama": "Al-Qasimia University",
+      "org": "Al-Qasimia University Sharjah",
+      "negara": "Uni Emirat Arab",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
+      "buka": "2027-01-15",
+      "tutup": "2027-06-30",
+      "link": "https://alqasimia.ac.ae/",
+      "syarat": [
+        "Studi keislaman, bahasa Arab, dan beberapa bidang sosial",
+        "Beasiswa penuh termasuk asrama dan tiket",
+        "Terbuka untuk lulusan SMA dan S1"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 15 Januari sampai 30 Juni 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "kaust-2027",
+      "nama": "KAUST Global Fellowship",
+      "org": "King Abdullah University of Science and Technology",
+      "negara": "Arab Saudi",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-07-01",
+      "tutup": "2027-01-15",
+      "link": "https://www.kaust.edu.sa/en/study/fellowships",
+      "syarat": [
+        "Khusus PhD bidang sains, teknik, dan komputer",
+        "Berbahasa Inggris penuh, kampus riset dengan pendanaan besar",
+        "Beasiswa penuh plus tunjangan hidup yang tinggi",
+        "Butuh rekam jejak riset yang kuat"
+      ],
+      "catatan": "Perkiraan. Siklus 2026 tutup 15 Januari 2026. Salah satu tunjangan PhD paling besar di dunia, dan jarang masuk radar pelamar Indonesia."
+    },
+    {
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "doha-institute-2027",
+      "nama": "Doha Institute for Graduate Studies",
+      "org": "Doha Institute",
+      "negara": "Qatar",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2027-01-15",
+      "link": "https://www.dohainstitute.edu.qa/",
+      "syarat": [
+        "Fokus ilmu sosial, humaniora, dan kebijakan publik",
+        "Beasiswa penuh termasuk tiket, asrama, dan tunjangan bulanan",
+        "Pengantar bahasa Arab dan Inggris tergantung program"
+      ],
+      "catatan": "Siklus berjalan, dan tanggal 15 Januari 2027 cocok dengan hasil penelusuran terpisah. Fokus ilmu sosial, humaniora, dan kebijakan publik."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "isdb-merit-2027",
+      "nama": "IsDB Merit Scholarship",
+      "org": "Islamic Development Bank",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-12-01",
+      "tutup": "2027-01-31",
+      "link": "https://www.isdb.org/scholarships",
+      "syarat": [
+        "Untuk warga negara anggota IsDB, Indonesia termasuk",
+        "Khusus program doktor dan pascadoktoral bidang sains dan teknologi",
+        "Kampus tujuan bisa di berbagai negara",
+        "Wajib kembali dan mengabdi di negara asal"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Desember 2025 sampai 31 Januari 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "acyls-2027",
+      "nama": "ASEAN-China Young Leaders Scholarship (ACYLS)",
+      "org": "Kementerian Pendidikan China",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-03-01",
+      "link": "https://www.campuschina.org/",
+      "syarat": [
+        "Khusus warga negara ASEAN, kuota per negara",
+        "Untuk pejabat muda, akademisi, dan profesional",
+        "Beasiswa penuh termasuk asrama dan tunjangan bulanan",
+        "Berbeda dari CSC umum, pesaingnya jauh lebih sedikit"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Februari sampai 1 Maret 2026. Jalur ASEAN ini sering terlewat karena tertutup popularitas CSC."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "hyundai-cmk-2027",
+      "nama": "Hyundai Motor Chung Mong-Koo Foundation",
+      "org": "Chung Mong-Koo Foundation",
+      "negara": "Korea Selatan",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-02-19",
+      "link": "https://www.cmkfoundation.org/",
+      "syarat": [
+        "Untuk mahasiswa S1 dari negara Asia termasuk Indonesia",
+        "Tunjangan biaya kuliah dan hidup",
+        "Jendelanya sangat pendek, hanya sekitar tiga minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 19 Februari 2026. Siapkan berkas dari Januari, karena kalau baru mulai saat dibuka biasanya tidak keburu."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "ajinomoto-2027",
+      "nama": "Ajinomoto Scholarship",
+      "org": "Ajinomoto Foundation",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-01-05",
+      "tutup": "2027-03-05",
+      "link": "https://www.ajinomoto.co.jp/foundation/",
+      "syarat": [
+        "Khusus bidang pangan, gizi, dan ilmu hayati",
+        "Untuk program master di kampus Jepang tertentu",
+        "Termasuk masa riset mahasiswa pendengar sebelum masuk program",
+        "Beasiswa penuh plus tunjangan bulanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 5 Januari sampai 5 Maret 2026. Populer di kalangan pelamar Indonesia bidang teknologi pangan."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "sapienza-2027",
+      "nama": "Sapienza University of Rome",
+      "org": "Sapienza Universita di Roma",
+      "negara": "Italia",
+      "region": "eropa",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-12-22",
+      "tutup": "2027-05-15",
+      "link": "https://www.uniroma1.it/en/pagina/scholarships-international-students",
+      "syarat": [
+        "Pembebasan biaya kuliah plus tunjangan untuk pelamar internasional terpilih",
+        "Banyak program master berbahasa Inggris",
+        "Jendela pendaftarannya panjang, tapi seleksinya bertahap"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 22 Desember 2025 sampai 15 Mei 2026."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "iasp-austria-2027",
+      "nama": "Indonesia-Austria Scholarship Programme (IASP)",
+      "org": "OeAD dan Kemendikbud",
+      "negara": "Austria",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-10-02",
+      "tutup": "2027-03-01",
+      "link": "https://oead.at/en/",
+      "syarat": [
+        "KHUSUS pelamar Indonesia, hasil kerja sama dua pemerintah",
+        "Hanya untuk program doktor",
+        "Butuh surat penerimaan dari supervisor di kampus Austria",
+        "Pendanaan dibagi antara OeAD dan pihak Indonesia"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN. Program bilateral khusus Indonesia, pesaing sangat sedikit. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "anso-2027",
+      "nama": "ANSO Scholarship",
+      "org": "Alliance of International Science Organizations",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-10-15",
+      "tutup": "2027-01-31",
+      "link": "https://www.anso.org.cn/",
+      "syarat": [
+        "Untuk program master dan doktor di University of Chinese Academy of Sciences dan mitranya",
+        "Fokus sains, teknik, dan lingkungan",
+        "Beasiswa penuh plus tunjangan bulanan",
+        "Butuh calon supervisor lebih dulu"
+      ],
+      "catatan": "Perkiraan. Siklus 2026 tutup 31 Januari 2026. Jalur riset, bukan jalur kuliah biasa, cocok kalau kamu sudah punya arah penelitian."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "oxford-pershing-2027",
+      "nama": "Oxford-Pershing Square Graduate Scholarship",
+      "org": "University of Oxford",
+      "negara": "Inggris",
+      "region": "uk",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-08-01",
+      "tutup": "2027-01-07",
+      "link": "https://www.sbs.ox.ac.uk/programmes/degrees/mba/pershing-square-scholarship",
+      "syarat": [
+        "Khusus program 1+1 MBA di Oxford, MBA digabung dengan satu master lain",
+        "Dinilai pada komitmen menyelesaikan masalah sosial berskala besar",
+        "Biaya kuliah penuh plus tunjangan hidup",
+        "Harus mendaftar ke program MBA-nya lebih dulu"
+      ],
+      "catatan": "Perkiraan. Siklus 2026 tutup 7 Januari 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "nus-st-undergrad-2027",
+      "nama": "NUS Science and Technology Undergraduate Scholarship",
+      "org": "National University of Singapore",
+      "negara": "Singapura",
+      "region": "asiatenggara",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-12-03",
+      "tutup": "2027-02-23",
+      "link": "https://www.nus.edu.sg/oam/scholarships",
+      "syarat": [
+        "Untuk lulusan SMA jurusan sains dari negara Asia termasuk Indonesia",
+        "Biaya kuliah penuh plus tunjangan hidup tahunan",
+        "Butuh nilai akademik sangat tinggi",
+        "Ada ikatan kerja di Singapura setelah lulus pada sebagian skema"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 3 Desember 2025 sampai 23 Februari 2026. Salah satu jalur S1 luar negeri terbaik yang jaraknya dekat."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "dbr-brin-2027",
+      "nama": "Beasiswa Gelar Riset (DbR) BRIN",
+      "org": "Badan Riset dan Inovasi Nasional",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-03-27",
+      "link": "https://brin.go.id/",
+      "syarat": [
+        "Untuk periset dan calon periset Indonesia",
+        "Kampus tujuan tersebar di Australia, Kanada, China, Korea, Inggris, Prancis, Jerman, Singapura, Jepang, dan Amerika",
+        "Butuh kesesuaian topik dengan prioritas riset nasional",
+        "Ada ikatan kembali ke lembaga riset Indonesia"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Februari sampai 27 Maret 2026. Jalur khusus periset, pesaingnya beda kolam dengan LPDP Reguler."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "asean-women-stem-2027",
+      "nama": "ASEAN Women in STEM Scholarship",
+      "org": "British Council",
+      "negara": "Inggris",
+      "region": "uk",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-04-30",
+      "link": "https://www.britishcouncil.id/",
+      "syarat": [
+        "Khusus perempuan dari negara ASEAN",
+        "Bidang sains, teknologi, teknik, dan matematika",
+        "Program master di kampus Inggris tertentu",
+        "Biaya kuliah, tunjangan hidup, tiket, dan visa"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Februari sampai 30 April 2026. Kolam pesaingnya jauh lebih kecil daripada Chevening karena dibatasi gender dan bidang."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "fulbright-flta-2027",
+      "nama": "Fulbright FLTA",
+      "org": "AMINEF",
+      "negara": "Amerika Serikat",
+      "region": "amerika",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
+      "buka": "2027-02-16",
+      "tutup": "2027-04-15",
+      "link": "https://www.aminef.or.id/",
+      "syarat": [
+        "Program sembilan bulan mengajar bahasa Indonesia di kampus Amerika sambil mengambil mata kuliah",
+        "Untuk guru atau calon guru bahasa Inggris",
+        "Bukan program gelar, tapi jalur masuk ke jaringan Fulbright",
+        "Tunjangan hidup, tiket, dan asuransi"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 16 Februari sampai 15 April 2026. Banyak alumni FLTA yang kemudian lolos Fulbright jalur gelar."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "kuok-2027",
+      "nama": "Kuok Foundation Scholarship",
+      "org": "Kuok Foundation Berhad",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-01-20",
+      "tutup": "2027-02-20",
+      "link": "https://www.kuokfoundation.com/",
+      "syarat": [
+        "Untuk program S1 di kampus Malaysia",
+        "Dinilai pada prestasi akademik dan kebutuhan finansial",
+        "Bantuan biaya kuliah, bukan selalu penuh"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 20 Januari sampai 20 Februari 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "geneva-excellence-2027",
+      "nama": "University of Geneva Excellence Master Fellowship",
+      "org": "Universite de Geneve",
+      "negara": "Swiss",
+      "region": "eropa",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-11-01",
+      "tutup": "2027-02-28",
+      "link": "https://www.unige.ch/sciences/en/enseignements/formations/masters/excellencemasterfellowships/",
+      "syarat": [
+        "Fokus fakultas sains",
+        "Berupa tunjangan CHF 10.000 sampai 15.000 per tahun, bukan beasiswa penuh",
+        "Butuh nilai akademik di 10 persen teratas angkatan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 November 2025 sampai 28 Februari 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "asean-maybank-2027",
+      "nama": "ASEAN Maybank Scholarship",
+      "org": "Maybank Foundation",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-01-13",
+      "tutup": "2027-03-02",
+      "link": "https://www.maybankfoundation.com/",
+      "syarat": [
+        "Untuk warga negara ASEAN, kampus tujuan di kawasan ASEAN",
+        "Biaya kuliah, uang saku, akomodasi, dan laptop",
+        "Ada program magang di Maybank",
+        "Dinilai pada prestasi akademik dan kepemimpinan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 13 Januari sampai 2 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "ssmp-bappenas-2027",
+      "nama": "Split-Site Master Program (SSMP) Bappenas",
+      "org": "Bappenas",
+      "negara": "Australia",
+      "region": "oseania",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-01-12",
+      "tutup": "2027-01-24",
+      "link": "https://pusbindiklatren.bappenas.go.id/",
+      "syarat": [
+        "Untuk aparatur sipil negara, jalur pegawai pemerintah",
+        "Sebagian studi di Indonesia, sebagian di Australia",
+        "Jendelanya sangat pendek, hanya sekitar dua minggu",
+        "Butuh izin dan rekomendasi instansi"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 12 sampai 24 Januari 2026. Hanya untuk ASN, jadi tidak relevan bagi pelamar umum."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "maeci-italia-2027",
+      "nama": "MAECI Grant Study in Italy",
+      "org": "Kementerian Luar Negeri Italia",
+      "negara": "Italia",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-01",
+      "tutup": "2027-03-26",
+      "link": "https://studyinitaly.esteri.it/",
+      "syarat": [
+        "Untuk master, doktor, kursus bahasa Italia, dan program seni (AFAM)",
+        "Tunjangan bulanan plus pembebasan biaya kuliah di kampus negeri",
+        "Jendela pendaftarannya pendek, sekitar tiga sampai empat minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 26 Maret 2026. Siapkan berkas dari Februari karena jendelanya singkat."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "iyt-italia-2027",
+      "nama": "Invest Your Talent in Italy (IYT)",
+      "org": "Kementerian Luar Negeri Italia dan kampus mitra",
+      "negara": "Italia",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-04-20",
+      "tutup": "2027-05-11",
+      "link": "https://investyourtalent.esteri.it/",
+      "syarat": [
+        "Fokus teknik, ekonomi, manajemen, dan desain",
+        "Program master berbahasa Inggris plus magang di perusahaan Italia",
+        "Indonesia termasuk negara sasaran program"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 20 April sampai 11 Mei 2026. Jalur ini membedakan diri dengan komponen magang industrinya."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "iclts-2027",
+      "nama": "International Chinese Language Teachers Scholarship (ICLTS)",
+      "org": "Center for Language Education and Cooperation",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-03-01",
+      "tutup": "2027-05-05",
+      "link": "https://cis.chinese.cn/",
+      "syarat": [
+        "Untuk calon dan praktisi pengajar bahasa Mandarin",
+        "Butuh skor HSK, bukan IELTS",
+        "Beasiswa penuh termasuk asrama dan tunjangan bulanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Maret sampai 5 Mei 2026. Jalur yang hampir tidak pernah dibahas bimbel IELTS karena syarat bahasanya HSK."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "mofcom-isscad-2027",
+      "nama": "MOFCOM ISSCAD",
+      "org": "Kementerian Perdagangan China, Peking University",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-01",
+      "tutup": "2027-04-24",
+      "link": "https://isscad.pku.edu.cn/",
+      "syarat": [
+        "Fokus studi pembangunan nasional, di Peking University",
+        "Diutamakan pegawai pemerintah dan profesional sektor publik",
+        "Beasiswa penuh termasuk tiket dan tunjangan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Maret sampai 24 April 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "sjtu-2027",
+      "nama": "Shanghai Jiao Tong University Scholarship",
+      "org": "Shanghai Jiao Tong University",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-11-01",
+      "tutup": "2027-03-31",
+      "link": "https://isc.sjtu.edu.cn/",
+      "syarat": [
+        "Salah satu kampus riset teratas di China",
+        "Banyak program berbahasa Inggris",
+        "Sebagian jalur digabung dengan skema CSC"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 November 2025 sampai 31 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "schwarzman-2027",
+      "nama": "Schwarzman Scholars",
+      "org": "Tsinghua University",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-04-01",
+      "tutup": "2027-09-09",
+      "link": "https://www.schwarzmanscholars.org/",
+      "syarat": [
+        "Master satu tahun bidang Global Affairs di Tsinghua",
+        "Batas usia di bawah 29 tahun",
+        "Seleksi sangat ketat, menilai kepemimpinan setara Rhodes",
+        "Beasiswa penuh termasuk perjalanan dan tunjangan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 April sampai 9 September 2026. Salah satu program paling bergengsi di Asia, dan jendela pendaftarannya panjang jadi tidak ada alasan terlewat."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "cuhk-2027",
+      "nama": "Chinese University of Hong Kong Scholarship",
+      "org": "The Chinese University of Hong Kong",
+      "negara": "Hong Kong",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-09-15",
+      "tutup": "2027-03-09",
+      "link": "https://admission.cuhk.edu.hk/",
+      "syarat": [
+        "Untuk pelamar S1 internasional",
+        "Berbahasa Inggris penuh",
+        "Besaran bantuan bertingkat, dari potongan sebagian sampai penuh"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 15 September 2025 sampai 9 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "sk-global-2027",
+      "nama": "SK Global Scholarship",
+      "org": "SK Group",
+      "negara": "Korea Selatan",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-03-03",
+      "tutup": "2027-03-31",
+      "link": "https://www.skhynix.com/",
+      "syarat": [
+        "Untuk program master di kampus Korea tertentu",
+        "Diutamakan bidang teknik dan bisnis",
+        "Jendelanya pendek, sekitar empat minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 3 sampai 31 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "mide-jerman-2027",
+      "nama": "MIDE Master in International and Development Economics",
+      "org": "HTW Berlin",
+      "negara": "Jerman",
+      "region": "eropa",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-03-01",
+      "tutup": "2027-08-31",
+      "link": "https://mide.htw-berlin.de/",
+      "syarat": [
+        "Program master ekonomi pembangunan berbahasa Inggris",
+        "Butuh pengalaman kerja relevan",
+        "Sebagian pelamar bisa dikaitkan dengan beasiswa DAAD EPOS"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Maret sampai 31 Agustus 2026. Jendelanya panjang, cocok dikerjakan sambil menyiapkan EPOS."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "mis-malaysia-2027",
+      "nama": "Malaysia International Scholarship (MIS)",
+      "org": "Kementerian Pendidikan Tinggi Malaysia",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-04",
+      "tutup": "2027-04-03",
+      "link": "https://biasiswa.mohe.gov.my/INTER/",
+      "syarat": [
+        "Untuk master dan doktor di kampus Malaysia",
+        "Batas usia 40 tahun untuk master, 45 untuk doktor",
+        "IPK minimum dan skor IELTS ditentukan tiap siklus"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 4 Maret sampai 3 April 2026. Berbeda dari BYDPA, boleh mendaftar keduanya."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "ytl-malaysia-2027",
+      "nama": "YTL Foundation Scholarship",
+      "org": "YTL Foundation",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-04-30",
+      "link": "https://www.ytlfoundation.org/",
+      "syarat": [
+        "Untuk program S1 di kampus Malaysia dan beberapa kampus luar",
+        "Dinilai pada prestasi akademik dan kepemimpinan",
+        "Besaran bantuan bervariasi, tidak selalu penuh"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Februari sampai 30 April 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "albukhary-2027",
+      "nama": "Cendekia BAZNAS Albukhary International University",
+      "org": "BAZNAS dan Albukhary International University",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-04-15",
+      "tutup": "2027-04-30",
+      "link": "https://beasiswa.baznas.go.id/",
+      "syarat": [
+        "Kerja sama BAZNAS dengan kampus Malaysia",
+        "Untuk pelamar dari keluarga kurang mampu",
+        "Beasiswa penuh termasuk asrama"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 15 sampai 30 April 2026. Jendelanya hanya dua minggu."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "nama-ksu-2027",
+      "nama": "NAMA x KSU Postgraduate Scholarship",
+      "org": "King Saud University",
+      "negara": "Arab Saudi",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-01",
+      "tutup": "2027-03-31",
+      "link": "https://ksu.edu.sa/en",
+      "syarat": [
+        "Untuk master dan doktor di King Saud University",
+        "Beberapa program berbahasa Inggris",
+        "Beasiswa penuh termasuk akomodasi"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 31 Maret 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "kazakhstan-2027",
+      "nama": "Beasiswa Pemerintah Kazakhstan",
+      "org": "Kementerian Sains dan Pendidikan Tinggi Kazakhstan",
+      "negara": "Kazakhstan",
+      "region": "turki",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-30",
+      "tutup": "2027-05-31",
+      "link": "https://enic-kazakhstan.edu.kz/",
+      "syarat": [
+        "Terbuka untuk semua jenjang gelar",
+        "Biaya kuliah, asrama, dan tunjangan bulanan",
+        "Sebagian program berbahasa Inggris atau Rusia"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 30 Maret sampai 31 Mei 2026. Tujuan yang sangat jarang dilirik, jadi pesaingnya tipis."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "skoltech-2027",
+      "nama": "Skolkovo Institute of Science and Technology",
+      "org": "Skoltech",
+      "negara": "Rusia",
+      "region": "eropa",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-04-27",
+      "link": "https://www.skoltech.ru/en/education/admissions/",
+      "syarat": [
+        "Kampus riset sains dan teknologi berbahasa Inggris penuh",
+        "Fokus AI, energi, bioteknologi, dan ilmu material",
+        "Biaya kuliah penuh plus uang saku bulanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Februari sampai 27 April 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "tas-romania-2027",
+      "nama": "Transilvania Academica Scholarship (TAS)",
+      "org": "Transilvania University of Brasov",
+      "negara": "Romania",
+      "region": "eropa",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-02-23",
+      "tutup": "2027-04-10",
+      "link": "https://www.unitbv.ro/en/",
+      "syarat": [
+        "Program master berbahasa Inggris",
+        "Pembebasan biaya kuliah plus tunjangan bulanan",
+        "Berbeda dari beasiswa MFA Romania, boleh mendaftar keduanya"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 23 Februari sampai 10 April 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "arice-romania-2027",
+      "nama": "Romanian Government ARICE Scholarship",
+      "org": "Agentia Romana ARICE",
+      "negara": "Romania",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-04-15",
+      "tutup": "2027-06-12",
+      "link": "https://arice.gov.ro/",
+      "syarat": [
+        "Jalur pemerintah Romania yang terpisah dari skema MFA",
+        "Terbuka semua jenjang gelar",
+        "Termasuk tahun persiapan bahasa Romania bila diperlukan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 15 April sampai 12 Juni 2026. Romania punya dua jalur pemerintah berbeda, cek dua-duanya."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "flinders-agrtps-2027",
+      "nama": "Flinders University AGRTPS",
+      "org": "Flinders University",
+      "negara": "Australia",
+      "region": "oseania",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-04-30",
+      "tutup": "2027-06-18",
+      "link": "https://www.flinders.edu.au/scholarships",
+      "syarat": [
+        "Untuk program riset master dan doktor",
+        "Biaya kuliah plus tunjangan hidup tahunan",
+        "Butuh calon supervisor yang bersedia lebih dulu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 30 April sampai 18 Juni 2026. Jalur Research Training Program, berbeda dari AAS."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "unimelb-grs-2027",
+      "nama": "Melbourne Graduate Research Scholarship",
+      "org": "University of Melbourne",
+      "negara": "Australia",
+      "region": "oseania",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-04-01",
+      "tutup": "2026-10-31",
+      "link": "https://scholarships.unimelb.edu.au/",
+      "syarat": [
+        "Untuk program riset master dan PhD, bukan coursework",
+        "Biaya kuliah penuh plus tunjangan hidup dan relokasi",
+        "Otomatis dipertimbangkan saat mendaftar program riset",
+        "Butuh calon supervisor lebih dulu"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Beasiswa penuh untuk jalur riset, berbeda dari Melbourne Undergraduate yang hanya potongan 25 persen. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "saseaf-2027",
+      "nama": "Singapore South-East Asia Fellowship (SASEAF)",
+      "org": "Pemerintah Singapura",
+      "negara": "Singapura",
+      "region": "asiatenggara",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2027-04-01",
+      "tutup": "2027-08-01",
+      "link": "https://www.a-star.edu.sg/",
+      "syarat": [
+        "Khusus pelamar dari Asia Tenggara",
+        "Untuk program doktor di kampus Singapura",
+        "Beasiswa penuh plus uang saku bulanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 April sampai 1 Agustus 2026. Kolam pesaingnya dibatasi Asia Tenggara, jauh lebih kecil dari SINGA yang global."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "lpdp-akselerasi-2027",
+      "nama": "LPDP Akselerasi",
+      "org": "LPDP",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-06",
+      "tutup": "2027-03-27",
+      "link": "https://lpdp.kemenkeu.go.id/",
+      "syarat": [
+        "Jalur cepat untuk pelamar yang sudah punya LoA dari kampus unggulan",
+        "Proses seleksinya lebih singkat dari jalur Reguler",
+        "Daftar kampus unggulan ditentukan LPDP tiap siklus",
+        "Ada versi Akselerasi Magister yang terpisah dengan jendela sendiri"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: Akselerasi Universitas Unggulan 6 sampai 27 Maret 2026, dan Akselerasi Magister 2 sampai 30 April 2026. Dua jendela berbeda, jangan tertukar."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "bib-kemenag-2027",
+      "nama": "Beasiswa Indonesia Bangkit (BIB) Kemenag",
+      "org": "Kementerian Agama dan LPDP",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-04-01",
+      "tutup": "2027-06-05",
+      "link": "https://beasiswa.kemenag.go.id/",
+      "syarat": [
+        "Banyak jalur: Unggulan Keagamaan, Santri Berprestasi, Double Degree, dan Akselerasi",
+        "Tujuan dalam dan luar negeri, termasuk Timur Tengah, Australia, Jepang, Korea, Belanda, dan Inggris",
+        "Diutamakan lulusan pesantren dan madrasah, serta pegawai Kemenag",
+        "Jalur Double Degree menggabungkan kampus Indonesia dan luar negeri"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 April sampai 5 Juni 2026 untuk hampir semua jalur. Kalau latar belakangmu pesantren atau madrasah, jalur ini pesaingnya jauh berbeda dari LPDP umum."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "cimb-asean-2027",
+      "nama": "CIMB ASEAN Scholarship",
+      "org": "CIMB Foundation",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-04-06",
+      "tutup": "2027-04-22",
+      "link": "https://www.cimb.com/en/sustainability.html",
+      "syarat": [
+        "Untuk warga ASEAN, kampus tujuan di kawasan ASEAN dan beberapa negara lain",
+        "Biaya kuliah, uang saku, dan kesempatan magang di CIMB",
+        "Jendelanya sangat pendek, sekitar dua minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 6 sampai 22 April 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "daad-helmut-schmidt-2027",
+      "nama": "DAAD Helmut-Schmidt Programme",
+      "org": "DAAD Jerman",
+      "negara": "Jerman",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-06-01",
+      "tutup": "2027-07-31",
+      "link": "https://www.daad.de/en/",
+      "syarat": [
+        "Fokus kebijakan publik dan tata kelola pemerintahan",
+        "Untuk calon pemimpin sektor publik dari negara berkembang",
+        "Beasiswa penuh termasuk tunjangan bulanan dan kursus bahasa Jerman"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Juni sampai 31 Juli 2026. Jalur DAAD yang berbeda dari EPOS, boleh dipertimbangkan keduanya."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "daad-stem-2027",
+      "nama": "DAAD Study Scholarship for STEM",
+      "org": "DAAD Jerman",
+      "negara": "Jerman",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-06-01",
+      "tutup": "2026-10-21",
+      "link": "https://www.daad.de/en/",
+      "syarat": [
+        "Khusus bidang sains, teknologi, teknik, dan matematika",
+        "Untuk program master di kampus Jerman",
+        "Tunjangan bulanan plus asuransi dan tunjangan perjalanan"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Tanggal dari daftar agregator, belum dicek ke situs DAAD."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "daad-research-2027",
+      "nama": "DAAD Research Grants dan Doctoral Programmes",
+      "org": "DAAD Jerman",
+      "negara": "Jerman",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-06-20",
+      "tutup": "2026-10-07",
+      "link": "https://www.daad.de/en/",
+      "syarat": [
+        "Untuk program doktor dan riset jangka panjang di Jerman",
+        "Butuh surat kesediaan calon supervisor di kampus Jerman",
+        "Ada jalur terstruktur (doctoral programmes) dan jalur individual"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Research Grants tutup 7 Oktober 2026 dan Doctoral Programmes tutup 20 Oktober 2026. Tanggal dari daftar agregator untuk siklus berjalan, belum dicek ke situs DAAD."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "koica-2027",
+      "nama": "KOICA Scholarship Program",
+      "org": "Korea International Cooperation Agency",
+      "negara": "Korea Selatan",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-06-01",
+      "tutup": "2027-07-30",
+      "link": "https://www.koica.go.kr/",
+      "syarat": [
+        "Diutamakan pegawai pemerintah dan lembaga publik",
+        "Program master di kampus Korea dengan pengantar bahasa Inggris",
+        "Beasiswa penuh termasuk tiket, asrama, dan tunjangan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Juni sampai 30 Juli 2026. Berbeda dari GKS, jalurnya kerja sama pembangunan."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "humphrey-2027",
+      "nama": "Hubert H. Humphrey Fellowship",
+      "org": "AMINEF",
+      "negara": "Amerika Serikat",
+      "region": "amerika",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-06-01",
+      "tutup": "2027-07-15",
+      "link": "https://www.aminef.or.id/",
+      "syarat": [
+        "BUKAN program gelar, melainkan fellowship profesional 10 bulan di kampus Amerika",
+        "Minimal 5 tahun pengalaman kerja di sektor publik atau nirlaba",
+        "Untuk profesional pertengahan karier, bukan fresh graduate",
+        "Beasiswa penuh termasuk tunjangan hidup dan perjalanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Juni sampai 15 Juli 2026. Dicantumkan meski non-gelar karena setara beasiswa penuh dan banyak dikejar profesional Indonesia."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "itb-jardine-2027",
+      "nama": "ITB Jardine Foundation Scholarship",
+      "org": "Jardine Foundation dan ITB",
+      "negara": "Inggris",
+      "region": "uk",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-06-01",
+      "tutup": "2027-07-20",
+      "link": "https://www.jardines.com/en/group/jardine-foundation.html",
+      "syarat": [
+        "Untuk alumni ITB yang melanjutkan ke Oxford atau Cambridge",
+        "Butuh dukungan dari kampus asal",
+        "Beasiswa penuh termasuk biaya kuliah dan tunjangan hidup"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Juni sampai 20 Juli 2026. Jalur sangat sempit, tapi kalau kamu alumni ITB pesaingnya segelintir."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "mtcp-malaysia-2027",
+      "nama": "Malaysian Technical Cooperation Programme (MTCP)",
+      "org": "Kementerian Luar Negeri Malaysia",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-05-04",
+      "tutup": "2027-06-12",
+      "link": "https://mtcpscholarship.gov.my/",
+      "syarat": [
+        "Program master di kampus Malaysia terpilih",
+        "Batas usia umumnya 45 tahun",
+        "Biaya kuliah, tunjangan bulanan, tiket, dan asuransi"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 4 Mei sampai 12 Juni 2026. Jalur ketiga Malaysia setelah BYDPA dan MIS."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "iium-2027",
+      "nama": "International Islamic University Malaysia (IIUM)",
+      "org": "IIUM",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "kampus",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2027-05-15",
+      "tutup": "2027-07-15",
+      "link": "https://www.iium.edu.my/",
+      "syarat": [
+        "Untuk program doktor",
+        "Pengantar bahasa Inggris, lingkungan kampus Islam",
+        "Pembebasan biaya kuliah plus tunjangan terbatas"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 15 Mei sampai 15 Juli 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "csu-china-2027",
+      "nama": "Central South University Scholarship",
+      "org": "Central South University",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-05-01",
+      "tutup": "2027-05-31",
+      "link": "https://ie.csu.edu.cn/",
+      "syarat": [
+        "Kuat di bidang metalurgi, material, dan kedokteran",
+        "Sebagian jalur digabung dengan skema CSC dan kerja sama LPDP",
+        "Beasiswa penuh termasuk asrama"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 31 Mei 2026. Kampus ini juga jadi mitra LPDP untuk bidang metalurgi."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "silk-road-2027",
+      "nama": "Silk Road Scholarship",
+      "org": "Pemerintah China",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-05-01",
+      "tutup": "2027-05-17",
+      "link": "https://www.campuschina.org/",
+      "syarat": [
+        "Jalur khusus negara peserta Belt and Road, Indonesia termasuk",
+        "Kuota per negara, lebih kecil dari CSC umum",
+        "Jendelanya sangat pendek, sekitar dua minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 17 Mei 2026. Dua minggu saja, jadi siapkan berkas sebelum dibuka."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "mext-igp-hokkaido-2027",
+      "nama": "MEXT IGP Hokkaido University",
+      "org": "Hokkaido University",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-05-01",
+      "tutup": "2026-11-01",
+      "link": "https://www.oia.hokudai.ac.jp/",
+      "syarat": [
+        "Jalur U to U, mendaftar langsung ke kampus, bukan lewat Kedutaan",
+        "Program berbahasa Inggris di bidang sains dan lingkungan",
+        "Butuh calon supervisor lebih dulu"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Jalur U to U, mendaftar langsung ke kampus, bukan lewat Kedutaan. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "tmu-taiwan-2027",
+      "nama": "New Southbound Elite Study Program, Taipei Medical University",
+      "org": "Taipei Medical University",
+      "negara": "Taiwan",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
+      "buka": "2027-06-01",
+      "tutup": "2027-06-30",
+      "link": "https://eng.tmu.edu.tw/",
+      "syarat": [
+        "Bagian dari kebijakan New Southbound Taiwan untuk Asia Tenggara",
+        "Fokus bidang kesehatan dan biomedis",
+        "Biaya kuliah plus tunjangan, besarannya bertingkat"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 30 Juni 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "matsumae-2027",
+      "nama": "Matsumae International Foundation Fellowship",
+      "org": "Matsumae International Foundation",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2027-06-01",
+      "tutup": "2027-06-30",
+      "link": "https://www.mif-japan.org/",
+      "syarat": [
+        "Untuk peneliti yang sudah bergelar doktor atau setara",
+        "Riset jangka pendek 3 sampai 6 bulan di lembaga Jepang",
+        "Tidak boleh pernah tinggal di Jepang sebelumnya"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 30 Juni 2026. Cocok untuk dosen yang sudah S3 dan butuh pengalaman riset internasional."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "canada-asia-fellowship-2027",
+      "nama": "Canada Asia Young Fellowship Professionals Program",
+      "org": "Pemerintah Kanada",
+      "negara": "Kanada",
+      "region": "amerika",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-06-18",
+      "tutup": "2027-07-19",
+      "link": "https://www.educanada.ca/",
+      "syarat": [
+        "Untuk profesional muda dari negara Asia",
+        "Program di kampus Kanada",
+        "Tunjangan hidup dan biaya program"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 18 Juni sampai 19 Juli 2026. Kanada jarang masuk radar pelamar Indonesia dibanding Australia dan Inggris."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "world-in-serbia-2027",
+      "nama": "World in Serbia",
+      "org": "Pemerintah Serbia",
+      "negara": "Serbia",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-05-18",
+      "tutup": "2027-06-01",
+      "link": "https://www.mpn.gov.rs/",
+      "syarat": [
+        "Untuk warga negara Gerakan Non-Blok, Indonesia termasuk",
+        "Biaya kuliah, asrama, dan tunjangan bulanan",
+        "Sebagian program butuh kursus bahasa Serbia dulu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 18 Mei sampai 1 Juni 2026. Hanya dua minggu, dan hampir tidak ada yang membahasnya di Indonesia."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "garuda-2027",
+      "nama": "Beasiswa Garuda",
+      "org": "Kemendikdasmen",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-05-25",
+      "tutup": "2027-06-25",
+      "link": "https://beasiswagaruda.kemdikbud.go.id/",
+      "syarat": [
+        "Untuk lulusan SMA berprestasi menuju kampus top dunia",
+        "Tujuan tersebar di 30-an negara termasuk Inggris, Amerika, Jepang, Jerman, dan Singapura",
+        "Ada jalur persiapan sebelum keberangkatan",
+        "Seleksi menilai prestasi akademik dan olimpiade"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 25 Mei sampai 25 Juni 2026. Program pemerintah Indonesia terbesar untuk jalur S1 ke kampus top dunia."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "muhammadiyah-mot-2027",
+      "nama": "Muhammadiyah Master of Teaching",
+      "org": "Muhammadiyah dan kampus Australia",
+      "negara": "Australia",
+      "region": "oseania",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-05-26",
+      "tutup": "2027-06-13",
+      "link": "https://diktilitbangmuhammadiyah.org/",
+      "syarat": [
+        "Untuk guru dan calon guru di lingkungan Muhammadiyah",
+        "Program Master of Teaching di kampus Australia",
+        "Jendelanya sangat pendek, sekitar tiga minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 26 Mei sampai 13 Juni 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "brin-dbr-doktor-2027",
+      "nama": "BRIN Doktor Jalur Doctor by Research",
+      "org": "Badan Riset dan Inovasi Nasional",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2027-06-30",
+      "tutup": "2027-07-31",
+      "link": "https://brin.go.id/",
+      "syarat": [
+        "Jalur doktor berbasis riset, bukan perkuliahan",
+        "Tujuan Australia, Belanda, Inggris, Prancis, dan Rusia",
+        "Untuk periset dan calon periset BRIN",
+        "Berbeda dari skema Gelar Riset BRIN yang dibuka Februari"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 30 Juni sampai 31 Juli 2026. BRIN punya dua skema doktor terpisah, cek dua-duanya."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "polimi-dsu-2027",
+      "nama": "DSU Politecnico di Milano",
+      "org": "Politecnico di Milano",
+      "negara": "Italia",
+      "region": "eropa",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-07-10",
+      "tutup": "2027-09-30",
+      "link": "https://www.polimi.it/en/",
+      "syarat": [
+        "Beasiswa berbasis kebutuhan ekonomi dan prestasi",
+        "Kampus teknik terbaik Italia, banyak program berbahasa Inggris",
+        "Mencakup pembebasan biaya kuliah, tunjangan, dan layanan kantin"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 10 Juli sampai 30 September 2026."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "ernst-mach-2027",
+      "nama": "Ernst Mach Grant ASEA-UNINET",
+      "org": "OeAD Austria",
+      "negara": "Austria",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-08-01",
+      "tutup": "2027-03-01",
+      "link": "https://oead.at/en/",
+      "syarat": [
+        "Khusus jaringan ASEA-UNINET, dan Indonesia anggota aktifnya",
+        "Untuk riset dan studi di kampus Austria",
+        "Butuh surat undangan dari supervisor di Austria",
+        "Jendelanya panjang, sekitar tujuh bulan"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027/28. Jalur Austria kedua setelah IASP, keduanya punya kuota khusus Indonesia. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "ares-belgia-2027",
+      "nama": "ARES International Scholarships",
+      "org": "ARES Belgia",
+      "negara": "Belgia",
+      "region": "eropa",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-08-03",
+      "tutup": "2027-09-18",
+      "link": "https://www.ares-ac.be/en/cooperation-au-developpement/bourses/",
+      "syarat": [
+        "Untuk program master dan pelatihan di kampus berbahasa Prancis di Belgia",
+        "Fokus bidang pembangunan",
+        "Butuh pengalaman kerja relevan",
+        "Beasiswa penuh termasuk tiket dan tunjangan bulanan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 3 Agustus sampai 18 September 2026. Sebagian program diajarkan dalam bahasa Prancis, cek dulu bahasa pengantarnya."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "mext-ylp-2027",
+      "nama": "MEXT Young Leaders Program (YLP)",
+      "org": "Kedutaan Besar Jepang",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-08-14",
+      "tutup": "2027-09-14",
+      "link": "https://www.id.emb-japan.go.jp/sch.html",
+      "syarat": [
+        "Untuk pegawai pemerintah dan profesional muda sektor publik",
+        "Master satu tahun berbahasa Inggris, bidang kebijakan publik, administrasi, hukum, atau bisnis",
+        "Butuh rekomendasi instansi",
+        "Berbeda dari MEXT Research dan MEXT Undergraduate"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 14 Agustus sampai 14 September 2026. Jalur MEXT ketiga, dan paling jarang dibahas padahal programnya hanya satu tahun."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "inpex-2027",
+      "nama": "Beasiswa INPEX",
+      "org": "INPEX Scholarship Foundation",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-08-01",
+      "tutup": "2026-10-31",
+      "link": "https://www.inpex-s.com/",
+      "syarat": [
+        "KHUSUS pelamar Indonesia",
+        "Untuk program master di kampus Jepang",
+        "Diutamakan bidang teknik, sains, dan energi",
+        "Beasiswa penuh termasuk tiket dan tunjangan bulanan"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Program bilateral khusus Indonesia, pesaingnya jauh lebih sedikit dari MEXT. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "fast-retailing-2027",
+      "nama": "Fast Retailing Foundation Scholarship",
+      "org": "Fast Retailing (Uniqlo)",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-07-01",
+      "tutup": "2027-09-01",
+      "link": "https://www.fastretailing.com/eng/",
+      "syarat": [
+        "Untuk pelamar Asia yang akan kuliah S1 di Jepang",
+        "Beasiswa penuh termasuk biaya hidup",
+        "Ada komponen pengembangan kepemimpinan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Juli sampai 1 September 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "iuhw-jepang-2027",
+      "nama": "IUHW Kedokteran Jepang",
+      "org": "International University of Health and Welfare",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-07-25",
+      "tutup": "2027-08-25",
+      "link": "https://www.iuhw.ac.jp/en/",
+      "syarat": [
+        "Program kedokteran S1 dengan jalur khusus mahasiswa internasional",
+        "Sebagian kuliah berbahasa Inggris di tahun awal",
+        "Pembebasan sebagian besar biaya kuliah",
+        "Butuh komitmen praktik di Jepang setelah lulus"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 25 Juli sampai 25 Agustus 2026. Salah satu dari sangat sedikit jalur kedokteran luar negeri yang terbuka untuk pelamar Indonesia."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "snu-spf-2027",
+      "nama": "SNU President Fellowship (SPF)",
+      "org": "Seoul National University",
+      "negara": "Korea Selatan",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2027-06-20",
+      "tutup": "2027-07-09",
+      "link": "https://en.snu.ac.kr/",
+      "syarat": [
+        "Khusus program doktor di SNU, kampus nomor satu Korea",
+        "Butuh rekam jejak riset kuat dan calon supervisor",
+        "Beasiswa penuh plus tunjangan riset"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 6 sampai 9 Juli 2026, hanya beberapa hari. Pantau situs SNU dari Mei kalau menargetkan ini."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "swarovski-water-2027",
+      "nama": "Women 4 Water Swarovski Foundation",
+      "org": "IHE Delft dan Swarovski Foundation",
+      "negara": "Belanda",
+      "region": "eropa",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-07-01",
+      "tutup": "2027-07-12",
+      "link": "https://www.un-ihe.org/",
+      "syarat": [
+        "Khusus perempuan dari negara berkembang",
+        "Bidang air, sanitasi, dan lingkungan di IHE Delft",
+        "Beasiswa penuh termasuk tiket dan tunjangan"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 12 Juli 2026, hanya dua minggu. Kolam pesaingnya kecil karena dibatasi gender dan bidang."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "au-egls-2027",
+      "nama": "AU Emerging Global Leader Scholarship",
+      "org": "American University",
+      "negara": "Amerika Serikat",
+      "region": "amerika",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-08-01",
+      "tutup": "2026-11-01",
+      "link": "https://www.american.edu/financialaid/eagle/",
+      "syarat": [
+        "Untuk pelamar S1 internasional dengan komitmen pengabdian di negara asal",
+        "Beasiswa penuh termasuk biaya kuliah dan asrama",
+        "Seleksinya sangat ketat, kuota sangat kecil"
+      ],
+      "catatan": "KOREKSI: siklus ini sedang BERJALAN, bukan 2027. Salah satu dari sedikit beasiswa S1 penuh ke Amerika yang terbuka untuk Indonesia. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "buuts-azhar-2027",
+      "nama": "Buuts Al-Azhar Al-Sharif",
+      "org": "Universitas Al-Azhar Kairo",
+      "negara": "Mesir",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
+      "buka": "2027-07-01",
+      "tutup": "2027-09-30",
+      "link": "https://www.azhar.edu.eg/",
+      "syarat": [
+        "Studi keislaman dan bahasa Arab",
+        "Umumnya lewat jalur rekomendasi Kementerian Agama atau lembaga Islam",
+        "Beasiswa penuh termasuk asrama dan uang saku",
+        "Butuh kemampuan bahasa Arab"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 Juli sampai 30 September 2026. Salah satu tujuan paling ramai untuk lulusan pesantren Indonesia."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "beirut-islamic-2027",
+      "nama": "Beirut Islamic University",
+      "org": "Beirut Islamic University",
+      "negara": "Lebanon",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-07-28",
+      "tutup": "2027-08-15",
+      "link": "https://www.biu.edu.lb/",
+      "syarat": [
+        "Studi keislaman dan bahasa Arab",
+        "Umumnya lewat jalur lembaga atau yayasan di Indonesia",
+        "Jendelanya pendek, sekitar tiga minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 28 Juli sampai 15 Agustus 2026."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "aiu-malaysia-2027",
+      "nama": "Albukhary International University (AIU)",
+      "org": "Albukhary International University",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2027-07-01",
+      "tutup": "2027-07-31",
+      "link": "https://aiu.edu.my/",
+      "syarat": [
+        "Khusus pelamar dari keluarga kurang mampu",
+        "Beasiswa penuh termasuk asrama dan uang saku",
+        "Pengantar bahasa Inggris"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 31 Juli 2026. Berbeda dari jalur Cendekia BAZNAS ke kampus yang sama, cek dua-duanya."
+    },
+    {
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "inceif-2027",
+      "nama": "NAMA INCEIF Amanah Scholarship",
+      "org": "INCEIF University",
+      "negara": "Malaysia",
+      "region": "asiatenggara",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2027-07-01",
+      "tutup": "2027-07-20",
+      "link": "https://www.inceif.edu.my/",
+      "syarat": [
+        "Khusus bidang keuangan Islam",
+        "Kampus pascasarjana khusus keuangan Islam di Kuala Lumpur",
+        "Jendelanya pendek, sekitar tiga minggu"
+      ],
+      "catatan": "Perkiraan. Jendela 2026: 1 sampai 20 Juli 2026."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "tsinghua-shenzhen-2027",
+      "nama": "Tsinghua Shenzhen International Graduate School",
+      "org": "Tsinghua University",
+      "negara": "China",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-17",
+      "tutup": "2027-05-15",
+      "link": "https://www.sigs.tsinghua.edu.cn/en/",
+      "syarat": [
+        "Kampus Tsinghua di Shenzhen, program berbahasa Inggris",
+        "Fokus teknologi, data, lingkungan, dan logistik",
+        "Jendela pendaftarannya sangat panjang, hampir delapan bulan"
+      ],
+      "catatan": "Siklus sedang berjalan sampai 15 Mei 2027. Jendela terpanjang di seluruh kalender ini, jadi tidak ada alasan terlewat. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "saudi-gov-2027",
+      "nama": "Saudi Government Scholarship",
+      "org": "Kementerian Pendidikan Arab Saudi",
+      "negara": "Arab Saudi",
+      "region": "turki",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-16",
+      "tutup": "2026-10-06",
+      "link": "https://studyinsaudi.moe.gov.sa/",
+      "syarat": [
+        "Terbuka semua jenjang gelar di kampus negeri Saudi",
+        "Beasiswa penuh termasuk asrama, tiket tahunan, dan uang saku",
+        "Sebagian program berbahasa Arab, sebagian Inggris"
+      ],
+      "catatan": "Siklus sedang berjalan dan tutup 6 Oktober 2026, hari yang sama dengan Chevening. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "searca-2027",
+      "nama": "SEARCA Graduate Scholarship",
+      "org": "SEAMEO SEARCA",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2026-10-31",
+      "link": "https://www.searca.org/scholarship",
+      "syarat": [
+        "Khusus bidang pertanian dan pembangunan pedesaan",
+        "Kampus tujuan di Asia Tenggara: Indonesia, Malaysia, Filipina, Thailand",
+        "Untuk dosen, peneliti, dan pegawai pemerintah",
+        "Beasiswa penuh termasuk tunjangan riset dan tesis"
+      ],
+      "catatan": "Siklus sedang berjalan sampai 31 Oktober 2026. Jalur regional yang hampir tidak pernah masuk daftar beasiswa populer. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "spear-2027",
+      "nama": "Scholars Programme on EU-ASEAN Relations (SPEAR)",
+      "org": "Uni Eropa dan ASEAN",
+      "negara": "Berbagai negara",
+      "region": "lain",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-07",
+      "tutup": "2026-10-05",
+      "link": "https://www.eeas.europa.eu/",
+      "syarat": [
+        "Khusus warga negara ASEAN",
+        "Fokus hubungan Uni Eropa dan ASEAN",
+        "Kampus tujuan di Eropa"
+      ],
+      "catatan": "Siklus sedang berjalan dan tutup 5 Oktober 2026, besok. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "jf-jsa-asean-2027",
+      "nama": "JF-JSA-ASEAN Master Student Fellowship",
+      "org": "Japan Foundation",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "pemerintah",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2026-10-30",
+      "link": "https://www.jpf.go.jp/e/",
+      "syarat": [
+        "Khusus mahasiswa dari negara ASEAN",
+        "Untuk program master di kampus Jepang",
+        "Beasiswa penuh termasuk tunjangan bulanan"
+      ],
+      "catatan": "Siklus sedang berjalan sampai 30 Oktober 2026. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "asean-asia-univ-2027",
+      "nama": "ASEAN Asia University Japan",
+      "org": "Asia University Jepang",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "kampus",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2026-10-05",
+      "link": "https://www.asia-u.ac.jp/english/",
+      "syarat": [
+        "Khusus pelamar dari negara ASEAN",
+        "Program S1 di Asia University Tokyo",
+        "Mencakup biaya kuliah dan sebagian biaya hidup"
+      ],
+      "catatan": "Siklus sedang berjalan dan tutup 5 Oktober 2026, besok. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "parsial",
+      "id": "rotary-yoneyama-2027",
+      "nama": "Rotary Yoneyama Scholarship",
+      "org": "Rotary Yoneyama Memorial Foundation",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-10-01",
+      "tutup": "2026-10-31",
+      "link": "https://www.rotary-yoneyama.or.jp/english",
+      "syarat": [
+        "Untuk mahasiswa internasional yang SUDAH atau AKAN kuliah di Jepang",
+        "Tunjangan bulanan, bukan biaya kuliah penuh",
+        "Ada kewajiban mengikuti kegiatan klub Rotary setempat"
+      ],
+      "catatan": "Siklus sedang berjalan sepanjang Oktober 2026. Berbeda dari Rotary Peace Fellowship. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "aflsp-2027",
+      "nama": "Asian Future Leaders Scholarship Program (AFLSP)",
+      "org": "Bai Xian Asia Institute",
+      "negara": "Jepang",
+      "region": "asiatimur",
+      "sumber": "yayasan",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-11-04",
+      "tutup": "2026-11-13",
+      "link": "https://www.bxai.org/",
+      "syarat": [
+        "Kampus mitra di Jepang, China, Hong Kong, dan Korea",
+        "Fokus pertukaran budaya dan kepemimpinan Asia",
+        "Jendelanya sangat pendek, hanya sekitar sepuluh hari"
+      ],
+      "catatan": "Siklus sedang berjalan, dibuka 4 sampai 13 November 2026. Sepuluh hari saja, siapkan berkas dari Oktober. Tanggal dari daftar agregator."
+    },
+    {
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "tipe": "penuh",
+      "id": "khalifa-2027",
+      "nama": "Khalifa University PhD Scholarship",
+      "org": "Khalifa University",
+      "negara": "Uni Emirat Arab",
+      "region": "turki",
+      "sumber": "kampus",
+      "jenjang": [
+        "S3"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2026-09-14",
+      "link": "https://www.ku.ac.ae/",
+      "syarat": [
+        "Khusus program doktor bidang teknik dan sains",
+        "Berbahasa Inggris penuh, kampus riset dengan pendanaan besar",
+        "Beasiswa penuh plus tunjangan bulanan tinggi"
+      ],
+      "catatan": "Siklus 2026 sudah tutup 14 September 2026. Dicantumkan supaya kamu tahu polanya: jendelanya hanya dua minggu di awal September. Tanggal dari daftar agregator."
     }
   ]
 }
