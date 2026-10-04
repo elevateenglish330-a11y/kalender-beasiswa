@@ -141,6 +141,8 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
 .tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line-strong);color:var(--ink-2);border-radius:2px;padding:2px 6px;background:var(--surface-2)}
 .tag.est{border-style:dashed;border-color:var(--soon);color:var(--soon);background:var(--soon-bg)}
+.tag.penuh{border-color:var(--open);color:var(--open);background:var(--open-bg);font-weight:600}
+.tag.parsial{border-color:var(--closed);color:var(--closed);background:var(--closed-bg);font-weight:600}
 .dates{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:11px;font-family:var(--font-mono);font-size:12px;color:var(--ink-2)}
 .dates b{color:var(--ink);font-weight:500}
 .syarat{margin:12px 0 0;padding:11px 13px;background:var(--surface-2);border:1px solid var(--line);border-radius:3px}
@@ -298,7 +300,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
   var editing = false, dirty = false;
   var formFor = null, toast = null, showJson = false;
   var view = "kalender";
-  var filterStatus = "aktif", filterJenjang = "semua";
+  var filterStatus = "aktif", filterJenjang = "semua", filterDana = "semua";
   var curY, curM, selected = null;
 
   function pad(n){ return n < 10 ? "0" + n : "" + n; }
@@ -528,6 +530,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       if (filterStatus === "nanti" && s !== "nanti") return false;
       if (filterStatus === "tutup" && s !== "tutup") return false;
       if (filterJenjang !== "semua" && (i.jenjang || []).indexOf(filterJenjang) === -1) return false;
+      if (filterDana !== "semua" && i.tipe !== filterDana) return false;
       return true;
     });
     var h = '<div class="chips">'
@@ -535,7 +538,9 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       + chip("status","nanti","Belum buka") + chip("status","tutup","Sudah tutup")
       + chip("status","semua","Semua") + '<div class="sep"></div>'
       + chip("jenjang","semua","Semua jenjang") + chip("jenjang","S1","S1")
-      + chip("jenjang","S2","S2") + chip("jenjang","S3","S3") + "</div>";
+      + chip("jenjang","S2","S2") + chip("jenjang","S3","S3") + '<div class="sep"></div>'
+      + chip("dana","semua","Semua dana") + chip("dana","penuh","Beasiswa penuh")
+      + chip("dana","parsial","Parsial") + "</div>";
     h += '<div class="list">';
     if (!shown.length) h += '<div class="empty">Tidak ada beasiswa yang cocok dengan filter ini.</div>';
     else shown.forEach(function(it){
@@ -609,7 +614,8 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
   }
 
   function chip(grup, nilai, label){
-    var aktif = (grup === "status" ? filterStatus : filterJenjang) === nilai;
+    var cur = grup === "status" ? filterStatus : (grup === "jenjang" ? filterJenjang : filterDana);
+    var aktif = cur === nilai;
     return '<button class="chip" aria-pressed="' + aktif + '" data-filter="' + grup + '" data-val="' + esc(nilai) + '">' + esc(label) + "</button>";
   }
 
@@ -627,6 +633,8 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
 
     var tags = '<span class="tag neg">' + esc(it.negara) + "</span>";
     (it.jenjang || []).forEach(function(j){ tags += '<span class="tag">' + esc(j) + "</span>"; });
+    if (it.tipe === "penuh") tags += '<span class="tag penuh">Beasiswa penuh</span>';
+    else if (it.tipe === "parsial") tags += '<span class="tag parsial">Parsial</span>';
     if (!it.pasti) tags += '<span class="tag est">Perkiraan</span>';
 
     var h = '<article class="row ' + kelasRow(it) + " " + regionCls(it) + '"><div class="stripe"></div><div class="body">'
@@ -652,7 +660,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
   }
 
   function formHtml(it){
-    var v = it || { id:"", nama:"", org:"", negara:"", region:"lain", jenjang:["S2"], buka:"", tutup:"",
+    var v = it || { id:"", nama:"", org:"", negara:"", region:"lain", tipe:"penuh", jenjang:["S2"], buka:"", tutup:"",
                     presisi:"hari", pasti:true, jam:"", link:"", syarat:[], catatan:"" };
     function opt(val, label, cur){ return '<option value="' + esc(val) + '"' + (cur === val ? " selected" : "") + ">" + esc(label) + "</option>"; }
     var jch = "";
@@ -667,6 +675,8 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       + '<div class="fld"><label for="f-region">Warna wilayah</label><select id="f-region">'
         + REGIONS.map(function(r){ return opt(r[0], r[1], v.region || "lain"); }).join("")
         + opt("lain", "Lainnya", v.region || "lain") + "</select></div>"
+      + '<div class="fld"><label for="f-tipe">Jenis pendanaan</label><select id="f-tipe">'
+        + opt("penuh", "Beasiswa penuh", v.tipe || "penuh") + opt("parsial", "Parsial", v.tipe || "penuh") + "</select></div>"
       + '<div class="fld wide"><label>Jenjang</label><div>' + jch + "</div></div>"
       + '<div class="fld"><label for="f-buka">Tanggal buka</label><input id="f-buka" type="date" value="' + esc(v.buka) + '"></div>'
       + '<div class="fld"><label for="f-tutup">Tanggal tutup</label><input id="f-tutup" type="date" value="' + esc(v.tutup) + '"></div>'
@@ -713,6 +723,7 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       org: (document.getElementById("f-org").value || "").trim(),
       negara: (document.getElementById("f-negara").value || "").trim(),
       region: document.getElementById("f-region").value,
+      tipe: document.getElementById("f-tipe").value,
       jenjang: jen,
       buka: document.getElementById("f-buka").value || "",
       tutup: document.getElementById("f-tutup").value || "",
@@ -772,7 +783,9 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
       render(); return;
     }
     if (b.dataset.filter){
-      if (b.dataset.filter === "status") filterStatus = b.dataset.val; else filterJenjang = b.dataset.val;
+      if (b.dataset.filter === "status") filterStatus = b.dataset.val;
+      else if (b.dataset.filter === "jenjang") filterJenjang = b.dataset.val;
+      else filterDana = b.dataset.val;
       render(); return;
     }
 

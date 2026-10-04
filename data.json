@@ -75,7 +75,9 @@
       "org": "Pemerintah Inggris (FCDO)",
       "negara": "Inggris",
       "region": "uk",
-      "jenjang": ["S2"],
+      "jenjang": [
+        "S2"
+      ],
       "buka": "2026-08-04",
       "tutup": "2026-10-06",
       "presisi": "hari",
@@ -90,7 +92,8 @@
         "Belum pernah menerima beasiswa yang didanai Pemerintah Inggris",
         "Sertifikat bahasa Inggris boleh menyusul, bukan syarat saat mendaftar"
       ],
-      "catatan": "Hasil diumumkan Juni 2027, kuliah mulai September 2027. Seleksi menilai kepemimpinan, jaringan, dan kejelasan rencana karier setelah pulang."
+      "catatan": "Hasil diumumkan Juni 2027, kuliah mulai September 2027. Seleksi menilai kepemimpinan, jaringan, dan kejelasan rencana karier setelah pulang.",
+      "tipe": "penuh"
     },
     {
       "id": "daad-epos-2728",
@@ -98,7 +101,10 @@
       "org": "DAAD Jerman",
       "negara": "Jerman",
       "region": "eropa",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-08-01",
       "tutup": "2026-10-15",
       "presisi": "hari",
@@ -112,7 +118,8 @@
         "Sertifikat bahasa Inggris atau Jerman sesuai program",
         "Lulus S1 tidak lebih dari 6 tahun sebelum mendaftar"
       ],
-      "catatan": "Deadline berbeda per program, 15 Oktober adalah yang paling umum. Pendaftaran dilakukan satu tahun sebelum kuliah dimulai, jadi ini untuk masuk Oktober 2027."
+      "catatan": "Deadline berbeda per program, 15 Oktober adalah yang paling umum. Pendaftaran dilakukan satu tahun sebelum kuliah dimulai, jadi ini untuk masuk Oktober 2027.",
+      "tipe": "penuh"
     },
     {
       "id": "orange-tulip-2027",
@@ -120,7 +127,10 @@
       "org": "Nuffic Neso Indonesia",
       "negara": "Belanda",
       "region": "eropa",
-      "jenjang": ["S1", "S2"],
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
       "buka": "2026-09-01",
       "tutup": "2026-11-15",
       "presisi": "hari",
@@ -134,7 +144,8 @@
         "Sertifikat IELTS atau TOEFL sesuai syarat kampus tujuan",
         "Beasiswa parsial, jarang menutup seluruh biaya"
       ],
-      "catatan": "Khusus pelamar Indonesia, dikelola Neso Jakarta. Tiap kampus punya kuota dan syarat sendiri, baca daftar kampusnya dulu sebelum mendaftar."
+      "catatan": "Khusus pelamar Indonesia, dikelola Neso Jakarta. Tiap kampus punya kuota dan syarat sendiri, baca daftar kampusnya dulu sebelum mendaftar.",
+      "tipe": "parsial"
     },
     {
       "id": "stipendium-2728",
@@ -142,7 +153,11 @@
       "org": "Tempus Public Foundation",
       "negara": "Hungaria",
       "region": "eropa",
-      "jenjang": ["S1", "S2", "S3"],
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
       "buka": "2026-11-01",
       "tutup": "2027-01-15",
       "presisi": "hari",
@@ -156,7 +171,8 @@
         "Sertifikat kemampuan bahasa Inggris sesuai syarat program",
         "Memenuhi batas usia yang berbeda per jenjang"
       ],
-      "catatan": "Siklus 2027/2028. Tanggal buka November 2026 masih perkiraan, tanggal tutup 15 Januari 2027 sudah disebut resmi. Jalur nominasi Indonesia punya tenggat sendiri yang lebih awal, cek terpisah."
+      "catatan": "Siklus 2027/2028. Tanggal buka November 2026 masih perkiraan, tanggal tutup 15 Januari 2027 sudah disebut resmi. Jalur nominasi Indonesia punya tenggat sendiri yang lebih awal, cek terpisah.",
+      "tipe": "penuh"
     },
     {
       "id": "taiwan-icdf-2027",
@@ -164,7 +180,11 @@
       "org": "International Cooperation and Development Fund",
       "negara": "Taiwan",
       "region": "asiatimur",
-      "jenjang": ["S1", "S2", "S3"],
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
       "buka": "2026-12-01",
       "tutup": "2027-03-15",
       "presisi": "hari",
@@ -178,7 +198,8 @@
         "Sertifikat bahasa Inggris sesuai syarat kampus",
         "Sehat jasmani dan rohani"
       ],
-      "catatan": "Beasiswa penuh termasuk tiket, uang saku bulanan, dan asrama. Daftar program terbatas, cek katalog ICDF sebelum memilih kampus."
+      "catatan": "Beasiswa penuh termasuk tiket, uang saku bulanan, dan asrama. Daftar program terbatas, cek katalog ICDF sebelum memilih kampus.",
+      "tipe": "penuh"
     },
     {
       "id": "turkiye-burslari-2027",
@@ -186,7 +207,11 @@
       "org": "Pemerintah Turki",
       "negara": "Turki",
       "region": "turki",
-      "jenjang": ["S1", "S2", "S3"],
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
       "buka": "2027-01-10",
       "tutup": "2027-02-20",
       "presisi": "hari",
@@ -200,7 +225,8 @@
         "Gratis kursus bahasa Turki satu tahun sebelum kuliah",
         "Satu jendela pendaftaran per tahun, hanya 41 hari"
       ],
-      "catatan": "Jendelanya pendek dan tidak dibuka dua kali. Siapkan dokumen dari Desember, karena Februari sudah tutup."
+      "catatan": "Jendelanya pendek dan tidak dibuka dua kali. Siapkan dokumen dari Desember, karena Februari sudah tutup.",
+      "tipe": "penuh"
     },
     {
       "id": "sisgp-2728",
@@ -208,7 +234,9 @@
       "org": "Swedish Institute",
       "negara": "Swedia",
       "region": "eropa",
-      "jenjang": ["S2"],
+      "jenjang": [
+        "S2"
+      ],
       "buka": "2027-02-09",
       "tutup": "2027-02-25",
       "presisi": "hari",
@@ -222,7 +250,8 @@
         "Dua surat referensi",
         "Portal SI baru dibuka 9 sampai 25 Februari, setelah pendaftaran kampus"
       ],
-      "catatan": "Dua tahap terpisah dan ini yang paling sering bikin gagal: kalau lewat 15 Januari di University Admissions, pendaftaran SI-mu otomatis gugur meski portalnya masih buka."
+      "catatan": "Dua tahap terpisah dan ini yang paling sering bikin gagal: kalau lewat 15 Januari di University Admissions, pendaftaran SI-mu otomatis gugur meski portalnya masih buka.",
+      "tipe": "penuh"
     },
     {
       "id": "manaaki-nz-2027",
@@ -230,7 +259,10 @@
       "org": "Pemerintah Selandia Baru (MFAT)",
       "negara": "Selandia Baru",
       "region": "oseania",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2027-03-01",
       "tutup": "2027-04-10",
       "presisi": "hari",
@@ -244,7 +276,8 @@
         "Bersedia kembali ke Indonesia minimal 2 tahun setelah lulus",
         "IELTS minimal 6.5 untuk sebagian besar program"
       ],
-      "catatan": "Beasiswa penuh termasuk tunjangan hidup mingguan NZD 615, tiket pulang pergi, asuransi, dan dana riset untuk pascasarjana."
+      "catatan": "Beasiswa penuh termasuk tunjangan hidup mingguan NZD 615, tiket pulang pergi, asuransi, dan dana riset untuk pascasarjana.",
+      "tipe": "penuh"
     },
     {
       "id": "moe-taiwan-2027",
@@ -252,7 +285,11 @@
       "org": "Kementerian Pendidikan Taiwan",
       "negara": "Taiwan",
       "region": "asiatimur",
-      "jenjang": ["S1", "S2", "S3"],
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
       "buka": "2027-02-01",
       "tutup": "2027-04-30",
       "presisi": "hari",
@@ -266,7 +303,8 @@
         "Bukan mahasiswa pertukaran atau alumni program Taiwan sebelumnya",
         "Berbeda dari Taiwan ICDF, bisa mendaftar keduanya"
       ],
-      "catatan": "Jendela pendaftaran sama setiap tahun, 1 Februari sampai 30 April. Termasuk kursus bahasa Mandarin bagi yang mengambil program berbahasa Mandarin."
+      "catatan": "Jendela pendaftaran sama setiap tahun, 1 Februari sampai 30 April. Termasuk kursus bahasa Mandarin bagi yang mengambil program berbahasa Mandarin.",
+      "tipe": "penuh"
     },
     {
       "id": "erasmus-mundus-2728",
@@ -274,7 +312,9 @@
       "org": "Komisi Eropa",
       "negara": "Eropa (multi-negara)",
       "region": "eropa",
-      "jenjang": ["S2"],
+      "jenjang": [
+        "S2"
+      ],
       "buka": "2026-10-01",
       "tutup": "2027-01-31",
       "presisi": "bulan",
@@ -288,7 +328,8 @@
         "Maksimal mendaftar 3 program dalam satu siklus",
         "Belum pernah menerima beasiswa Erasmus Mundus sebelumnya"
       ],
-      "catatan": "Tidak ada satu deadline. Tiap program punya portal dan tanggalnya sendiri, mayoritas tutup Januari sampai Februari 2027. 37 program baru diumumkan untuk angkatan September 2027."
+      "catatan": "Tidak ada satu deadline. Tiap program punya portal dan tanggalnya sendiri, mayoritas tutup Januari sampai Februari 2027. 37 program baru diumumkan untuk angkatan September 2027.",
+      "tipe": "penuh"
     },
     {
       "id": "gates-cambridge-2027",
@@ -296,7 +337,10 @@
       "org": "University of Cambridge",
       "negara": "Inggris",
       "region": "uk",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-09-01",
       "tutup": "2027-01-06",
       "presisi": "bulan",
@@ -310,7 +354,8 @@
         "Dinilai pada empat hal: mutu akademik, kecocokan program, kepemimpinan, dan komitmen memperbaiki hidup orang lain",
         "Untuk PhD, proposal riset dan kecocokan dengan calon supervisor sangat menentukan"
       ],
-      "catatan": "BELUM DIVERIFIKASI. Deadline mengikuti deadline kursus masing-masing di Cambridge, umumnya awal Desember sampai awal Januari dan berbeda per departemen. Cek halaman kursusmu sendiri."
+      "catatan": "BELUM DIVERIFIKASI. Deadline mengikuti deadline kursus masing-masing di Cambridge, umumnya awal Desember sampai awal Januari dan berbeda per departemen. Cek halaman kursusmu sendiri.",
+      "tipe": "penuh"
     },
     {
       "id": "clarendon-2027",
@@ -318,7 +363,10 @@
       "org": "University of Oxford",
       "negara": "Inggris",
       "region": "uk",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-09-01",
       "tutup": "2027-01-08",
       "presisi": "bulan",
@@ -332,7 +380,8 @@
         "Terbuka untuk semua kewarganegaraan dan semua bidang studi",
         "Harus mendaftar sebelum tenggat pendanaan kursus, bukan tenggat akhir kursus"
       ],
-      "catatan": "BELUM DIVERIFIKASI. Deadline mengikuti kursus, umumnya Desember sampai Januari. Perhatikan bedanya tenggat pendanaan dan tenggat pendaftaran biasa. Cek halaman kursusmu sendiri."
+      "catatan": "BELUM DIVERIFIKASI. Deadline mengikuti kursus, umumnya Desember sampai Januari. Perhatikan bedanya tenggat pendanaan dan tenggat pendaftaran biasa. Cek halaman kursusmu sendiri.",
+      "tipe": "penuh"
     },
     {
       "id": "fulbright-2728",
@@ -340,7 +389,10 @@
       "org": "AMINEF",
       "negara": "Amerika Serikat",
       "region": "amerika",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-10-15",
       "tutup": "2027-02-15",
       "presisi": "bulan",
@@ -354,7 +406,8 @@
         "Berkomitmen kembali ke Indonesia setelah studi",
         "Bidang klinis dan perawatan pasien tidak termasuk"
       ],
-      "catatan": "Pola tahunan: buka pertengahan Oktober, tutup pertengahan Februari. Siklus sebelumnya berjalan 15 Oktober 2025 sampai 18 Februari 2026. Angka IPK dan skor bisa berubah tiap siklus, cek AMINEF."
+      "catatan": "Pola tahunan: buka pertengahan Oktober, tutup pertengahan Februari. Siklus sebelumnya berjalan 15 Oktober 2025 sampai 18 Februari 2026. Angka IPK dan skor bisa berubah tiap siklus, cek AMINEF.",
+      "tipe": "penuh"
     },
     {
       "id": "brunei-bdgs-2728",
@@ -362,7 +415,11 @@
       "org": "Kementerian Luar Negeri Brunei",
       "negara": "Brunei",
       "region": "asiatenggara",
-      "jenjang": ["S1", "S2", "S3"],
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
       "buka": "2026-12-15",
       "tutup": "2027-02-15",
       "presisi": "bulan",
@@ -376,7 +433,8 @@
         "Sertifikat bahasa Inggris sesuai syarat kampus",
         "Beasiswa penuh termasuk tiket, uang saku, dan akomodasi"
       ],
-      "catatan": "Siklus 2026/2027 tutup 15 Februari 2026. Tanggal 2027 mengikuti pola yang sama dan belum diumumkan. Dekat, murah secara biaya hidup, dan pesaingnya jauh lebih sedikit dari tujuan Eropa."
+      "catatan": "Siklus 2026/2027 tutup 15 Februari 2026. Tanggal 2027 mengikuti pola yang sama dan belum diumumkan. Dekat, murah secara biaya hidup, dan pesaingnya jauh lebih sedikit dari tujuan Eropa.",
+      "tipe": "penuh"
     },
     {
       "id": "gks-g-2027",
@@ -384,7 +442,10 @@
       "org": "NIIED, Pemerintah Korea",
       "negara": "Korea Selatan",
       "region": "asiatimur",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2027-02-01",
       "tutup": "2027-03-20",
       "presisi": "bulan",
@@ -398,7 +459,8 @@
         "Dua jalur: lewat kedutaan atau lewat kampus, pilih salah satu",
         "Termasuk satu tahun kursus bahasa Korea sebelum kuliah"
       ],
-      "catatan": "Jalur pascasarjana, berbeda dari GKS-U untuk S1 yang tutup September. Tanggal pastinya diumumkan NIIED sekitar Januari."
+      "catatan": "Jalur pascasarjana, berbeda dari GKS-U untuk S1 yang tutup September. Tanggal pastinya diumumkan NIIED sekitar Januari.",
+      "tipe": "penuh"
     },
     {
       "id": "mext-undergrad-2028",
@@ -406,7 +468,9 @@
       "org": "Kedutaan Besar Jepang",
       "negara": "Jepang",
       "region": "asiatimur",
-      "jenjang": ["S1"],
+      "jenjang": [
+        "S1"
+      ],
       "buka": "2027-04-01",
       "tutup": "2027-05-25",
       "presisi": "bulan",
@@ -420,7 +484,8 @@
         "Termasuk satu tahun persiapan bahasa Jepang",
         "Jalur G to G lewat Kedutaan Jepang di Jakarta"
       ],
-      "catatan": "Siklus sebelumnya tutup 25 Mei 2026. Tanggal 2027 perkiraan dari pola yang sama. Berbeda dari jalur Research Students untuk pascasarjana."
+      "catatan": "Siklus sebelumnya tutup 25 Mei 2026. Tanggal 2027 perkiraan dari pola yang sama. Berbeda dari jalur Research Students untuk pascasarjana.",
+      "tipe": "penuh"
     },
     {
       "id": "lpdp-2027-t1",
@@ -428,7 +493,10 @@
       "org": "Kementerian Keuangan RI",
       "negara": "Dalam & luar negeri",
       "region": "indonesia",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2027-01-15",
       "tutup": "2027-02-20",
       "presisi": "bulan",
@@ -443,7 +511,8 @@
         "LoA tidak wajib untuk semua jalur, tapi sangat membantu",
         "Seleksi tiga tahap: administrasi, bakat skolastik, lalu substansi"
       ],
-      "catatan": "JADWAL 2027 BELUM DIUMUMKAN RESMI per September 2026. Tanggal di sini murni pola tahun sebelumnya. Pembanding: Tahap 2 2026 berjalan 30 Juni sampai 31 Juli 2026. Jangan pakai untuk perencanaan final."
+      "catatan": "JADWAL 2027 BELUM DIUMUMKAN RESMI per September 2026. Tanggal di sini murni pola tahun sebelumnya. Pembanding: Tahap 2 2026 berjalan 30 Juni sampai 31 Juli 2026. Jangan pakai untuk perencanaan final.",
+      "tipe": "penuh"
     },
     {
       "id": "lpdp-2027-t2",
@@ -451,7 +520,10 @@
       "org": "Kementerian Keuangan RI",
       "negara": "Dalam & luar negeri",
       "region": "indonesia",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2027-06-25",
       "tutup": "2027-07-31",
       "presisi": "bulan",
@@ -464,7 +536,8 @@
         "Kuota dan daftar kampus tujuan bisa berbeda antar tahap",
         "Perhatikan jadwal mulai kuliah, Tahap 2 biasanya untuk intake tahun berikutnya"
       ],
-      "catatan": "Perkiraan dari pola. Tahap 2 2026 berjalan 30 Juni sampai 31 Juli 2026, jadi Tahap 2 2027 kemungkinan di jendela yang sama."
+      "catatan": "Perkiraan dari pola. Tahap 2 2026 berjalan 30 Juni sampai 31 Juli 2026, jadi Tahap 2 2027 kemungkinan di jendela yang sama.",
+      "tipe": "penuh"
     },
     {
       "id": "great-scholarships-2728",
@@ -472,7 +545,9 @@
       "org": "British Council dan kampus Inggris",
       "negara": "Inggris",
       "region": "uk",
-      "jenjang": ["S2"],
+      "jenjang": [
+        "S2"
+      ],
       "buka": "2027-01-01",
       "tutup": "2027-05-31",
       "presisi": "bulan",
@@ -486,7 +561,8 @@
         "Berlaku untuk satu tahun akademik program master",
         "Tiap kampus punya kuota, bidang studi, dan deadline sendiri"
       ],
-      "catatan": "Tidak ada satu tanggal. Deadline berbeda per kampus, umumnya tersebar antara Januari dan Juni. Buka daftar kampus peserta di situs British Council lalu cek satu per satu."
+      "catatan": "Tidak ada satu tanggal. Deadline berbeda per kampus, umumnya tersebar antara Januari dan Juni. Buka daftar kampus peserta di situs British Council lalu cek satu per satu.",
+      "tipe": "parsial"
     },
     {
       "id": "bim-2027",
@@ -494,7 +570,10 @@
       "org": "Puspresnas Kemendikbud",
       "negara": "Dalam & luar negeri",
       "region": "indonesia",
-      "jenjang": ["S1", "S2"],
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
       "buka": "2027-03-01",
       "tutup": "2027-04-15",
       "presisi": "bulan",
@@ -508,7 +587,8 @@
         "Batas usia dan syarat prestasi berbeda per jalur",
         "Untuk siswa dan lulusan berprestasi, bukan jalur umum"
       ],
-      "catatan": "Perkiraan. BIM biasanya buka dua kali setahun, sekitar Maret dan Oktober, dengan Oktober untuk jalur Non Gelar. Jadwal resmi 2027 belum terbit."
+      "catatan": "Perkiraan. BIM biasanya buka dua kali setahun, sekitar Maret dan Oktober, dengan Oktober untuk jalur Non Gelar. Jadwal resmi 2027 belum terbit.",
+      "tipe": "penuh"
     },
     {
       "id": "aas-2028",
@@ -516,7 +596,10 @@
       "org": "DFAT, Pemerintah Australia",
       "negara": "Australia",
       "region": "oseania",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2027-02-01",
       "tutup": "2027-04-30",
       "presisi": "bulan",
@@ -531,7 +614,8 @@
         "Bersedia kembali ke Indonesia minimal dua tahun setelah lulus",
         "Ada pelatihan bahasa sebelum berangkat bagi yang skornya belum cukup"
       ],
-      "catatan": "Intake 2027 sudah tutup, berjalan 1 Februari sampai 30 April 2026 pukul 11:00 WIB. Intake 2028 diperkirakan mengikuti pola yang sama lewat portal OASIS."
+      "catatan": "Intake 2027 sudah tutup, berjalan 1 Februari sampai 30 April 2026 pukul 11:00 WIB. Intake 2028 diperkirakan mengikuti pola yang sama lewat portal OASIS.",
+      "tipe": "penuh"
     },
     {
       "id": "mext-research-2028",
@@ -539,7 +623,10 @@
       "org": "Kedutaan Besar Jepang",
       "negara": "Jepang",
       "region": "asiatimur",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2027-03-01",
       "tutup": "2027-04-22",
       "presisi": "bulan",
@@ -554,7 +641,8 @@
         "Mengikuti ujian tertulis bahasa Inggris dan Jepang, lalu wawancara",
         "Jalur G to G lewat Kedutaan Jepang, berbeda dari jalur U to U lewat kampus"
       ],
-      "catatan": "Siklus 2027 tutup 22 April 2026. Perkiraan siklus berikutnya mengikuti pola yang sama sekitar April 2027."
+      "catatan": "Siklus 2027 tutup 22 April 2026. Perkiraan siklus berikutnya mengikuti pola yang sama sekitar April 2027.",
+      "tipe": "penuh"
     },
     {
       "id": "gks-2027-s1",
@@ -562,7 +650,9 @@
       "org": "NIIED, Pemerintah Korea",
       "negara": "Korea Selatan",
       "region": "asiatimur",
-      "jenjang": ["S1"],
+      "jenjang": [
+        "S1"
+      ],
       "buka": "2026-09-15",
       "tutup": "2026-09-30",
       "presisi": "hari",
@@ -577,7 +667,8 @@
         "Sehat jasmani dan rohani",
         "Belum pernah menerima beasiswa GKS sebelumnya"
       ],
-      "catatan": "Sudah tutup. Jalur kedutaan 15 sampai 30 September 2026. Hasil akhir dijadwalkan 7 Januari 2027. Dicantumkan supaya kamu tahu polanya untuk siklus berikutnya."
+      "catatan": "Sudah tutup. Jalur kedutaan 15 sampai 30 September 2026. Hasil akhir dijadwalkan 7 Januari 2027. Dicantumkan supaya kamu tahu polanya untuk siklus berikutnya.",
+      "tipe": "penuh"
     },
     {
       "id": "lpdp-2026-t2",
@@ -585,7 +676,10 @@
       "org": "Kementerian Keuangan RI",
       "negara": "Dalam & luar negeri",
       "region": "indonesia",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-06-30",
       "tutup": "2026-07-31",
       "presisi": "hari",
@@ -598,7 +692,8 @@
         "Esai komitmen kembali ke Indonesia",
         "Surat rekomendasi dari akademisi atau atasan"
       ],
-      "catatan": "Sudah tutup. Dicantumkan sebagai pembanding: inilah jendela nyata Tahap 2 di 2026, dan jadi dasar perkiraan jadwal 2027."
+      "catatan": "Sudah tutup. Dicantumkan sebagai pembanding: inilah jendela nyata Tahap 2 di 2026, dan jadi dasar perkiraan jadwal 2027.",
+      "tipe": "penuh"
     },
     {
       "id": "aas-2027-tutup",
@@ -606,7 +701,10 @@
       "org": "DFAT, Pemerintah Australia",
       "negara": "Australia",
       "region": "oseania",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-02-01",
       "tutup": "2026-04-30",
       "presisi": "hari",
@@ -618,7 +716,8 @@
         "Pendaftaran lewat portal OASIS",
         "Ada jalur khusus daerah fokus, disabilitas, dan perempuan"
       ],
-      "catatan": "Sudah tutup. Dicantumkan sebagai pembanding untuk memperkirakan jendela intake 2028."
+      "catatan": "Sudah tutup. Dicantumkan sebagai pembanding untuk memperkirakan jendela intake 2028.",
+      "tipe": "penuh"
     },
     {
       "id": "mext-research-2027-tutup",
@@ -626,7 +725,10 @@
       "org": "Kedutaan Besar Jepang",
       "negara": "Jepang",
       "region": "asiatimur",
-      "jenjang": ["S2", "S3"],
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
       "buka": "2026-03-01",
       "tutup": "2026-04-22",
       "presisi": "hari",
@@ -637,7 +739,173 @@
         "Jendela nyata: tutup 22 April 2026",
         "Ujian tertulis dan wawancara di Kedutaan Jepang Jakarta"
       ],
-      "catatan": "Sudah tutup. Dicantumkan sebagai pembanding untuk memperkirakan jendela siklus berikutnya."
+      "catatan": "Sudah tutup. Dicantumkan sebagai pembanding untuk memperkirakan jendela siklus berikutnya.",
+      "tipe": "penuh"
+    },
+    {
+      "id": "unimelb-intl-s1-2027",
+      "nama": "Melbourne International Undergraduate Scholarship",
+      "org": "University of Melbourne",
+      "negara": "Australia",
+      "region": "oseania",
+      "tipe": "parsial",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-08-12",
+      "tutup": "2026-10-31",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://scholarships.unimelb.edu.au/",
+      "syarat": [
+        "Tidak ada formulir terpisah, semua pelamar yang dapat unconditional offer otomatis dipertimbangkan",
+        "Syarat kewarganegaraan: negara dengan GDP per kapita di bawah USD 10.000, Indonesia memenuhi",
+        "Potongan 25 persen biaya kuliah selama masa studi, sekitar 1.000 penerima",
+        "Tanggal 31 Oktober 2026 adalah tenggat ADMISI untuk Semester 1 2027, bukan tenggat beasiswa terpisah"
+      ],
+      "catatan": "Sudah diverifikasi. Ini beasiswa parsial, bukan beasiswa penuh. Kamu tetap menanggung 75 persen biaya kuliah plus biaya hidup di Melbourne."
+    },
+    {
+      "id": "stust-2027",
+      "nama": "STUST Scholarship",
+      "org": "Southern Taiwan University of Science and Technology",
+      "negara": "Taiwan",
+      "region": "asiatimur",
+      "tipe": "parsial",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-15",
+      "tutup": "2026-11-30",
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "link": "https://eng.stust.edu.tw/",
+      "syarat": [
+        "Mendaftar langsung ke kampus, bukan lewat lembaga pemerintah",
+        "Besaran bantuan berbeda per jenjang dan per fakultas",
+        "Umumnya berupa potongan biaya kuliah plus uang saku bulanan"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga, belum dicek ke situs resmi kampus. Konfirmasi dulu sebelum mengandalkan tanggal ini."
+    },
+    {
+      "id": "mingchuan-2027",
+      "nama": "Ming Chuan University Living and Learning Assistantship",
+      "org": "Ming Chuan University",
+      "negara": "Taiwan",
+      "region": "asiatimur",
+      "tipe": "parsial",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-08-01",
+      "tutup": "2026-10-15",
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "link": "https://web.mcu.edu.tw/en",
+      "syarat": [
+        "Lulusan SMA sederajat, mendaftar langsung ke kampus",
+        "Berbentuk bantuan kerja dan tinggal, bukan beasiswa penuh",
+        "Program berbahasa Inggris tersedia"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga. Cek situs resmi kampus dulu."
+    },
+    {
+      "id": "cycu-2027",
+      "nama": "Chung Yuan Christian University Scholarship",
+      "org": "Chung Yuan Christian University",
+      "negara": "Taiwan",
+      "region": "asiatimur",
+      "tipe": "parsial",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-08-01",
+      "tutup": "2026-10-15",
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "link": "https://oia.cycu.edu.tw/",
+      "syarat": [
+        "Lulusan SMA sederajat, mendaftar langsung ke kampus",
+        "Umumnya potongan biaya kuliah, besarannya bertingkat sesuai nilai",
+        "Sertifikat bahasa Inggris sesuai syarat program"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga. Cek situs resmi kampus dulu."
+    },
+    {
+      "id": "latrobe-high-achiever-2027",
+      "nama": "La Trobe High Achiever Scholarship",
+      "org": "La Trobe University",
+      "negara": "Australia",
+      "region": "oseania",
+      "tipe": "parsial",
+      "jenjang": [
+        "S1",
+        "S2"
+      ],
+      "buka": "2026-08-12",
+      "tutup": "2026-12-31",
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.latrobe.edu.au/scholarships",
+      "syarat": [
+        "Mendaftar langsung ke kampus, penilaian berbasis nilai akademik",
+        "Berbentuk potongan biaya kuliah, bukan beasiswa penuh",
+        "Berlaku untuk S1 dan S2"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga. Cek situs resmi kampus dulu."
+    },
+    {
+      "id": "csu-intl-support-2027",
+      "nama": "Charles Sturt International Student Support Scholarship",
+      "org": "Charles Sturt University",
+      "negara": "Australia",
+      "region": "oseania",
+      "tipe": "parsial",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-08-12",
+      "tutup": "2026-12-31",
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "link": "https://study.csu.edu.au/international/scholarships",
+      "syarat": [
+        "Mendaftar langsung ke kampus",
+        "Berbentuk bantuan biaya, bukan beasiswa penuh",
+        "Syarat akademik dan kuota ditentukan kampus"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga. Cek situs resmi kampus dulu."
+    },
+    {
+      "id": "boustany-mba-2027",
+      "nama": "Boustany Foundation MBA Scholarship",
+      "org": "Boustany Foundation",
+      "negara": "Amerika Serikat / Inggris",
+      "region": "amerika",
+      "tipe": "penuh",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-08-12",
+      "tutup": "2027-05-31",
+      "presisi": "hari",
+      "pasti": false,
+      "jam": "",
+      "link": "https://boustany-foundation.org/scholarship-programs/",
+      "syarat": [
+        "Khusus program MBA, bukan master umum",
+        "Harus sudah diterima di kampus mitra yayasan",
+        "Termasuk magang di Boustany Foundation",
+        "Diberikan dua tahun sekali, cek siklusnya"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Tanggal dari daftar agregator pihak ketiga. Program sangat spesifik untuk MBA, periksa kampus mitranya dulu."
     }
   ]
 }
