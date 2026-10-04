@@ -122,8 +122,11 @@ h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:70
 .cell.wk .dnum{color:var(--ink-3)}
 .ev{display:block;width:100%;font-size:10.5px;line-height:1.25;padding:2px 4px;border-radius:2px;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;background:var(--surface-2);color:var(--ink-2);border-left:2px solid currentColor}
 .ev.lebih{background:var(--closed-bg);color:var(--closed);border-left-color:var(--closed)}
-.dots{display:none;gap:3px;flex-wrap:wrap}
-.dot{width:6px;height:6px;border-radius:999px;background:currentColor}
+.dots{display:none;gap:3px;flex-wrap:wrap;align-items:center;margin-top:1px}
+.dotwrap{display:inline-flex;color:var(--region,var(--ink-3))}
+.dotwrap.kosong .dot{background:none;border:1.5px solid currentColor}
+.dot{width:6px;height:6px;border-radius:999px;background:currentColor;display:block}
+.lebihdot{font-family:var(--font-mono);font-size:9px;color:var(--ink-3);line-height:1}
 .months{display:flex;flex-wrap:wrap;gap:6px;padding:11px 12px;border-top:1px solid var(--line);background:var(--surface-2)}
 .months b{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);align-self:center;margin-right:2px}
 .mjump{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:3px 10px;font-size:11.5px;font-family:var(--font-mono)}
@@ -249,6 +252,9 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 .legend{display:flex;flex-wrap:wrap;gap:4px 12px;padding:10px 12px;border-top:1px solid var(--line);background:var(--surface)}
 .lg{display:inline-flex;align-items:center;gap:5px;font-size:10.5px;color:var(--ink-2);font-family:var(--font-mono)}
 .lg i{width:9px;height:9px;border-radius:2px;background:var(--region);display:inline-block}
+.lg i.bulat{border-radius:999px;background:var(--ink-2)}
+.lg i.bulat.rongga{background:none;border:1.5px solid var(--ink-2)}
+.lg.hponly{display:none}
 
 /* peta */
 .map{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
@@ -342,6 +348,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
   .cell{min-height:62px;padding:4px 3px 5px}
   .ev{display:none}
   .dots{display:flex}
+  .lg.hponly{display:inline-flex}
   .stats{grid-template-columns:1fr}
   .row{grid-template-columns:4px 1fr}
   .cd{grid-column:2;padding:0 15px 14px 0;flex-direction:row;align-items:baseline;gap:9px}
@@ -535,7 +542,9 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     }
   }
 
-  function calendarHtml(evs, list){
+  /* catatan: JANGAN beri nama parameter ini "list" — di dalam loop grid ada
+     "var list" yang akan menimpanya karena var itu function-scoped. */
+  function calendarHtml(evs, daftar){
     var first = new Date(Date.UTC(curY, curM, 1));
     var startDow = (first.getUTCDay() + 6) % 7;
     var dim = new Date(Date.UTC(curY, curM + 1, 0)).getUTCDate();
@@ -562,13 +571,17 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
       if (i % 7 >= 5) cls += " wk";
 
       var inner = '<span class="dnum">' + dnum + "</span>", dots = "";
+      /* layar lebar: chip teks. layar HP: titik warna (lihat media query) */
       list.slice(0, 3).forEach(function(e){
         var u = e.tipe === "buka" ? "nanti" : urgensi(e.it);
-        var cls = "ev " + regionCls(e.it) + " u-" + u + (e.tipe === "buka" ? " buka" : "");
-        inner += '<span class="' + cls + '">' + esc((e.tipe === "buka" ? "Buka " : "") + e.it.nama) + "</span>";
-        dots += '<span class="' + cls + '" style="padding:0;border:0;background:none;color:var(--region)"><span class="dot"></span></span>';
+        inner += '<span class="ev ' + regionCls(e.it) + " u-" + u + (e.tipe === "buka" ? " buka" : "") + '">'
+          + esc((e.tipe === "buka" ? "Buka " : "") + e.it.nama) + "</span>";
+      });
+      list.slice(0, 4).forEach(function(e){
+        dots += '<span class="dotwrap ' + regionCls(e.it) + (e.tipe === "buka" ? " kosong" : "") + '"><span class="dot"></span></span>';
       });
       if (list.length > 3) inner += '<span class="ev lebih">+' + (list.length - 3) + " lagi</span>";
+      if (list.length > 4) dots += '<span class="lebihdot">+' + (list.length - 4) + "</span>";
       if (dots) inner += '<span class="dots">' + dots + "</span>";
 
       h += list.length
@@ -591,10 +604,13 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     }
 
     var hadir = {};
-    (list || state.items).forEach(function(it){ hadir[it.region || "lain"] = 1; });
+    (daftar || state.items).forEach(function(it){ hadir[it.region || "lain"] = 1; });
     var lg = "";
     REGIONS.forEach(function(r){ if (hadir[r[0]]) lg += '<span class="lg r-' + r[0] + '"><i></i>' + esc(r[1]) + "</span>"; });
-    if (lg) h += '<div class="legend">' + lg + "</div>";
+    if (lg) h += '<div class="legend">' + lg
+      + '<span class="lg hponly"><i class="bulat"></i>tenggat tutup</span>'
+      + '<span class="lg hponly"><i class="bulat rongga"></i>pendaftaran buka</span>'
+      + "</div>";
     h += "</div>";
 
     var sel = evs[selected] || [];
