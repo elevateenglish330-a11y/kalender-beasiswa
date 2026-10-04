@@ -46,6 +46,20 @@ Jangan mengetik JSON dengan tangan. Satu koma salah dan seluruh halaman kosong.
 
 Kalau clipboard gagal, tombol **Unduh** memberi file `data.json` yang bisa kamu unggah menggantikan yang lama di repo.
 
+## Tiga tampilan
+
+- **Kalender**: grid bulanan, klik tanggal untuk melihat syaratnya.
+- **Daftar**: urut dari tenggat terdekat, dengan filter status, jenjang, dan jenis pendanaan.
+- **Peta**: lingkaran proporsional di koordinat asli tiap negara. Besar lingkaran menunjukkan jumlah beasiswa, warna menunjukkan wilayah, abu berarti tidak ada yang sedang dibuka. Klik lingkaran atau kartu negara untuk menyaring.
+
+Kalau kamu menambah beasiswa dengan negara yang belum pernah ada, lingkarannya tidak muncul dan namanya tampil di keterangan peta sebagai "Belum ada di peta". Untuk menambahnya, buka `index.html`, cari `var KOORD = {`, lalu sisipkan satu baris berisi nama negara persis seperti yang kamu tulis di data, diikuti lintang dan bujurnya:
+
+```js
+"Vietnam":[16.0,107.8],
+```
+
+Lintang dulu, bujur kemudian. Selatan dan barat bernilai negatif.
+
 ## Soal label Perkiraan
 
 Setiap beasiswa punya penanda `pasti`:
