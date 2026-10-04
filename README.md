@@ -89,3 +89,20 @@ Hosting tetap gratis. Yang kamu bayar hanya nama domainnya.
 ## Catatan jujur soal SEO
 
 Kalender sepuluh baris tidak akan mengalahkan Kobi atau Schoters di hasil pencarian. Mereka punya ratusan artikel yang sudah bertahun-tahun terindeks. Nilai nyata memindahkan ini ke domain sendiri ada di tiga hal: link yang kamu miliki sendiri, pratinjau yang rapi saat dibagikan di WhatsApp, dan fondasi kalau suatu saat kamu benar-benar menulis artikel per beasiswa. Peringkat pencarian datang dari tulisan, bukan dari tabel tanggal.
+
+## Tautan langsung
+
+Tambahkan di belakang alamat situs:
+
+| Akhiran | Hasil |
+|---|---|
+| `#kalender` | buka langsung di tampilan kalender |
+| `#daftar` | buka langsung di tampilan daftar |
+| `#peta` | buka langsung di tampilan peta |
+| `#edit` | munculkan panel edit (hanya untukmu) |
+
+Berguna saat membagikan di grup: kirim `#peta` kalau ingin orang melihat sebaran negara, `#daftar` kalau ingin mereka langsung melihat tenggat terdekat.
+
+## Sumber data peta
+
+Batas daratan berasal dari Natural Earth 110m (domain publik), didekode dari TopoJSON dan diproyeksikan equirectangular langsung ke dalam `index.html`. Tidak ada peta pihak ketiga, tidak ada tile server, tidak ada pustaka eksternal. Peta tetap tampil walau jaringan lambat.
