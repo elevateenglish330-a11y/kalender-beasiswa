@@ -1,0 +1,254 @@
+{
+  "updated": "2026-10-04",
+  "kontak": {
+    "nama": "Elevate English",
+    "ig": "elevate.english.id",
+    "wa": "",
+    "catatan": "Mentoring aplikasi beasiswa dan persiapan IELTS. Tutor lulusan UCL."
+  },
+  "items": [
+    {
+      "id": "chevening-2728",
+      "nama": "Chevening",
+      "org": "Pemerintah Inggris (FCDO)",
+      "negara": "Inggris",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-08-04",
+      "tutup": "2026-10-06",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "11:00 UTC / 18:00 WIB",
+      "link": "https://www.chevening.org/",
+      "syarat": [
+        "Warga negara Indonesia dan bersedia kembali minimal 2 tahun setelah lulus",
+        "Sudah punya gelar S1 yang memenuhi syarat masuk pascasarjana di Inggris",
+        "Minimal 2 tahun pengalaman kerja, setara 2.800 jam",
+        "Mendaftar tepat 3 program master di kampus Inggris",
+        "Belum pernah menerima beasiswa yang didanai Pemerintah Inggris",
+        "Sertifikat bahasa Inggris boleh menyusul, bukan syarat saat mendaftar"
+      ],
+      "catatan": "Hasil diumumkan Juni 2027, kuliah mulai September 2027. Seleksi menilai kepemimpinan, jaringan, dan kejelasan rencana karier setelah pulang."
+    },
+    {
+      "id": "gks-2027-s1",
+      "nama": "Global Korea Scholarship (GKS-U)",
+      "org": "NIIED, Pemerintah Korea",
+      "negara": "Korea Selatan",
+      "jenjang": [
+        "S1"
+      ],
+      "buka": "2026-09-15",
+      "tutup": "2026-09-30",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "18:00 KST",
+      "link": "https://www.studyinkorea.go.kr/",
+      "syarat": [
+        "Warga negara Indonesia, begitu juga kedua orang tua",
+        "Lulus atau akan lulus SMA sederajat",
+        "Batas usia umumnya di bawah 25 tahun pada tahun keberangkatan",
+        "Nilai akademik tinggi, umumnya persentil 80 ke atas",
+        "Sehat jasmani dan rohani",
+        "Belum pernah menerima beasiswa GKS sebelumnya"
+      ],
+      "catatan": "Jalur kedutaan, pendaftaran sepenuhnya online. Hasil akhir dijadwalkan 7 Januari 2027. Jalur GKS-G untuk S2 dan S3 biasanya dibuka sekitar Februari sampai Maret."
+    },
+    {
+      "id": "stipendium-2728",
+      "nama": "Stipendium Hungaricum",
+      "org": "Tempus Public Foundation",
+      "negara": "Hungaria",
+      "jenjang": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-11-01",
+      "tutup": "2027-01-15",
+      "presisi": "hari",
+      "pasti": true,
+      "jam": "",
+      "link": "https://stipendiumhungaricum.hu/",
+      "syarat": [
+        "Warga negara Indonesia",
+        "Wajib dinominasikan lewat jalur pemerintah Indonesia, cek Puslapdik Kemendikbud",
+        "Memilih dua program studi dalam satu pendaftaran",
+        "Sertifikat kemampuan bahasa Inggris sesuai syarat program",
+        "Memenuhi batas usia yang berbeda per jenjang"
+      ],
+      "catatan": "Siklus 2027/2028. Tanggal buka November 2026 masih perkiraan, tanggal tutup 15 Januari 2027 sudah disebut resmi. Jalur nominasi Indonesia punya tenggat sendiri yang lebih awal, cek terpisah."
+    },
+    {
+      "id": "erasmus-mundus-2728",
+      "nama": "Erasmus Mundus Joint Masters",
+      "org": "Komisi Eropa",
+      "negara": "Eropa (multi-negara)",
+      "jenjang": [
+        "S2"
+      ],
+      "buka": "2026-10-01",
+      "tutup": "2027-01-31",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.eacea.ec.europa.eu/scholarships/emjmd-catalogue_en",
+      "syarat": [
+        "Sudah punya gelar S1 saat program dimulai",
+        "Syarat detail berbeda total antar program, tidak ada standar tunggal",
+        "Umumnya butuh bukti kemampuan bahasa Inggris",
+        "Maksimal mendaftar 3 program dalam satu siklus",
+        "Belum pernah menerima beasiswa Erasmus Mundus sebelumnya"
+      ],
+      "catatan": "Tidak ada satu deadline. Tiap program punya portal dan tanggalnya sendiri, mayoritas tutup Januari sampai Februari 2027. 37 program baru diumumkan untuk angkatan September 2027."
+    },
+    {
+      "id": "gates-cambridge-2027",
+      "nama": "Gates Cambridge",
+      "org": "University of Cambridge",
+      "negara": "Inggris",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2027-01-06",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.gatescambridge.org/apply/",
+      "syarat": [
+        "Bukan warga negara Inggris",
+        "Mendaftar program pascasarjana penuh waktu di Cambridge",
+        "Tidak ada formulir terpisah, satu aplikasi lewat portal Cambridge",
+        "Dinilai pada empat hal: mutu akademik, kecocokan program, kepemimpinan, dan komitmen memperbaiki hidup orang lain",
+        "Untuk PhD, proposal riset dan kecocokan dengan calon supervisor sangat menentukan"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Deadline mengikuti deadline kursus masing-masing di Cambridge, umumnya awal Desember sampai awal Januari dan berbeda per departemen. Cek halaman kursusmu sendiri sebelum mengandalkan tanggal ini."
+    },
+    {
+      "id": "clarendon-2027",
+      "nama": "Clarendon Fund",
+      "org": "University of Oxford",
+      "negara": "Inggris",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-09-01",
+      "tutup": "2027-01-08",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.ox.ac.uk/clarendon",
+      "syarat": [
+        "Mendaftar program pascasarjana penuh waktu di Oxford",
+        "Tidak ada formulir terpisah, semua pelamar otomatis dipertimbangkan",
+        "Dinilai murni pada keunggulan akademik dan potensi",
+        "Terbuka untuk semua kewarganegaraan dan semua bidang studi",
+        "Harus mendaftar sebelum tenggat pendanaan kursus, bukan tenggat akhir kursus"
+      ],
+      "catatan": "BELUM DIVERIFIKASI. Deadline mengikuti kursus, umumnya Desember sampai Januari. Perhatikan bedanya tenggat pendanaan dan tenggat pendaftaran biasa. Cek halaman kursusmu sendiri."
+    },
+    {
+      "id": "fulbright-2728",
+      "nama": "Fulbright Master's & Doctoral",
+      "org": "AMINEF",
+      "negara": "Amerika Serikat",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2026-10-15",
+      "tutup": "2027-02-15",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.aminef.or.id/grants-for-indonesians/deadlines-timeline/",
+      "syarat": [
+        "Warga negara Indonesia, tidak berstatus penduduk tetap Amerika",
+        "IPK minimal sekitar 3.0 dari skala 4.0",
+        "TOEFL ITP minimal sekitar 550 atau IELTS 6.5 untuk jenjang master, lebih tinggi untuk doktoral",
+        "Berkomitmen kembali ke Indonesia setelah studi",
+        "Bidang klinis dan perawatan pasien tidak termasuk"
+      ],
+      "catatan": "Pola tahunan: buka pertengahan Oktober, tutup pertengahan Februari. Siklus sebelumnya berjalan 15 Oktober 2025 sampai 18 Februari 2026. Angka IPK dan skor bisa berubah tiap siklus, cek AMINEF."
+    },
+    {
+      "id": "lpdp-2027-t1",
+      "nama": "LPDP Tahap 1",
+      "org": "Kementerian Keuangan RI",
+      "negara": "Dalam & luar negeri",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-01-15",
+      "tutup": "2027-02-20",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://lpdp.kemenkeu.go.id/",
+      "syarat": [
+        "Warga negara Indonesia dan sudah menyelesaikan jenjang sebelumnya",
+        "Batas usia dan IPK minimum berbeda per jalur, cek buku panduan tahun berjalan",
+        "Sertifikat bahasa yang masih berlaku, syaratnya berbeda untuk tujuan dalam dan luar negeri",
+        "Surat rekomendasi dan esai komitmen kembali ke Indonesia",
+        "LoA tidak wajib untuk semua jalur, tapi sangat membantu",
+        "Seleksi tiga tahap: administrasi, bakat skolastik, lalu substansi"
+      ],
+      "catatan": "JADWAL 2027 BELUM DIUMUMKAN RESMI per September 2026. Tanggal di sini murni pola tahun sebelumnya: Tahap 1 Januari atau Februari, Tahap 2 Juni atau Juli. Pembanding: Tahap 2 2026 berjalan 30 Juni sampai 31 Juli 2026. Jangan pakai untuk perencanaan final."
+    },
+    {
+      "id": "aas-2028",
+      "nama": "Australia Awards Scholarships",
+      "org": "DFAT, Pemerintah Australia",
+      "negara": "Australia",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-02-01",
+      "tutup": "2027-04-30",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.australiaawardsindonesia.org/",
+      "syarat": [
+        "Warga negara Indonesia dan berdomisili di Indonesia saat mendaftar",
+        "IPK dan skor IELTS minimum berbeda per jalur, ada jalur khusus daerah fokus dan disabilitas",
+        "Punya pengalaman kerja yang relevan dengan bidang prioritas",
+        "Tidak menikah atau bertunangan dengan warga negara Australia atau Selandia Baru",
+        "Bersedia kembali ke Indonesia minimal dua tahun setelah lulus",
+        "Ada pelatihan bahasa sebelum berangkat bagi yang skornya belum cukup"
+      ],
+      "catatan": "Intake 2027 sudah tutup, berjalan 1 Februari sampai 30 April 2026 pukul 11:00 WIB. Intake 2028 diperkirakan mengikuti pola yang sama lewat portal OASIS."
+    },
+    {
+      "id": "mext-research-2028",
+      "nama": "MEXT Research Students",
+      "org": "Kedutaan Besar Jepang",
+      "negara": "Jepang",
+      "jenjang": [
+        "S2",
+        "S3"
+      ],
+      "buka": "2027-03-01",
+      "tutup": "2027-04-22",
+      "presisi": "bulan",
+      "pasti": false,
+      "jam": "",
+      "link": "https://www.id.emb-japan.go.jp/sch.html",
+      "syarat": [
+        "Warga negara Indonesia dengan batas usia umumnya di bawah 35 tahun",
+        "Lulusan S1 atau S2 dengan nilai akademik tinggi",
+        "Mencari dan menghubungi calon supervisor di universitas Jepang",
+        "Menyusun rencana penelitian yang jelas",
+        "Mengikuti ujian tertulis bahasa Inggris dan Jepang, lalu wawancara",
+        "Jalur G to G lewat Kedutaan Jepang, berbeda dari jalur U to U lewat kampus"
+      ],
+      "catatan": "Siklus 2027 tutup 22 April 2026. Perkiraan siklus berikutnya mengikuti pola yang sama sekitar April 2027."
+    }
+  ]
+}

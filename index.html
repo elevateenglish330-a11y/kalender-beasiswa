@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kalender Beasiswa Terupdate dan Terlengkap | Jadwal Beasiswa Luar Negeri 2027</title>
+<meta name="description" content="Kalender beasiswa luar negeri untuk pelamar Indonesia: jadwal dan tenggat pendaftaran Chevening, LPDP, Fulbright, Australia Awards, Erasmus Mundus, MEXT, GKS, Stipendium Hungaricum dan lainnya. Klik tanggal untuk melihat syaratnya.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="./">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalender Beasiswa Terupdate dan Terlengkap">
+<meta property="og:description" content="Jadwal dan tenggat pendaftaran beasiswa luar negeri untuk pelamar Indonesia, diurutkan dari yang paling dekat. Klik tanggal untuk melihat syaratnya.">
+<meta property="og:locale" content="id_ID">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230E1626'/%3E%3Crect x='6' y='9' width='20' height='17' rx='2' fill='%23F0B01E'/%3E%3Crect x='6' y='9' width='20' height='5' fill='%23ffffff' opacity='.28'/%3E%3Crect x='10' y='5' width='3' height='7' rx='1.5' fill='%23F0B01E'/%3E%3Crect x='19' y='5' width='3' height='7' rx='1.5' fill='%23F0B01E'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a wall calendar for deadlines. Month grid on top, the selected day's dossier underneath; an agenda view for scanning across months. */
+:root{
+  color-scheme:light;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#E9ECF1; --surface:#FFFFFF; --surface-2:#F4F6F9; --surface-3:#DFE4EC;
+  --ink:#0E1626; --ink-2:#4C5A70; --ink-3:#78869A;
+  --line:#D3DAE4; --line-strong:#B6C0CE;
+  --accent:#8A5E05; --accent-bright:#F0B01E;
+  --urgent:#A82A1F; --urgent-bg:#FAE7E4;
+  --soon:#845A05; --soon-bg:#FBF1D9;
+  --open:#15654A; --open-bg:#E0F1EA;
+  --closed:#66748A; --closed-bg:#E7EBF1;
+  --font-display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --font-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B111C; --surface:#141C2B; --surface-2:#1B2434; --surface-3:#222D40;
+    --ink:#E7ECF4; --ink-2:#9AA8BD; --ink-3:#73819A;
+    --line:#283347; --line-strong:#3A4761;
+    --accent:#F0B01E; --accent-bright:#F0B01E;
+    --urgent:#FF8276; --urgent-bg:#381916;
+    --soon:#F0B01E; --soon-bg:#312509;
+    --open:#4FD7A0; --open-bg:#0F271E;
+    --closed:#8695AB; --closed-bg:#1A2231;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B111C; --surface:#141C2B; --surface-2:#1B2434; --surface-3:#222D40;
+  --ink:#E7ECF4; --ink-2:#9AA8BD; --ink-3:#73819A;
+  --line:#283347; --line-strong:#3A4761;
+  --accent:#F0B01E; --accent-bright:#F0B01E;
+  --urgent:#FF8276; --urgent-bg:#381916;
+  --soon:#F0B01E; --soon-bg:#312509;
+  --open:#4FD7A0; --open-bg:#0F271E;
+  --closed:#8695AB; --closed-bg:#1A2231;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+img{max-width:100%}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:15px;line-height:1.5;-webkit-font-smoothing:antialiased}
+#app{max-width:900px;margin:0 auto;padding-inline:16px;padding-block:28px 56px}
+h1,h2,h3,h4{margin:0;text-wrap:balance}
+a{color:inherit}
+button{font:inherit;cursor:pointer}
+.mono{font-family:var(--font-mono);font-variant-numeric:tabular-nums}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.mast{display:flex;flex-wrap:wrap;gap:16px;align-items:flex-end;justify-content:space-between;padding-bottom:18px;border-bottom:2px solid var(--ink)}
+.mast-l{min-width:0}
+.eyebrow{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-3);margin-bottom:6px}
+h1{font-family:var(--font-display);font-size:clamp(32px,8vw,46px);font-weight:700;letter-spacing:-.015em;line-height:1}
+.strap{font-family:var(--font-display);font-size:clamp(12.5px,3vw,16px);font-weight:600;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);margin:8px 0 0;line-height:1.2}
+.sub{color:var(--ink-2);font-size:13.5px;margin-top:8px;max-width:48ch}
+.mast-r{display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.stamp{font-family:var(--font-mono);font-size:11px;color:var(--ink-2);border:1px solid var(--line-strong);border-radius:2px;padding:5px 9px;background:var(--surface);white-space:nowrap}
+.stamp b{color:var(--ink);font-weight:600}
+
+.alert{display:flex;gap:11px;align-items:flex-start;margin-top:18px;padding:12px 14px;background:var(--urgent-bg);border-left:3px solid var(--urgent);border-radius:0 3px 3px 0}
+.alert-k{font-family:var(--font-mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--urgent);font-weight:600;padding-top:1px;white-space:nowrap}
+.alert-t{font-size:13.5px;min-width:0}
+
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;margin-top:18px;background:var(--line);border:1px solid var(--line);border-radius:3px;overflow:hidden}
+.stat{background:var(--surface);padding:12px 14px;min-width:0}
+.stat-n{font-family:var(--font-mono);font-size:25px;font-weight:600;line-height:1;letter-spacing:-.02em}
+.stat-l{font-size:11px;color:var(--ink-2);margin-top:5px;line-height:1.3}
+
+.views{display:flex;gap:6px;margin-top:20px}
+.vbtn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);border-radius:3px;padding:7px 15px;font-size:13px}
+.vbtn[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:500}
+
+.cal{margin-top:14px;background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.calnav{display:flex;align-items:center;gap:8px;padding:11px 12px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.calnav h2{font-family:var(--font-display);font-size:20px;font-weight:600;flex:1;min-width:0}
+.nbtn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:3px;width:30px;height:30px;line-height:1;padding:0;font-size:15px;display:grid;place-items:center}
+.nbtn.wide{width:auto;padding:0 11px;font-size:12.5px}
+.dow{display:grid;grid-template-columns:repeat(7,1fr);background:var(--line);gap:1px;border-bottom:1px solid var(--line)}
+.dow span{background:var(--surface-2);text-align:center;padding:7px 2px;font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3)}
+.grid7{display:grid;grid-template-columns:repeat(7,1fr);gap:1px;background:var(--line)}
+.cell{background:var(--surface);min-height:86px;padding:5px 5px 6px;text-align:left;border:0;display:flex;flex-direction:column;gap:3px;min-width:0;color:inherit;font:inherit}
+.cell.pad{background:var(--surface-2)}
+.cell.has{cursor:pointer}
+.cell:not(.has){cursor:default}
+.cell.sel{background:var(--surface-3);box-shadow:inset 0 0 0 2px var(--ink)}
+.dnum{font-family:var(--font-mono);font-size:12px;color:var(--ink-2);line-height:1.4;flex:0 0 auto}
+.cell.today .dnum{background:var(--ink);color:var(--bg);border-radius:999px;width:21px;height:21px;display:grid;place-items:center;font-weight:600}
+.cell.wk .dnum{color:var(--ink-3)}
+.ev{display:block;width:100%;font-size:10.5px;line-height:1.25;padding:2px 4px;border-radius:2px;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border-left:2px solid currentColor}
+.ev.t-urgent{background:var(--urgent-bg);color:var(--urgent)}
+.ev.t-soon{background:var(--soon-bg);color:var(--soon)}
+.ev.t-open{background:var(--open-bg);color:var(--open)}
+.ev.t-closed{background:var(--closed-bg);color:var(--closed)}
+.ev.t-buka{background:var(--surface-2);color:var(--ink-3)}
+.dots{display:none;gap:3px;flex-wrap:wrap}
+.dot{width:6px;height:6px;border-radius:999px;background:currentColor}
+.months{display:flex;flex-wrap:wrap;gap:6px;padding:11px 12px;border-top:1px solid var(--line);background:var(--surface-2)}
+.months b{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-3);align-self:center;margin-right:2px}
+.mjump{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:3px 10px;font-size:11.5px;font-family:var(--font-mono)}
+.mjump[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+
+.detail{margin-top:14px}
+.dhead{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;justify-content:space-between;margin-bottom:10px}
+.dhead h3{font-family:var(--font-display);font-size:19px;font-weight:600}
+.dhead span{font-family:var(--font-mono);font-size:11.5px;color:var(--ink-3)}
+
+.list{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.row{display:grid;grid-template-columns:4px 1fr auto;gap:0 15px;background:var(--surface);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.stripe{background:var(--closed)}
+.row.s-urgent .stripe{background:var(--urgent)}
+.row.s-soon .stripe{background:var(--soon)}
+.row.s-open .stripe{background:var(--open)}
+.row.s-nanti .stripe{background:var(--line-strong)}
+.body{padding:14px 0;min-width:0}
+.ttl{display:flex;flex-wrap:wrap;align-items:baseline;gap:7px}
+.ttl h3{font-family:var(--font-display);font-size:20px;font-weight:600;line-height:1.15}
+.org{font-size:12px;color:var(--ink-3)}
+.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}
+.tag{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--line-strong);color:var(--ink-2);border-radius:2px;padding:2px 6px;background:var(--surface-2)}
+.tag.est{border-style:dashed;border-color:var(--soon);color:var(--soon);background:var(--soon-bg)}
+.dates{display:flex;flex-wrap:wrap;gap:4px 18px;margin-top:11px;font-family:var(--font-mono);font-size:12px;color:var(--ink-2)}
+.dates b{color:var(--ink);font-weight:500}
+.syarat{margin:12px 0 0;padding:11px 13px;background:var(--surface-2);border:1px solid var(--line);border-radius:3px}
+.syarat h4{font-family:var(--font-mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3);margin-bottom:7px}
+.syarat ul{margin:0;padding-left:17px;display:flex;flex-direction:column;gap:4px}
+.syarat li{font-size:13px;color:var(--ink-2)}
+.syarat p{margin:8px 0 0;font-size:11.5px;color:var(--ink-3);font-style:italic}
+.note{font-size:13px;color:var(--ink-2);margin:10px 0 0;max-width:62ch}
+.lnk{display:inline-block;margin-top:10px;font-size:12.5px;color:var(--accent);font-weight:500;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
+.cd{padding:14px 15px 14px 0;display:flex;flex-direction:column;align-items:flex-end;gap:5px;white-space:nowrap}
+.cd-n{font-family:var(--font-mono);font-size:29px;font-weight:600;line-height:1;letter-spacing:-.03em;color:var(--closed)}
+.row.s-urgent .cd-n{color:var(--urgent)}
+.row.s-soon .cd-n{color:var(--soon)}
+.row.s-open .cd-n{color:var(--open)}
+.cd-u{font-family:var(--font-mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3)}
+.pill{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;font-weight:600;border-radius:2px;padding:3px 7px;background:var(--closed-bg);color:var(--closed)}
+.row.s-urgent .pill{background:var(--urgent-bg);color:var(--urgent)}
+.row.s-soon .pill{background:var(--soon-bg);color:var(--soon)}
+.row.s-open .pill{background:var(--open-bg);color:var(--open)}
+.row.closed{opacity:.62}
+.empty{padding:34px 18px;text-align:center;color:var(--ink-3);font-size:13.5px;border:1px dashed var(--line-strong);border-radius:4px;background:var(--surface)}
+
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:5px 12px;font-size:12.5px;line-height:1.3}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:500}
+.sep{width:1px;background:var(--line-strong);margin-inline:4px;align-self:stretch}
+
+.ebar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:18px;padding:12px 14px;background:var(--surface-2);border:1px solid var(--line);border-radius:4px}
+.ebar p{margin:0;font-size:12.5px;color:var(--ink-2);flex:1;min-width:180px}
+.btn{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink);border-radius:3px;padding:7px 13px;font-size:13px;font-weight:500}
+.btn.pri{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.btn.pri[disabled]{opacity:.4;cursor:not-allowed}
+.btn.sm{padding:4px 9px;font-size:11.5px}
+.btn.dgr{color:var(--urgent);border-color:var(--urgent)}
+.rowacts{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.form{background:var(--surface);border:1px solid var(--line-strong);border-radius:4px;padding:16px;margin-top:12px}
+.form h3{font-family:var(--font-display);font-size:17px;margin-bottom:14px}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
+.fld{display:flex;flex-direction:column;gap:5px;min-width:0}
+.fld.wide{grid-column:1/-1}
+.fld label{font-family:var(--font-mono);font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--ink-3)}
+.fld input,.fld select,.fld textarea{font:inherit;font-size:13.5px;background:var(--surface-2);color:var(--ink);border:1px solid var(--line-strong);border-radius:3px;padding:7px 9px;width:100%;min-width:0}
+.fld textarea{resize:vertical;min-height:62px}
+.hint{font-size:11.5px;color:var(--ink-3);margin:12px 0 0}
+.formacts{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.toast{margin-top:12px;padding:10px 13px;border-radius:3px;font-size:13px;border-left:3px solid var(--accent);background:var(--soon-bg)}
+.toast.bad{border-left-color:var(--urgent);background:var(--urgent-bg)}
+.toast.good{border-left-color:var(--open);background:var(--open-bg)}
+.jsonbox{margin-top:12px}
+.jsonbox textarea{width:100%;min-height:150px;font-family:var(--font-mono);font-size:11.5px;background:var(--surface-2);color:var(--ink);border:1px solid var(--line-strong);border-radius:3px;padding:9px}
+
+.foot{margin-top:36px;padding-top:20px;border-top:2px solid var(--ink);display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between}
+.foot-l{min-width:0;max-width:46ch}
+.foot h2{font-family:var(--font-display);font-size:19px;font-weight:600}
+.foot p{margin:7px 0 0;font-size:13px;color:var(--ink-2)}
+.contact{display:flex;flex-direction:column;gap:7px}
+.cline{font-family:var(--font-mono);font-size:12.5px;color:var(--ink-2)}
+.cline b{color:var(--ink);font-weight:500}
+.disc{margin-top:24px;font-size:11.5px;color:var(--ink-3);line-height:1.55;max-width:70ch}
+.boot{padding:50px 18px;text-align:center;color:var(--ink-3);font-family:var(--font-mono);font-size:12.5px}
+
+@media (max-width:640px){
+  .cell{min-height:62px;padding:4px 3px 5px}
+  .ev{display:none}
+  .dots{display:flex}
+  .stats{grid-template-columns:1fr}
+  .row{grid-template-columns:4px 1fr}
+  .cd{grid-column:2;padding:0 15px 14px 0;flex-direction:row;align-items:baseline;gap:9px}
+  .cd-n{font-size:23px}
+  .body{padding-bottom:11px}
+  .calnav h2{font-size:17px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div id="app"><div class="boot">Memuat data beasiswa...</div></div>
+<script>
+(function(){
+  "use strict";
+
+  var BULAN = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
+  var BLN_PENDEK = ["Jan","Feb","Mar","Apr","Mei","Jun","Jul","Agu","Sep","Okt","Nov","Des"];
+  var DOW = ["Sen","Sel","Rab","Kam","Jum","Sab","Min"];
+  var JENJANG = ["S1","S2","S3"];
+
+  var state = null;
+  var app = document.getElementById("app");
+  var canWrite = location.hash.indexOf("edit") > -1;
+  var editing = false, dirty = false;
+  var formFor = null, toast = null, showJson = false;
+  var view = "kalender";
+  var filterStatus = "aktif", filterJenjang = "semua";
+  var curY, curM, selected = null;
+
+  function pad(n){ return n < 10 ? "0" + n : "" + n; }
+  function todayISO(){ var d = new Date(); return d.getFullYear() + "-" + pad(d.getMonth()+1) + "-" + pad(d.getDate()); }
+  function valid(s){ return typeof s === "string" && /^\d{4}-\d{2}-\d{2}$/.test(s); }
+  function days(a, b){
+    if (!valid(a) || !valid(b)) return null;
+    return Math.round((Date.parse(b + "T00:00:00Z") - Date.parse(a + "T00:00:00Z")) / 86400000);
+  }
+  function fmt(iso, presisi){
+    if (!valid(iso)) return "belum ada";
+    var p = iso.split("-"), bln = BULAN[parseInt(p[1],10) - 1];
+    return presisi === "bulan" ? bln + " " + p[0] : parseInt(p[2],10) + " " + bln + " " + p[0];
+  }
+  var TODAY = todayISO();
+
+  function statusOf(it){
+    var dt = days(TODAY, it.tutup), db = days(TODAY, it.buka);
+    if (dt !== null && dt < 0) return "tutup";
+    if (db !== null && db > 0) return "nanti";
+    return "buka";
+  }
+  function urgensi(it){
+    var s = statusOf(it);
+    if (s === "tutup") return "closed";
+    if (s === "nanti") return "nanti";
+    var d = days(TODAY, it.tutup);
+    if (d === null) return "open";
+    if (d <= 7) return "urgent";
+    if (d <= 30) return "soon";
+    return "open";
+  }
+  function kelasRow(it){ var u = urgensi(it); return u === "closed" ? "closed" : "s-" + u; }
+  function urutan(it){
+    var s = statusOf(it), dt = days(TODAY, it.tutup), db = days(TODAY, it.buka);
+    if (s === "buka") return [0, dt === null ? 99999 : dt];
+    if (s === "nanti") return [1, db === null ? 99999 : db];
+    return [2, dt === null ? 99999 : -dt];
+  }
+  function esc(s){
+    return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;");
+  }
+  function safeUrl(u){ return (typeof u === "string" && /^https:\/\//i.test(u)) ? u : ""; }
+
+  function eventMap(){
+    var m = {};
+    state.items.forEach(function(it){
+      if (valid(it.tutup)) (m[it.tutup] = m[it.tutup] || []).push({ it: it, tipe: "tutup" });
+      if (valid(it.buka))  (m[it.buka]  = m[it.buka]  || []).push({ it: it, tipe: "buka"  });
+    });
+    return m;
+  }
+  function defaultSelection(){
+    var buka = state.items.filter(function(i){ return statusOf(i) === "buka" && valid(i.tutup); })
+      .sort(function(a,b){ return days(TODAY,a.tutup) - days(TODAY,b.tutup); });
+    if (buka.length) return buka[0].tutup;
+    var next = state.items.filter(function(i){ return valid(i.tutup) && days(TODAY,i.tutup) >= 0; })
+      .sort(function(a,b){ return days(TODAY,a.tutup) - days(TODAY,b.tutup); });
+    return next.length ? next[0].tutup : TODAY;
+  }
+
+  function render(){
+    if (!state) return;
+    var evs = eventMap();
+    var items = state.items.slice().sort(function(a,b){
+      var x = urutan(a), y = urutan(b); return x[0]-y[0] || x[1]-y[1];
+    });
+    var buka = items.filter(function(i){ return statusOf(i) === "buka"; });
+    var mendesak = buka.filter(function(i){ var d = days(TODAY,i.tutup); return d !== null && d <= 30; });
+    var nanti = items.filter(function(i){ return statusOf(i) === "nanti"; });
+    var paling = buka[0] || null;
+    var palingN = paling ? days(TODAY, paling.tutup) : null;
+
+    var h = "";
+    h += '<header class="mast"><div class="mast-l">'
+      + '<div class="eyebrow">Dipantau oleh ' + esc(state.kontak.nama) + '</div>'
+      + '<h1>Kalender Beasiswa</h1>'
+      + '<p class="strap">Terupdate dan Terlengkap</p>'
+      + '<p class="sub">Tenggat pendaftaran beasiswa luar negeri untuk pelamar Indonesia. Klik tanggal untuk melihat syaratnya.</p>'
+      + '</div><div class="mast-r">'
+      + '<div class="stamp">Diperbarui <b>' + esc(fmt(state.updated,"hari")) + '</b></div>'
+      + '<div class="stamp">Hari ini <b class="mono">' + esc(fmt(TODAY,"hari")) + '</b></div>'
+      + '</div></header>';
+
+    if (paling && palingN !== null && palingN <= 14) {
+      h += '<div class="alert"><div class="alert-k">' + (palingN <= 0 ? "Hari ini" : palingN + " hari lagi") + '</div>'
+        + '<div class="alert-t"><b>' + esc(paling.nama) + '</b> tutup ' + esc(fmt(paling.tutup, paling.presisi))
+        + (paling.jam ? ", pukul " + esc(paling.jam) : "") + '.</div></div>';
+    }
+
+    h += '<div class="stats">'
+      + '<div class="stat"><div class="stat-n">' + buka.length + '</div><div class="stat-l">sedang dibuka</div></div>'
+      + '<div class="stat"><div class="stat-n">' + mendesak.length + '</div><div class="stat-l">tutup dalam 30 hari</div></div>'
+      + '<div class="stat"><div class="stat-n">' + nanti.length + '</div><div class="stat-l">menunggu dibuka</div></div>'
+      + '</div>';
+
+    if (canWrite) {
+      h += '<div class="ebar"><p>' + (editing
+          ? (dirty ? "Ada perubahan. Klik Salin data.json lalu tempel ke GitHub supaya publik melihatnya." : "Mode edit aktif. Hanya kamu yang melihat panel ini, karena alamatnya diakhiri #edit.")
+          : "Mode edit tersedia. Pengunjung biasa tidak melihat tombol ini.") + '</p>'
+        + '<button class="btn" data-act="toggle-edit">' + (editing ? "Selesai" : "Edit kalender") + '</button>'
+        + (editing ? '<button class="btn" data-act="add">+ Tambah beasiswa</button>' : "")
+        + (editing ? '<button class="btn" data-act="kontak">Kontak</button>' : "")
+        + (editing ? '<button class="btn pri" data-act="salin">Salin data.json</button>' : "")
+        + (editing ? '<button class="btn" data-act="unduh">Unduh</button>' : "")
+        + '</div>';
+    }
+    if (toast) h += '<div class="toast ' + esc(toast.kind) + '">' + esc(toast.text) + '</div>';
+    if (showJson) h += '<div class="jsonbox"><textarea id="jsonout" readonly spellcheck="false">'
+      + esc(JSON.stringify(state, null, 2)) + '</textarea></div>';
+    if (editing && formFor === "__new__") h += formHtml(null);
+    if (editing && formFor === "__kontak__") h += kontakHtml();
+
+    h += '<div class="views">'
+      + '<button class="vbtn" aria-pressed="' + (view === "kalender") + '" data-view="kalender">Kalender</button>'
+      + '<button class="vbtn" aria-pressed="' + (view === "daftar") + '" data-view="daftar">Daftar</button>'
+      + '</div>';
+
+    h += view === "kalender" ? calendarHtml(evs) : daftarHtml(items);
+
+    var wa = state.kontak.wa ? String(state.kontak.wa).replace(/[^0-9]/g,"") : "";
+    h += '<footer class="foot"><div class="foot-l"><h2>' + esc(state.kontak.nama) + '</h2>'
+      + '<p>' + esc(state.kontak.catatan) + '</p></div><div class="contact">';
+    if (state.kontak.ig) h += '<div class="cline">Instagram <b>@' + esc(state.kontak.ig) + '</b></div>';
+    if (wa) {
+      h += '<div class="cline">WhatsApp <b>+' + esc(wa) + '</b></div>'
+        + '<a class="lnk" href="https://wa.me/' + esc(wa) + '" target="_blank" rel="noopener">Buka chat WhatsApp</a>';
+    } else if (canWrite) {
+      h += '<div class="cline" style="color:var(--urgent)">Nomor WhatsApp belum diisi. Klik Edit kalender lalu Kontak.</div>';
+    }
+    h += '</div></footer>';
+
+    h += '<p class="disc">Tanggal dan syarat bertanda <b>Perkiraan</b> belum diumumkan resmi untuk siklus ini dan disusun dari pola sebelumnya. '
+      + 'Daftar syarat di halaman ini adalah ringkasan, bukan salinan resmi. Selalu buka situs penyelenggara sebelum mengandalkan apa pun di sini. '
+      + 'Halaman ini bukan afiliasi resmi dari penyelenggara beasiswa mana pun.</p>';
+
+    app.innerHTML = h;
+  }
+
+  function calendarHtml(evs){
+    var first = new Date(Date.UTC(curY, curM, 1));
+    var startDow = (first.getUTCDay() + 6) % 7;
+    var dim = new Date(Date.UTC(curY, curM + 1, 0)).getUTCDate();
+    var total = Math.ceil((startDow + dim) / 7) * 7;
+
+    var h = '<div class="cal"><div class="calnav">'
+      + '<h2>' + BULAN[curM] + " " + curY + '</h2>'
+      + '<button class="nbtn" data-nav="-1" aria-label="Bulan sebelumnya">&#8249;</button>'
+      + '<button class="nbtn wide" data-nav="0">Hari ini</button>'
+      + '<button class="nbtn" data-nav="1" aria-label="Bulan berikutnya">&#8250;</button>'
+      + '</div><div class="dow">';
+    DOW.forEach(function(d){ h += "<span>" + d + "</span>"; });
+    h += '</div><div class="grid7">';
+
+    for (var i = 0; i < total; i++){
+      var dnum = i - startDow + 1;
+      if (dnum < 1 || dnum > dim) { h += '<div class="cell pad"></div>'; continue; }
+      var iso = curY + "-" + pad(curM + 1) + "-" + pad(dnum);
+      var list = evs[iso] || [];
+      var cls = "cell";
+      if (list.length) cls += " has";
+      if (iso === TODAY) cls += " today";
+      if (iso === selected) cls += " sel";
+      if (i % 7 >= 5) cls += " wk";
+
+      var inner = '<span class="dnum">' + dnum + "</span>", dots = "";
+      list.slice(0, 3).forEach(function(e){
+        var t = e.tipe === "buka" ? "buka" : urgensi(e.it);
+        inner += '<span class="ev t-' + t + '">' + esc((e.tipe === "buka" ? "Buka " : "") + e.it.nama) + "</span>";
+        dots += '<span class="ev t-' + t + '" style="padding:0;border:0;background:none"><span class="dot"></span></span>';
+      });
+      if (list.length > 3) inner += '<span class="ev t-closed">+' + (list.length - 3) + " lagi</span>";
+      if (dots) inner += '<span class="dots">' + dots + "</span>";
+
+      h += list.length
+        ? '<button class="' + cls + '" data-date="' + iso + '">' + inner + "</button>"
+        : '<div class="' + cls + '">' + inner + "</div>";
+    }
+    h += "</div>";
+
+    var mset = {};
+    Object.keys(evs).forEach(function(iso){ mset[iso.slice(0,7)] = (mset[iso.slice(0,7)] || 0) + evs[iso].length; });
+    var keys = Object.keys(mset).sort();
+    if (keys.length){
+      h += '<div class="months"><b>Lompat ke</b>';
+      keys.forEach(function(k){
+        var y = parseInt(k.slice(0,4),10), m = parseInt(k.slice(5,7),10) - 1;
+        h += '<button class="mjump" aria-pressed="' + (y === curY && m === curM) + '" data-jump="' + k + '">'
+          + BLN_PENDEK[m] + " " + y + " (" + mset[k] + ")</button>";
+      });
+      h += "</div>";
+    }
+    h += "</div>";
+
+    var sel = evs[selected] || [];
+    h += '<section class="detail"><div class="dhead"><h3>' + esc(fmt(selected, "hari")) + "</h3>"
+      + "<span>" + (sel.length ? sel.length + " agenda pada tanggal ini" : "tidak ada agenda") + "</span></div>";
+    if (!sel.length) h += '<div class="empty">Klik tanggal yang bertanda di kalender untuk melihat syarat dan detailnya.</div>';
+    else {
+      h += '<div class="list">';
+      sel.forEach(function(e){
+        h += rowHtml(e.it, e.tipe);
+        if (editing && formFor === e.it.id) h += formHtml(e.it);
+      });
+      h += "</div>";
+    }
+    return h + "</section>";
+  }
+
+  function daftarHtml(items){
+    var shown = items.filter(function(i){
+      var s = statusOf(i);
+      if (filterStatus === "aktif" && s === "tutup") return false;
+      if (filterStatus === "buka" && s !== "buka") return false;
+      if (filterStatus === "nanti" && s !== "nanti") return false;
+      if (filterStatus === "tutup" && s !== "tutup") return false;
+      if (filterJenjang !== "semua" && (i.jenjang || []).indexOf(filterJenjang) === -1) return false;
+      return true;
+    });
+    var h = '<div class="chips">'
+      + chip("status","aktif","Aktif") + chip("status","buka","Dibuka")
+      + chip("status","nanti","Belum buka") + chip("status","tutup","Sudah tutup")
+      + chip("status","semua","Semua") + '<div class="sep"></div>'
+      + chip("jenjang","semua","Semua jenjang") + chip("jenjang","S1","S1")
+      + chip("jenjang","S2","S2") + chip("jenjang","S3","S3") + "</div>";
+    h += '<div class="list">';
+    if (!shown.length) h += '<div class="empty">Tidak ada beasiswa yang cocok dengan filter ini.</div>';
+    else shown.forEach(function(it){
+      h += rowHtml(it, "tutup");
+      if (editing && formFor === it.id) h += formHtml(it);
+    });
+    return h + "</div>";
+  }
+
+  function chip(grup, nilai, label){
+    var aktif = (grup === "status" ? filterStatus : filterJenjang) === nilai;
+    return '<button class="chip" aria-pressed="' + aktif + '" data-filter="' + grup + '" data-val="' + esc(nilai) + '">' + esc(label) + "</button>";
+  }
+
+  function rowHtml(it, tipe){
+    var s = statusOf(it), dt = days(TODAY, it.tutup), db = days(TODAY, it.buka);
+    var n, unit, pill;
+    if (tipe === "buka" && s === "nanti"){ n = db === null ? "-" : Math.abs(db); unit = "hari sebelum buka"; pill = "Pendaftaran buka"; }
+    else if (s === "buka"){
+      n = dt === null ? "-" : Math.abs(dt);
+      unit = it.presisi === "bulan" ? "hari (perkiraan)" : (dt === 0 ? "tutup hari ini" : "hari lagi");
+      pill = (dt !== null && dt <= 7) ? "Mendesak" : "Dibuka";
+    }
+    else if (s === "nanti"){ n = db === null ? "-" : Math.abs(db); unit = "hari sebelum buka"; pill = "Belum buka"; }
+    else { n = dt === null ? "-" : Math.abs(dt); unit = "hari lalu"; pill = "Tutup"; }
+
+    var tags = '<span class="tag">' + esc(it.negara) + "</span>";
+    (it.jenjang || []).forEach(function(j){ tags += '<span class="tag">' + esc(j) + "</span>"; });
+    if (!it.pasti) tags += '<span class="tag est">Perkiraan</span>';
+
+    var h = '<article class="row ' + kelasRow(it) + '"><div class="stripe"></div><div class="body">'
+      + '<div class="ttl"><h3>' + esc(it.nama) + '</h3><span class="org">' + esc(it.org) + "</span></div>"
+      + '<div class="tags">' + tags + "</div>"
+      + '<div class="dates"><span>Buka <b>' + esc(fmt(it.buka, it.presisi)) + "</b></span>"
+      + "<span>Tutup <b>" + esc(fmt(it.tutup, it.presisi)) + "</b>" + (it.jam ? " " + esc(it.jam) : "") + "</span></div>";
+
+    if (it.syarat && it.syarat.length){
+      h += '<div class="syarat"><h4>Syarat utama</h4><ul>';
+      it.syarat.forEach(function(x){ h += "<li>" + esc(x) + "</li>"; });
+      h += "</ul><p>Ringkasan, bukan daftar resmi. Cek situs penyelenggara.</p></div>";
+    }
+    if (it.catatan) h += '<p class="note">' + esc(it.catatan) + "</p>";
+    var url = safeUrl(it.link);
+    if (url) h += '<a class="lnk" href="' + esc(url) + '" target="_blank" rel="noopener">Situs resmi</a>';
+    if (editing){
+      h += '<div class="rowacts"><button class="btn sm" data-act="edit" data-id="' + esc(it.id) + '">Ubah</button>'
+        + '<button class="btn sm dgr" data-act="del" data-id="' + esc(it.id) + '">Hapus</button></div>';
+    }
+    return h + '</div><div class="cd"><div class="cd-n">' + esc(n) + '</div><div class="cd-u">' + esc(unit) + "</div>"
+      + '<span class="pill">' + esc(pill) + "</span></div></article>";
+  }
+
+  function formHtml(it){
+    var v = it || { id:"", nama:"", org:"", negara:"", jenjang:["S2"], buka:"", tutup:"",
+                    presisi:"hari", pasti:true, jam:"", link:"", syarat:[], catatan:"" };
+    function opt(val, label, cur){ return '<option value="' + esc(val) + '"' + (cur === val ? " selected" : "") + ">" + esc(label) + "</option>"; }
+    var jch = "";
+    JENJANG.forEach(function(j){
+      jch += '<label style="display:inline-flex;gap:5px;align-items:center;font-size:13px;margin-right:12px">'
+        + '<input type="checkbox" style="width:auto" id="f-j-' + j + '"' + ((v.jenjang||[]).indexOf(j) > -1 ? " checked" : "") + "> " + j + "</label>";
+    });
+    return '<div class="form"><h3>' + (it ? "Ubah " + esc(it.nama) : "Beasiswa baru") + '</h3><div class="fgrid">'
+      + '<div class="fld wide"><label for="f-nama">Nama beasiswa</label><input id="f-nama" value="' + esc(v.nama) + '"></div>'
+      + '<div class="fld"><label for="f-org">Penyelenggara</label><input id="f-org" value="' + esc(v.org) + '"></div>'
+      + '<div class="fld"><label for="f-negara">Negara tujuan</label><input id="f-negara" value="' + esc(v.negara) + '"></div>'
+      + '<div class="fld wide"><label>Jenjang</label><div>' + jch + "</div></div>"
+      + '<div class="fld"><label for="f-buka">Tanggal buka</label><input id="f-buka" type="date" value="' + esc(v.buka) + '"></div>'
+      + '<div class="fld"><label for="f-tutup">Tanggal tutup</label><input id="f-tutup" type="date" value="' + esc(v.tutup) + '"></div>'
+      + '<div class="fld"><label for="f-presisi">Presisi tanggal</label><select id="f-presisi">'
+        + opt("hari","Tanggal pasti",v.presisi) + opt("bulan","Hanya bulan",v.presisi) + "</select></div>"
+      + '<div class="fld"><label for="f-pasti">Status tanggal</label><select id="f-pasti">'
+        + opt("ya","Dikonfirmasi resmi", v.pasti?"ya":"tidak") + opt("tidak","Perkiraan", v.pasti?"ya":"tidak") + "</select></div>"
+      + '<div class="fld"><label for="f-jam">Jam tutup (opsional)</label><input id="f-jam" value="' + esc(v.jam) + '" placeholder="11:00 UTC"></div>'
+      + '<div class="fld"><label for="f-link">Link resmi (https)</label><input id="f-link" value="' + esc(v.link) + '" placeholder="https://..."></div>'
+      + '<div class="fld wide"><label for="f-syarat">Syarat utama, satu per baris</label><textarea id="f-syarat" style="min-height:110px">'
+        + esc((v.syarat || []).join("\n")) + "</textarea></div>"
+      + '<div class="fld wide"><label for="f-catatan">Catatan</label><textarea id="f-catatan">' + esc(v.catatan) + "</textarea></div>"
+      + "</div>"
+      + '<p class="hint">Pilih Perkiraan kalau tanggalnya belum diumumkan resmi. Baris itu diberi label Perkiraan supaya pembaca tahu harus mengecek sendiri.</p>'
+      + '<div class="formacts"><button class="btn pri" data-act="save" data-id="' + esc(v.id) + '">Simpan ke daftar</button>'
+      + '<button class="btn" data-act="cancel">Batal</button></div></div>';
+  }
+
+  function kontakHtml(){
+    var k = state.kontak;
+    return '<div class="form"><h3>Kontak</h3><div class="fgrid">'
+      + '<div class="fld"><label for="k-nama">Nama</label><input id="k-nama" value="' + esc(k.nama) + '"></div>'
+      + '<div class="fld"><label for="k-ig">Instagram (tanpa @)</label><input id="k-ig" value="' + esc(k.ig) + '"></div>'
+      + '<div class="fld"><label for="k-wa">WhatsApp (kode negara, tanpa +)</label><input id="k-wa" value="' + esc(k.wa) + '" placeholder="628xxxxxxxxxx"></div>'
+      + '<div class="fld wide"><label for="k-catatan">Deskripsi singkat</label><textarea id="k-catatan">' + esc(k.catatan) + "</textarea></div>"
+      + '</div><div class="formacts"><button class="btn pri" data-act="save-kontak">Simpan</button>'
+      + '<button class="btn" data-act="cancel">Batal</button></div></div>';
+  }
+
+  function slug(s){
+    return String(s).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,40) || "beasiswa-" + Date.now();
+  }
+  function readForm(id){
+    var jen = [];
+    JENJANG.forEach(function(j){ var c = document.getElementById("f-j-" + j); if (c && c.checked) jen.push(j); });
+    var nama = (document.getElementById("f-nama").value || "").trim();
+    if (!nama){ toast = { kind:"bad", text:"Nama beasiswa tidak boleh kosong." }; return null; }
+    var link = (document.getElementById("f-link").value || "").trim();
+    if (link && !/^https:\/\//i.test(link)){ toast = { kind:"bad", text:"Link harus diawali https://" }; return null; }
+    var syarat = (document.getElementById("f-syarat").value || "").split("\n")
+      .map(function(x){ return x.trim(); }).filter(Boolean);
+    return {
+      id: id || slug(nama), nama: nama,
+      org: (document.getElementById("f-org").value || "").trim(),
+      negara: (document.getElementById("f-negara").value || "").trim(),
+      jenjang: jen,
+      buka: document.getElementById("f-buka").value || "",
+      tutup: document.getElementById("f-tutup").value || "",
+      presisi: document.getElementById("f-presisi").value,
+      pasti: document.getElementById("f-pasti").value === "ya",
+      jam: (document.getElementById("f-jam").value || "").trim(),
+      link: link, syarat: syarat,
+      catatan: (document.getElementById("f-catatan").value || "").trim()
+    };
+  }
+
+  function salinJson(){
+    state.updated = todayISO();
+    showJson = true;
+    var txt = JSON.stringify(state, null, 2);
+    var done = function(ok){
+      toast = ok
+        ? { kind:"good", text:"data.json tersalin. Buka repo GitHub, klik data.json, klik ikon pensil, pilih semua isinya, tempel, lalu Commit changes." }
+        : { kind:"", text:"Tidak bisa menyalin otomatis. Pilih semua teks di kotak di bawah, salin manual, lalu tempel ke data.json di GitHub." };
+      render();
+      var ta = document.getElementById("jsonout");
+      if (ta && !ok){ ta.focus(); ta.select(); }
+    };
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(txt).then(function(){ done(true); }, function(){ done(false); });
+    } else done(false);
+  }
+
+  function unduhJson(){
+    state.updated = todayISO();
+    var blob = new Blob([JSON.stringify(state, null, 2)], { type: "application/json" });
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "data.json";
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 2000);
+    toast = { kind:"good", text:"data.json terunduh. Unggah file ini menggantikan data.json di repo GitHub-mu." };
+    render();
+  }
+
+  app.addEventListener("click", function(e){
+    var cell = e.target.closest("[data-date]");
+    if (cell){ selected = cell.dataset.date; render(); return; }
+    var b = e.target.closest("button");
+    if (!b) return;
+
+    if (b.dataset.view){ view = b.dataset.view; toast = null; showJson = false; render(); return; }
+    if (b.dataset.nav !== undefined){
+      var d = parseInt(b.dataset.nav, 10);
+      if (d === 0){ var t = new Date(); curY = t.getFullYear(); curM = t.getMonth(); }
+      else { curM += d; if (curM < 0){ curM = 11; curY--; } if (curM > 11){ curM = 0; curY++; } }
+      render(); return;
+    }
+    if (b.dataset.jump){
+      curY = parseInt(b.dataset.jump.slice(0,4), 10);
+      curM = parseInt(b.dataset.jump.slice(5,7), 10) - 1;
+      render(); return;
+    }
+    if (b.dataset.filter){
+      if (b.dataset.filter === "status") filterStatus = b.dataset.val; else filterJenjang = b.dataset.val;
+      render(); return;
+    }
+
+    var act = b.dataset.act;
+    if (!act) return;
+    toast = null;
+
+    if (act === "toggle-edit"){ editing = !editing; formFor = null; showJson = false; render(); }
+    else if (act === "add"){ formFor = "__new__"; render(); }
+    else if (act === "edit"){ formFor = b.dataset.id; render(); }
+    else if (act === "kontak"){ formFor = "__kontak__"; render(); }
+    else if (act === "cancel"){ formFor = null; render(); }
+    else if (act === "salin"){ salinJson(); }
+    else if (act === "unduh"){ unduhJson(); }
+    else if (act === "del"){
+      var it = state.items.filter(function(x){ return x.id === b.dataset.id; })[0];
+      if (!it) return;
+      if (b.dataset.sure === "1"){
+        state.items = state.items.filter(function(x){ return x.id !== b.dataset.id; });
+        dirty = true; formFor = null;
+        toast = { kind:"", text:'"' + it.nama + '" dihapus. Klik Salin data.json lalu tempel ke GitHub.' };
+        render();
+      } else { b.dataset.sure = "1"; b.textContent = "Yakin hapus?"; }
+    }
+    else if (act === "save"){
+      var data = readForm(b.dataset.id);
+      if (!data){ render(); return; }
+      var idx = -1;
+      state.items.forEach(function(x,i){ if (x.id === b.dataset.id) idx = i; });
+      if (idx > -1) state.items[idx] = data; else state.items.push(data);
+      dirty = true; formFor = null;
+      toast = { kind:"", text:"Tersimpan sementara di browser ini. Klik Salin data.json lalu tempel ke GitHub supaya permanen." };
+      render();
+    }
+    else if (act === "save-kontak"){
+      state.kontak = {
+        nama: (document.getElementById("k-nama").value || "").trim() || "Kalender Beasiswa",
+        ig: (document.getElementById("k-ig").value || "").trim().replace(/^@/,""),
+        wa: (document.getElementById("k-wa").value || "").replace(/[^0-9]/g,""),
+        catatan: (document.getElementById("k-catatan").value || "").trim()
+      };
+      dirty = true; formFor = null;
+      toast = { kind:"", text:"Kontak tersimpan sementara. Klik Salin data.json lalu tempel ke GitHub." };
+      render();
+    }
+  });
+
+  window.addEventListener("hashchange", function(){
+    canWrite = location.hash.indexOf("edit") > -1;
+    if (!canWrite){ editing = false; formFor = null; showJson = false; }
+    render();
+  });
+
+  function gagal(pesan){
+    app.innerHTML = '<div class="boot">' + esc(pesan) + "</div>";
+  }
+
+  fetch("data.json", { cache: "no-store" })
+    .then(function(r){ if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(function(d){
+      if (!d || !Array.isArray(d.items)) throw new Error("bentuk data salah");
+      state = d;
+      if (!state.kontak) state.kontak = { nama:"Kalender Beasiswa", ig:"", wa:"", catatan:"" };
+      selected = defaultSelection();
+      curY = parseInt(selected.slice(0,4), 10);
+      curM = parseInt(selected.slice(5,7), 10) - 1;
+      render();
+    })
+    .catch(function(err){
+      gagal("Gagal memuat data.json (" + err.message + "). Kalau kamu membuka file ini langsung dari komputer, "
+        + "jalankan lewat server lokal atau buka versi yang sudah di GitHub Pages.");
+    });
+})();
+</script>
+</body>
+</html>
