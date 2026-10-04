@@ -255,15 +255,26 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 .mapwrap{padding:0;background:var(--surface)}
 .mapwrap svg{display:block;width:100%;height:auto}
 .ocean{fill:var(--ocean)}
-.land{fill:var(--landfill);stroke:var(--landline);stroke-width:.3;stroke-linejoin:round}
-.grat{stroke:var(--ink);stroke-width:.2;fill:none;opacity:.13}
-.eqline{stroke:var(--ink);stroke-width:.35;stroke-dasharray:2.5 2.5;opacity:.3}
-.bub{fill:var(--region);fill-opacity:.7;stroke:var(--surface);stroke-width:.7;cursor:pointer;transition:fill-opacity .12s}
+.land{fill:var(--landfill);stroke:var(--landline);stroke-width:calc(.3 / var(--z,1));stroke-linejoin:round}
+.grat{stroke:var(--ink);stroke-width:calc(.2 / var(--z,1));fill:none;opacity:.13}
+.eqline{stroke:var(--ink);stroke-width:calc(.35 / var(--z,1));stroke-dasharray:2.5 2.5;opacity:.3}
+.bub{fill:var(--region);fill-opacity:.7;stroke:var(--surface);stroke-width:calc(.7 / var(--z,1));cursor:pointer;transition:fill-opacity .12s}
 .bub:hover{fill-opacity:1}
-.bub.on{fill-opacity:1;stroke:var(--ink);stroke-width:1.4}
+.bub.on{fill-opacity:1;stroke:var(--ink);stroke-width:calc(1.4 / var(--z,1))}
 .bub.mati{fill:var(--closed);fill-opacity:.3}
-.bubn{fill:var(--bubtext);font-size:3.4px;font-family:var(--font-mono);font-weight:600;text-anchor:middle;pointer-events:none}
-.bubl{fill:var(--ink);font-size:3.6px;font-family:var(--font-mono);text-anchor:middle;pointer-events:none}
+.bubn{fill:var(--bubtext);font-size:calc(3.4px / var(--z,1));font-family:var(--font-mono);font-weight:600;text-anchor:middle;pointer-events:none}
+.bubl{fill:var(--ink);font-size:calc(3.3px / var(--z,1));font-family:var(--font-mono);font-weight:500;text-anchor:middle;pointer-events:none;paint-order:stroke;stroke:var(--surface);stroke-width:calc(1.1 / var(--z,1))}
+.mapctl{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:11px 12px;border-bottom:1px solid var(--line);background:var(--surface-2)}
+.mapctl b{font-family:var(--font-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-3);font-weight:400;margin-right:2px}
+.zb{border:1px solid var(--line-strong);background:var(--surface);color:var(--ink-2);border-radius:999px;padding:4px 11px;font-size:11.5px;line-height:1.3}
+.zb[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:500}
+.zb.ikon{width:28px;padding:0;height:26px;border-radius:4px;font-size:15px;display:grid;place-items:center}
+.mapctl .kanan{margin-left:auto;display:flex;gap:5px}
+.mapwrap{position:relative}
+.mapwrap.bisageser svg{cursor:grab;touch-action:none}
+.mapwrap.bisageser.geser svg{cursor:grabbing}
+.zoomtip{position:absolute;right:10px;bottom:8px;font-family:var(--font-mono);font-size:10px;color:var(--ink-3);
+  background:color-mix(in srgb,var(--surface) 85%,transparent);padding:3px 8px;border-radius:3px;pointer-events:none}
 .mapkey{display:flex;flex-wrap:wrap;gap:6px 16px;padding:0 14px 12px;font-family:var(--font-mono);font-size:10.5px;color:var(--ink-3)}
 .negs{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:1px;background:var(--line);border-top:1px solid var(--line)}
 .neg{background:var(--surface);padding:10px 12px;text-align:left;border:0;border-left:3px solid var(--region,var(--line));color:inherit;font:inherit;cursor:pointer;min-width:0}
@@ -703,6 +714,50 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
   function px(lon){ return lon - LON0; }
   function py(lat){ return LAT0 - lat; }
 
+  /* ---------- zoom dan geser peta ---------- */
+  var ZONA = [
+    ["dunia","Dunia",        null, null, MW],
+    ["eropa","Eropa",          14,   50,  70],
+    ["timteng","Timur Tengah", 52,   36,  70],
+    ["asiatimur","Asia Timur",122,   32,  55],
+    ["asiatenggara","Asia Tenggara",112, 6, 55],
+    ["amerika","Amerika",     -90,   42,  90],
+    ["oseania","Oseania",     152,  -32,  70]
+  ];
+  var vbox = { x:0, y:0, w:MW };   // kotak tampilan dalam satuan viewBox
+  var zonaAktif = "dunia";
+
+  function vh(){ return vbox.w * MH / MW; }
+  function zoomNya(){ return MW / vbox.w; }
+  function rapikan(){
+    vbox.w = Math.max(24, Math.min(MW, vbox.w));
+    var h = vh();
+    vbox.x = Math.max(-8, Math.min(MW - vbox.w + 8, vbox.x));
+    vbox.y = Math.max(-8, Math.min(MH - h + 8, vbox.y));
+  }
+  function pusatkan(lon, lat, lebar){
+    vbox.w = lebar;
+    vbox.x = px(lon) - lebar / 2;
+    vbox.y = py(lat) - vh() / 2;
+    rapikan();
+  }
+  function keZona(key){
+    var z = null;
+    ZONA.forEach(function(a){ if (a[0] === key) z = a; });
+    if (!z) return;
+    zonaAktif = key;
+    if (key === "dunia"){ vbox = { x:0, y:0, w:MW }; return; }
+    pusatkan(z[2], z[3], z[4]);
+  }
+  function zoomKe(faktor){
+    var cx = vbox.x + vbox.w / 2, cy = vbox.y + vh() / 2;
+    vbox.w = vbox.w * faktor;
+    vbox.x = cx - vbox.w / 2;
+    vbox.y = cy - vh() / 2;
+    rapikan();
+    zonaAktif = Math.abs(vbox.w - MW) < 1 ? "dunia" : "";
+  }
+
   function negaraStat(list){
     var g = {};
     (list || state.items).forEach(function(it){
@@ -723,9 +778,21 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     if (!negs.length) return kosongHtml();
     var maxT = negs.reduce(function(m,n){ return Math.max(m, n.total); }, 1);
 
-    var h = '<div class="map"><div class="mapwrap"><svg viewBox="0 0 ' + MW + " " + MH
-      + '" role="img" aria-label="Peta negara tujuan beasiswa">'
-      + '<rect class="ocean" x="0" y="0" width="' + MW + '" height="' + MH + '"/>'
+    var z = zoomNya(), bisaGeser = z > 1.02;
+
+    var h = '<div class="map"><div class="mapctl"><b>Zoom ke</b>';
+    ZONA.forEach(function(a){
+      h += '<button class="zb" aria-pressed="' + (zonaAktif === a[0]) + '" data-zona="' + a[0] + '">' + esc(a[1]) + "</button>";
+    });
+    h += '<span class="kanan">'
+      + '<button class="zb ikon" data-zoom="out" aria-label="Perkecil"' + (z <= 1.02 ? " disabled" : "") + '>&minus;</button>'
+      + '<button class="zb ikon" data-zoom="in" aria-label="Perbesar">+</button>'
+      + "</span></div>";
+
+    h += '<div class="mapwrap' + (bisaGeser ? " bisageser" : "") + '">'
+      + '<svg viewBox="' + vbox.x.toFixed(1) + " " + vbox.y.toFixed(1) + " " + vbox.w.toFixed(1) + " " + vh().toFixed(1)
+      + '" style="--z:' + z.toFixed(3) + '" role="img" aria-label="Peta negara tujuan beasiswa">'
+      + '<rect class="ocean" x="-20" y="-20" width="' + (MW + 40) + '" height="' + (MH + 40) + '"/>'
       + '<path class="land" d="' + LAND + '"/>';
 
     for (var lon = -120; lon <= 180; lon += 30)
@@ -742,17 +809,21 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 
     titik.forEach(function(n){
       var k = KOORD[n.negara];
-      var r = 2.2 + 2.4 * Math.sqrt(n.total / maxT);
+      var r = (2.2 + 2.4 * Math.sqrt(n.total / maxT)) / Math.pow(z, 0.72);
       var x = px(k[1]), y = py(k[0]);
       var on = mapNegara === n.negara;
       h += '<g class="' + regionCls({ region:n.region }) + '">'
         + '<circle class="bub' + (on ? " on" : "") + (n.buka === 0 ? " mati" : "") + '" cx="' + x.toFixed(1)
-        + '" cy="' + y.toFixed(1) + '" r="' + r.toFixed(1) + '" data-neg="' + esc(n.negara) + '">'
-        + "<title>" + esc(n.negara) + ": " + n.total + " beasiswa, " + n.buka + " sedang dibuka</title></circle>";
-      if (r >= 3.6) h += '<text class="bubn" x="' + x.toFixed(1) + '" y="' + (y + 1.2).toFixed(1) + '">' + n.total + "</text>";
+        + '" cy="' + y.toFixed(1) + '" r="' + r.toFixed(2) + '" data-neg="' + esc(n.negara) + '">'
+        + "<title>" + esc(n.negara) + ": " + n.total + " beasiswa, " + n.buka + " sedang dibuka</title></circle>"
+        + '<text class="bubn" x="' + x.toFixed(1) + '" y="' + (y + 1.2 / z).toFixed(2) + '">' + n.total + "</text>";
+      /* nama negara baru muat kalau sudah di-zoom */
+      if (z >= 1.8) h += '<text class="bubl" x="' + x.toFixed(1) + '" y="' + (y - r - 1.4 / z).toFixed(2) + '">' + esc(n.negara) + "</text>";
       h += "</g>";
     });
-    h += "</svg></div>";
+    h += "</svg>"
+      + (bisaGeser ? '<span class="zoomtip">seret untuk menggeser</span>' : "")
+      + "</div>";
 
     h += '<div class="mapkey"><span>Besar lingkaran = jumlah beasiswa</span><span>Warna = wilayah</span>'
       + "<span>Abu = tidak ada yang sedang dibuka</span>"
@@ -1067,6 +1138,7 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 
     var neg = e.target.closest("[data-neg]");
     if (neg){
+      if (abaikanKlik){ abaikanKlik = false; return; }   // baru selesai menggeser peta
       var v = neg.getAttribute("data-neg");
       mapNegara = (!v || mapNegara === v) ? null : v;
       render(); return;
@@ -1074,6 +1146,9 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
 
     var b = e.target.closest("button");
     if (!b) return;
+
+    if (b.dataset.zona){ keZona(b.dataset.zona); render(); return; }
+    if (b.dataset.zoom){ zoomKe(b.dataset.zoom === "in" ? 0.6 : 1 / 0.6); render(); return; }
 
     if (b.dataset.view){ view = b.dataset.view; toast = null; showJson = false; render(); return; }
     if (b.dataset.nav !== undefined){
@@ -1142,6 +1217,42 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
       render();
     }
   });
+
+  /* ---------- geser peta ---------- */
+  var geser = null, abaikanKlik = false;
+  function pasangViewBox(svg){
+    svg.setAttribute("viewBox", vbox.x.toFixed(1) + " " + vbox.y.toFixed(1) + " " + vbox.w.toFixed(1) + " " + vh().toFixed(1));
+  }
+  app.addEventListener("pointerdown", function(e){
+    var svg = e.target.closest(".mapwrap.bisageser svg");
+    if (!svg) return;
+    var lebar = svg.getBoundingClientRect().width;
+    if (!lebar) return;
+    geser = { x:e.clientX, y:e.clientY, vx:vbox.x, vy:vbox.y, skala:vbox.w / lebar, svg:svg, wrap:svg.parentNode, pindah:false };
+    svg.parentNode.classList.add("geser");
+    try { svg.setPointerCapture(e.pointerId); } catch(err){}
+  });
+  app.addEventListener("pointermove", function(e){
+    if (!geser) return;
+    var dx = (e.clientX - geser.x) * geser.skala, dy = (e.clientY - geser.y) * geser.skala;
+    if (!geser.pindah && Math.abs(dx) + Math.abs(dy) > 0.6) geser.pindah = true;
+    vbox.x = geser.vx - dx; vbox.y = geser.vy - dy;
+    rapikan();
+    pasangViewBox(geser.svg);
+  });
+  function selesaiGeser(){
+    if (!geser) return;
+    geser.wrap.classList.remove("geser");
+    if (geser.pindah){
+      abaikanKlik = true;
+      zonaAktif = "";
+      var bar = geser.wrap.parentNode.querySelectorAll("[data-zona]");
+      for (var i = 0; i < bar.length; i++) bar[i].setAttribute("aria-pressed", "false");
+    }
+    geser = null;
+  }
+  app.addEventListener("pointerup", selesaiGeser);
+  app.addEventListener("pointercancel", selesaiGeser);
 
   var tundaCari = null;
   app.addEventListener("input", function(e){
