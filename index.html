@@ -784,9 +784,10 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
       if (it.tipe === "penuh") g[k].penuh++;
       g[k].items.push(it);
     });
-    return Object.keys(g).sort(function(a,b){
-      return g[b].buka - g[a].buka || g[b].total - g[a].total || a.localeCompare(b);
-    }).map(function(k){ return g[k]; });
+    /* kartu negara diurutkan abjad supaya gampang dicari di antara 38 negara.
+       Besar-kecilnya peluang sudah terbaca dari ukuran lingkaran di peta. */
+    return Object.keys(g).sort(function(a,b){ return a.localeCompare(b, "id"); })
+      .map(function(k){ return g[k]; });
   }
 
   function petaHtml(list){
@@ -1260,7 +1261,10 @@ mark{background:color-mix(in srgb,var(--brand-2) 55%,transparent);color:inherit;
     if (!geser) return;
     geser.wrap.classList.remove("geser");
     if (geser.pindah){
+      /* telan HANYA klik yang menyusul pointerup ini, lalu lepas lagi.
+         Tanpa setTimeout, flag-nya nyangkut dan menelan klik negara berikutnya. */
       abaikanKlik = true;
+      setTimeout(function(){ abaikanKlik = false; }, 0);
       zonaAktif = "";
       var bar = geser.wrap.parentNode.querySelectorAll("[data-zona]");
       for (var i = 0; i < bar.length; i++) bar[i].setAttribute("aria-pressed", "false");
